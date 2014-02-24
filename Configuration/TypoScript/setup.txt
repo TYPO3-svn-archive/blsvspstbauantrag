@@ -1,0 +1,162 @@
+plugin.tx_blsvspstbauantrag {
+	view {
+		templateRootPath = {$plugin.tx_blsvspstbauantrag.view.templateRootPath}
+		partialRootPath = {$plugin.tx_blsvspstbauantrag.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_blsvspstbauantrag.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_blsvspstbauantrag.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_blsvspstbauantrag._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-blsvspstbauantrag table {
+		border-collapse:separate;
+	}
+	
+	.tx_blsvspstbauantrag table{
+  background-color: #eee;
+}
+.tx_blsvspstbauantrag input{
+  padding: 5px;
+  background-color: #fff;
+  width: 100px;
+}
+.tx_blsvspstbauantrag .datepicker{
+  width: 60px;
+}
+.tx_blsvspstbauantrag .prozent,
+.tx_blsvspstbauantrag .anzahl{
+  width: 60px;
+}
+.tx_blsvspstbauantrag .helpicon{
+  cursor: help;
+}
+.tx_blsvspstbauantrag .langhilfe{
+  position: fixed;
+  top: 200px;
+  left: 300px;
+  width: 400px;
+  height: 330px;
+  -webkit-box-shadow:  0px 0px 5px 5px rgba(100, 100, 100, 0.5);
+  box-shadow:  0px 0px 5px 5px rgba(100, 100, 100, 0.5);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding:  0px 3px 10px 5px;
+  background: #ddeeff url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/close.png) top right no-repeat;
+  overflow:  auto;
+}
+
+.tx_blsvspstbauantrag .langhilfe .content{
+  width: 390px;
+  height: 290px;
+  padding: 5px 5px;
+  overflow:  auto;
+   background: #fff;
+}
+.tx_blsvspstbauantrag .langhilfe .heading{
+  width: 390px;
+  height: 25px;
+  padding: 0px 5px;
+  overflow:  none;
+}
+
+.tx_blsvspstbauantrag .langhilfe div h1{
+  margin-top:5px;
+  text-align: center;
+  
+}
+
+ .statusinworkicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png) -2px 0px no-repeat;
+}
+.tx_blsvspstbauantrag .statusokicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png) -23px 0px  no-repeat;
+}
+
+.tx_blsvspstbauantrag  .statusfalseicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-46px 0px   no-repeat;
+}
+
+.tx_blsvspstbauantrag_abgeben{
+  border: 1px solid #333;
+  -webkit-border-radius: 5px;
+border-radius: 5px; 
+  padding: 5px;
+}
+
+.tx_blsvspstbauantrag_abgeben .editicon,
+.tx_blsvspstbauantrag .editicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-120px 0px   no-repeat;
+}
+.tx_blsvspstbauantrag .viewicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-143px 0px   no-repeat;
+}
+.tx_blsvspstbauantrag  .sendicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-72px 0px   no-repeat;
+}
+.tx_blsvspstbauantrag .freigabeicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-97px 0px   no-repeat;
+}
+.tx_blsvspstbauantrag .nichtklickbar{
+  opacity: 0.2;
+}
+.tabrowgrau td{
+  background: #eee;
+}
+
+input[disabled="disabled"]{
+  background: #eee;
+  color: #001;
+  }
+.tx_blsvspstbauantrag input.linkbutton{
+  font-size: 12px;
+  color: #5290cc;
+  cursor: pointer;
+  width: 150px;
+}
+
+.tx_blsvspstbauantrag .warning{
+//  color:#F00;
+  border: 1px solid #F00;
+//  background-color:#F00;
+}  
+
+	.tx-blsvspstbauantrag table th {
+		font-weight:bold;
+	}
+
+	.tx-blsvspstbauantrag table td {
+		vertical-align:top;
+	}
+)

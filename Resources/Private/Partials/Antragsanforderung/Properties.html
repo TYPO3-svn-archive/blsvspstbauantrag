@@ -1,0 +1,281 @@
+{namespace hv=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:form.hidden property="vereinsnummer" />
+<f:form.hidden property="feuser" />
+<h2 style="text-align: center;"> 
+
+	
+	<f:form.radio property="art" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art1" /> 
+	<f:form.radio property="art" value="2" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art2" />
+	<f:form.radio property="art" value="3" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art3" /> 
+</h2>	
+<br />
+<h1  style="text-align: center;"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.neuHeading" /></h1>
+<div  style="text-align: center;"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fuer" /></div>
+
+<h2  style="text-align: center;">
+	<f:form.checkbox property="fall1" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall1" />
+	<f:form.checkbox property="fall2" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall2" />
+	<f:form.checkbox property="fall3" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall3" />
+</h2>
+<br />
+<h2>1. <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.vereinsdaten" /><f:image class="helpicon" id="hilfsicon1" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+
+<table>
+	<tr >
+		<th class="linksoben"><label for="vereinsnummer">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.verein" /></label></th>
+		<td class="rechtsoben">{antragsanforderung.vereinsnummer} - {antragsanforderung.vereinsname}</td>
+	</tr>
+	<tr >
+		<th ><label for="uid">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsnummer" /></label></th>
+		<td >{antragsanforderung.uid}</td>
+	</tr>
+	
+	
+	<tr>
+		<th><label for="ansprechpartnername">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnername" /> <span class="required">*</span>	</label></th>
+		<td><f:form.textfield property="ansprechpartnername" /></td>
+	</tr>
+	<tr>
+		<th><label for="ansprechpartnervorname"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnervorname" /> <span class="required">*</span></label></th>
+		<td>
+		
+		
+		<f:form.textfield property="ansprechpartnervorname"  /></td>
+	</tr>
+	<tr>
+		<th><label for="ansprechpartnertitel"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnertitel" /> <span class="required">*</span></label></th>
+		<td><f:render partial="Antragsanforderung/SelectboxTitel" arguments="{property:'ansprechpartnertitel'}"/> </td>
+	</tr>
+	<tr>
+		<th><label for="ansprechpartnertelefondienst">
+		<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnertelefondienst" /> <span class="required">*</span>	</label></th>
+		<td><f:form.textfield property="ansprechpartnertelefondienst" /></td>
+	</tr>
+	<tr>
+		<th><label for="ansprechpartnertelefonprivat"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnertelefonprivat" /></label></th>
+		<td><f:form.textfield property="ansprechpartnertelefonprivat" /></td>
+	</tr>
+	<tr>
+		<th><label for="ansprechpartnermobil"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnermobil" /> <span class="required">*</span></label></th>
+		<td><f:form.textfield property="ansprechpartnermobil" /></td>
+	</tr>
+	<tr>
+		<th><label for="ansprechpartnerfax"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnerfax" /> <span class="required">*</span></label></th>
+		<td><f:form.textfield property="ansprechpartnerfax" /></td>
+	</tr>
+	<tr>
+		<th class="linksunten"><label for="ansprechpartneremail"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartneremail" /> <span class="required">*</span></label></th>
+		<td class="rechtsunten"><f:form.textfield property="ansprechpartneremail" /></td>
+	</tr>
+</table>
+
+<h2>2. <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorbmerkungenhead" /><f:image class="helpicon" id="hilfsicon2" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+<table>
+	<tr>
+		<td  class="oben"> </td>
+	</tr>
+	<tr>
+		<td class="unten"> <f:translate htmlEscape="FALSE" key="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorbmerkungentext" /></td>
+	</tr>	
+</table>
+
+
+
+
+<h2>3. <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.geplantemassnahmen" /><f:image class="helpicon" id="hilfsicon3" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+<table>
+	<tr>
+		<th class="linksoben  ">&nbsp;&nbsp;&nbsp;</th>
+		<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.baugenehmigungspflichtig" />  <span class="required">*</span></th>
+		<td class="rechtsoben ">
+			<f:form.radio property="baugenehmigungspflichtig" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.ja" /> 
+			<f:form.radio property="baugenehmigungspflichtig" value="0" /><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.nein" /> 
+		</td>
+	</tr>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	
+	</tr>
+
+	<tr>
+		<th class=""></th>
+		<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.geplantemassnahmen" /></th>
+		<th class=""><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.voraussichtlichekosten" /></th>
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td> <f:render partial="Regelantrag/Massnahmen" arguments="{property:'massnahme1'}"/></td>
+		<td>€<f:form.textfield class="euro massnahmekosten" property="massnahmekosten1" /></td>
+	</tr>
+	<tr>
+		<td>2.</td>
+		<td><f:render partial="Regelantrag/Massnahmen" arguments="{property:'massnahme2'}"/></td>
+		<td>€<f:form.textfield class="euro massnahmekosten" property="massnahmekosten2" /></td>
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td><f:render partial="Regelantrag/Massnahmen" arguments="{property:'massnahme3'}"/></td>
+		<td>€<f:form.textfield class="euro massnahmekosten" property="massnahmekosten3" /></td>
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td><f:render partial="Regelantrag/Massnahmen" arguments="{property:'massnahme4'}"/></td>
+		<td>€<f:form.textfield class="euro massnahmekosten" property="massnahmekosten4" /></td>
+	</tr>
+	<tr>
+		<td>5.</td>
+		<td><f:render partial="Regelantrag/Massnahmen" arguments="{property:'massnahme5'}"/></td>
+		<td>€<f:form.textfield class="euro massnahmekosten" property="massnahmekosten5" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.voraussichtlichegesamtkosten" /></td>
+		<td>€<f:form.textfield id="massnahmekostengesamt"  class="euro" type="text" name="tx_blsvspstbauantrag_massnahmekostengesamt" disabled="disabled" /></td>
+	</tr>
+	
+
+</table>		
+
+	
+	<br />
+	
+<h2>4. <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierung" /><f:image class="helpicon" id="hilfsicon4" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>	
+<table>
+	<tr>
+		<th class="linksoben">&nbsp;&nbsp;&nbsp;</th>
+		<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.finazierungsart" /></th>
+		<th class="rechtsoben"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierungswert" /></th>
+	</tr>
+	<tr>
+		<td></td>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.voraussichtlichegesamtkosten" /></td>
+		<td>€ <f:form.textfield id="massnahmekostengesamt2" class="euro" type="text" name="tx_blsvspstbauantrag_summegesamt2" disabled="disabled" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="barmittel">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.barmittel" /></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="barmittel" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="eigeneleistungen"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.eigeneleistungen" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="eigeneleistungen" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="unendgeltlichesachleistungen">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.unendgeltlichesachleistungen" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="unendgeltlichesachleistungen" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="geldspenden"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.geldspenden" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="geldspenden" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="zuschuesse">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.zuschuesse" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="zuschuesse" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="fianzierungkommune">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fianzierungkommune" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="fianzierungkommune" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="finanzierunglkr">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierunglkr" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="finanzierunglkr" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="finanzierungvorsteuer">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierungvorsteuer" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="finanzierungvorsteuer" /></td>
+	</tr>
+	
+	<tr>
+		<td></td>
+		<td><label for="fremdgelder">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fremdgelder" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro massnahmefinazierung" property="fremdgelder" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><label for="beantragtefoerderung">	<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.beantragtefoerderung" /> <span class="required">*</span></label></td>
+		<td>€ <f:form.textfield class="euro" id="beantragtefoerderung" property="beantragtefoerderung" readonly="readonly" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b></b><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.summefinazierung" /></b></td>
+		<td>€ <f:form.textfield id="summefinanzierung" class="euro"  type="text" name="tx_blsvspstbauantrag_summefinanzierung" disabled="disabled" /></td>
+	</tr>
+</table>
+
+
+	
+
+<h2>5. <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.begruendung" /><span class="required">*</span><f:image class="helpicon" id="hilfsicon5" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>		
+<f:form.textarea property="begruendung" cols="40" rows="15" />
+<h2>6. <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.erklärung" /><f:image class="helpicon" id="hilfsicon6" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+	<br />
+	
+	
+
+	<f:form.checkbox property="erklaerung1" value="1" /> <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.erklaerung1" /> <span class="required">*</span> 
+<br />
+<f:form.checkbox property="erklaerung2" value="1" /> <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.erklaerung2" /> <span class="required">*</span> 
+
+<br/><br/>
+
+
+
+<f:for each="{hilfetexte}" as="hilfetext">
+<script>
+$("#hilfsicon{hilfetext.uid}").attr("title", "{hilfetext.hilfekurz}");
+</script>
+
+<div id="langhilfe{hilfetext.uid}" class="langhilfe">
+
+<div class="heading">
+<h1>{hilfetext.heading}</h1>
+</div>
+<div class="content">
+
+<hv:hilfetexte htext="{hilfetext.hilfelang}" />
+</div>
+</div>
+</f:for>
+
+<script>
+	$(document).ready(function() {
+		$(".langhilfe").hide();
+	});
+	
+	<f:for each="{hilfetexte}" as="hilfetext">
+	$("#hilfsicon{hilfetext.uid}").click(function (e) {
+		$("#langhilfe{hilfetext.uid}").show("slow");
+	 });    
+	</f:for>
+	
+	$(".langhilfe").click(function () {		$(this).hide("slow");    });   
+	
+	
+
+	summefinanzierung = function(){        var summe=0;       $(".massnahmefinazierung").each(function(){            summe = summe + 1 * $(this).val();          });        return summe;
+	};
+	
+	$( ".massnahmefinazierung" ).change( function(){
+       	$(this).val( parseInt( $(this).val() ) );          	   		$( "#beantragtefoerderung" ).val( $( "#massnahmekostengesamt" ).val() - summefinanzierung() );		
+   	});		
+	massnahmekostenGesamt = function(){
+        var summe=0;        $(".massnahmekosten").each(function(){            summe = summe + 1 * $(this).val();          });        return summe;
+        
+	};
+
+   	$(".massnahmekosten").change( function(){       	$(this).val (parseInt($(this).val()));   		$("#massnahmekostengesamt").val( massnahmekostenGesamt() );   		$("#massnahmekostengesamt2").val( $("#massnahmekostengesamt").val() );   		$("#summefinanzierung").val(  $("#massnahmekostengesamt").val() );
+   	});		
+
+	$(document).ready(function() {
+		$("#massnahmekostengesamt").val( massnahmekostenGesamt() );   		$("#massnahmekostengesamt2").val( $("#massnahmekostengesamt").val() );		$("#summefinanzierung").val(  $("#massnahmekostengesamt").val() );		$( "#beantragtefoerderung" ).val( $( "#massnahmekostengesamt" ).val() - summefinanzierung() );
+	});
+</script>

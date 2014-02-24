@@ -1,0 +1,25 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<vh:zoombuttons />
+<div class='zoomarea'>
+	<h1>Single View for Bestandssicherung</h1>
+	
+	<f:flashMessages />
+	<f:render partial="Bestandssicherung/Properties" arguments="{bestandssicherung:bestandssicherung}" />
+	<f:link.action action="list">Back to list</f:link.action><br />
+	<f:link.action action="new">New Bestandssicherung</f:link.action>
+</div>
+</f:section>

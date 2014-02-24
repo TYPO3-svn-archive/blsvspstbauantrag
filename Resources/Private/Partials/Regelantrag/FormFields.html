@@ -1,0 +1,3248 @@
+{namespace hv=Tx_Blsvspstbauantrag_ViewHelpers}
+<!--   <f:debug title="Debug of MyArray">{art}</f:debug>
+	<f:if condition="{art}"> <f:then><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art2" /> hallo 1<br /></f:then><f:else>hallo 2</f:else></f:if> <f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art{art}" /> <f:debug title="Debug of MyArray">{vereinsinfos}</f:debug>
+ <f:for each="{vereinsinfos}" as="vereinsinfo"> <f:debug title="Debug of MyArray">{sparten}</f:debug>
+</f:for>-->
+
+<!-- <f:debug title="Debug of MyArray">{regelantrag.art}</f:debug><f:if condition="{regelantrag.art}==2"> <f:then><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art2" /> hallo 1<br /></f:then><f:else>hallo 2</f:else></f:if> -->
+ 
+<div id="raaccordion">
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.allgemein" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="4">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.allgemein" /></h2>
+				</th>
+			</tr>
+			<tr>
+				<th colspan="4">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.art{regelantrag.art}" />  
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fall{regelantrag.fall}" /></h2> 
+				</th> 
+			</tr> 
+			<tr> 
+				<th class="align-right" >
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vereinsnummer" /> <span class="required">*</span>
+				</th>
+				<td>
+					{regelantrag.vereinsnummer}
+				</td> 
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnummer1" /> <span class="required">*</span>
+				</th>
+				<td>{regelantrag.antragsnummer1.uid}</td> 
+			</tr> 
+			<tr> 
+				<th class="align-right"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.blsvkreis" /> <span class="required">*</span></th> 
+				<td>{regelantrag.blsvkreis}</td> 
+				<f:if condition="{admin}">
+					<f:then>
+						<th>
+							<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stimmkreis" /> <span class="required">*</span>
+						</th>
+						<td>
+							{regelantrag.stimmkreis}
+						</td>
+					</f:then>
+					<f:else>
+						<th></th><td></td>
+					</f:else>
+				</f:if>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vereinsname" /> <span class="required">*</span>
+				</th>
+				<td colspan="3">{regelantrag.vereinsname}</td>
+			</tr>
+		</table>
+	</div>
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="4">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner" />
+					<f:image class="helpicon" id="hilfsicon12" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartenertitel" />
+				</th>
+				<td colspan="3">
+					<f:render partial="Antragsanforderung/SelectboxTitel" arguments="{property:'ansprechpartenertitel'}"/>
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnername" /> <span class="required">*</span>
+				</th>
+				<td>
+					<f:form.textfield property="ansprechpartnername" />
+				</td>
+				<th  class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnervorname" /> <span class="required">*</span>
+				</th>
+				<td>
+					<f:form.textfield property="ansprechpartnervorname" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnerteldienst" /> <span class="required">*</span>
+				</th>
+				<td>
+					<f:form.textfield property="ansprechpartnerteldienst" />
+				</td>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnertelprivat" />
+				</th>
+				<td>
+					<f:form.textfield property="ansprechpartnertelprivat" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnermobil" />
+				</th>
+				<td>
+					<f:form.textfield id="ansprechpartnermobil" property="ansprechpartnermobil" />
+				</td>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnerfax" />
+				</th>
+				<td>
+					<f:form.textfield property="ansprechpartnerfax" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right" >
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartneremail" /> <span class="required">*</span>
+				</th>
+				<td colspan="3">
+					<f:form.textfield property="ansprechpartneremail" />
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweis" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="4">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweis" /> 
+					<f:image class="helpicon" id="hilfsicon16" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+			<tr>
+				<f:if condition="{regelantrag.art}==2"> <f:then>
+				<th colspan="2" class="align-left" >
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1_ra" />					
+				</th></f:then>
+				<f:else>
+				<th colspan="2" class="align-left" >
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1" />					
+				</th></f:else></f:if>
+				
+				<td colspan="2" class="align-left" >
+					<f:form.checkbox property="hinweistext1" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<f:if condition="{regelantrag.art}==2"> <f:then>
+				<th colspan="2" class="align-left" >
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2_ra" /></p>
+				</th></f:then>
+				<f:else>
+				<th colspan="2" class="align-left" >
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2" />					
+				</th></f:else></f:if>
+				<td colspan="2"class="align-left" >
+					<p><f:form.checkbox property="hinweistext2" value="1" /></p>
+				</td>
+			</tr>
+			<tr>
+				<f:if condition="{regelantrag.art}==2"> <f:then>
+				<th colspan="2"class="align-left" >
+					<p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3_ra" /></p>
+				</th></f:then>
+				<f:else>
+				<th colspan="2" class="align-left" >
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3" />					
+				</th></f:else></f:if>
+				<td colspan="2"class="align-left" >
+					<f:form.checkbox property="hinweistext3" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2"class="align-left" ><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext4" /></p></th>
+				<td colspan="2"class="align-left" ><f:form.checkbox property="hinweistext4" value="1" /></td>
+			</tr>
+		</table>
+	</div>
+
+
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a" /></h3>
+	
+	
+	<div>
+		<table>
+			<tr>
+				<th colspan="4">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a" /><f:image class="helpicon" id="hilfsicon17" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2> 
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a2" />
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck" /> <span class="required">*</span>
+				</th>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl" /> <span class="required">*</span>
+				</th>
+		<f:if condition="{regelantrag.art}!=1"> <f:then>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vbb" /> 
+		</f:then></f:if>
+				<th>			
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil" /> <span class="required">*</span>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<f:render partial="Regelantrag/Massnahmen" arguments="{property:'verwendungszweck1'}"/>
+				</td>				
+				<td>
+					<f:form.textfield class="anzahl" property="anzahl1" />
+				</td>
+		<f:if condition="{regelantrag.art}!=1"> <f:then>
+				<td align="center">
+					<f:form.checkbox property="b2vbb1" value="1" class="vbbcheck"/>
+				</td>
+		</f:then></f:if>
+				<td>
+					<f:form.textfield class="euro massnahmenkosten" property="kostenanteil1" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:render partial="Regelantrag/Massnahmen" arguments="{property:'verwendungszweck2'}"/>
+				</td>
+								<td>
+					<f:form.textfield class="anzahl" property="anzahl2" />
+				</td>
+		<f:if condition="{regelantrag.art}!=1"> <f:then>
+				<td align="center">
+					<f:form.checkbox property="b2vbb2" value="1" class="vbbcheck"/>
+				</td>
+		</f:then></f:if>
+				<td>
+					<f:form.textfield class="euro massnahmenkosten" property="kostenanteil2" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:render partial="Regelantrag/Massnahmen" arguments="{property:'verwendungszweck3'}"/>
+				</td>				
+				<td>
+					<f:form.textfield class="anzahl" property="anzahl3" />
+				</td>
+		<f:if condition="{regelantrag.art}!=1"> <f:then>
+				<td align="center">
+					<f:form.checkbox property="b2vbb3" value="1" class="vbbcheck"/>
+				</td>
+		</f:then></f:if>
+				<td>
+					<f:form.textfield class="euro massnahmenkosten" property="kostenanteil3" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:render partial="Regelantrag/Massnahmen" arguments="{property:'verwendungszweck4'}"/>
+				</td>				
+				<td>
+					<f:form.textfield class="anzahl" property="anzahl4" />
+				</td>
+		<f:if condition="{regelantrag.art}!=1"> <f:then>
+				<td align="center">
+					<f:form.checkbox property="b2vbb4" value="1" class="vbbcheck"/>
+				</td>
+		</f:then></f:if>
+				<td>
+					<f:form.textfield class="euro massnahmenkosten" property="kostenanteil4" />
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					<f:render partial="Regelantrag/Massnahmen" arguments="{property:'verwendungszweck5'}"/>
+				</td>				
+				<td>
+					<f:form.textfield class="anzahl" property="anzahl5" />
+				</td>
+		<f:if condition="{regelantrag.art}!=1"> <f:then>	
+				<td align="center">		
+					<f:form.checkbox property="b2vbb5" value="1" class="vbbcheck"/>
+				</td>
+		</f:then></f:if>
+				<td>
+					<f:form.textfield class="euro massnahmenkosten" property="kostenenteil5" />
+				</td>
+			</tr>
+			<tr>
+		<f:if condition="{regelantrag.art}==2"> <f:then>
+				<th colspan="3" class="align-right" >
+		</f:then></f:if>
+		<f:if condition="{regelantrag.art}==1"> <f:then>
+				<th colspan="2" class="align-right" >
+		</f:then></f:if>
+		<f:if condition="{regelantrag.art}==3"> <f:then>
+				<th colspan="2" class="align-right" >
+		</f:then></f:if>
+					<h4 class="align-right"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtkosten_brutto" /></h4>
+				</th>
+				<td>
+					<f:form.textfield class="euro "id="gesamtkosten_brutto1"  disabled="disabled" />
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	
+	
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b" /> </h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="2">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b" />
+					<f:image class="helpicon" id="hilfsicon13" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtkosten_brutto" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro "id="gesamtkosten_brutto2" property="gesamtkosten_brutto" disabled="disabled" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenmittel" /></h3>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bar" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungbarmittel" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro eigenmittel" property="finanzierungbarmittel" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunggeldspenden" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro eigenmittel" property="finanzierunggeldspenden" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkredit" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro " id="beantragtefoerderung" property="fianzierungkredit" readonly="readonly" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.unbar" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungaleistung" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro eigenmittel" property="finanzierungaleistung" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsachleistung" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro eigenmittel" property="finanzierungsachleistung" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenbeteiligung_gesamt" /></h4>
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro "id="summeeigenmittel" property="eigenbeteiligung_gesamt" disabled="disabled" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter" /></h3>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkommune" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro leistungendritter" property="fianzierungkommune" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunglkr" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro leistungendritter" property="finanzierunglkr" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsonstige" />
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro leistungendritter" property="finanzierungsonstige" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter_gesamt" /></h4>
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro "id="summedritter" property="leistungen_dritter_gesamt" disabled="disabled" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungvorsteuer" /></h3>
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro finanzierungvorsteuer" property="finanzierungvorsteuer" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungzuschuss" />
+					<f:image class="helpicon" id="hilfsicon24" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h3>
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro finanzierungzuschuss" property="finanzierungzuschuss" />
+				 </td>
+			</tr>
+				
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung2" /></h4>
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro" property="staatsmittelfoerderung2" />
+				 </td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3" /></h4>
+				</th>
+				<td align="center">
+					<f:form.textfield class="euro" property="staatsmittelfoerderung3" />
+				 </td>
+			</tr>
+			<tr>
+			<th colspan="2">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4" />
+			</th>
+			</tr>
+			<tr>
+				<td align="center"><f:form.radio  property="smfgs" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfgs" />
+				<f:form.radio  property="smfgs" value="2" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfkbs" />
+				<f:form.radio  property="smfgs" value="3" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfbbs" /></td>
+			</tr>
+		</table>
+	</div>
+	
+	
+	
+
+
+<f:if condition="{regelantrag.art}==2"> <f:then>
+
+<h3  class="vbb"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2" /> </h3>
+	<div  class="vbb">
+		<table>
+			<tr>
+				<th colspan="4">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2" />
+					<f:image class="helpicon" id="hilfsicon13" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+			
+			<tr>
+				<th colspan="4"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2_punkt1" />
+				</th>
+			</tr>
+			
+			<tr>
+				<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fposition" /></th>
+				<th> <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.durch" /></th>
+				<th> <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.betrag" /></th>
+				<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jbelastung" /></th>
+			</tr>
+			<tr>
+				<th rowspan="2">
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></h4>
+				</th>
+				<td align="center"><f:form.checkbox property="kommunebank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="kommunebetragbank" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="kommunejbelastungbank" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="kommuneprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="kommunebetragprivat" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="kommunejbelastungprivat" /></td>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1landkreis" /></h4>
+				</th>
+				<td align="center"><f:form.checkbox property="landkreisbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="landkreisbetragbank" /></td>
+				<td align="center"> <f:form.textfield class="euro zfjbelastung" property="landkreisjbelastungbank" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="landkreiskommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="landkreisbetragkommune" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="landkreisjbelastungkommune" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="landkreisprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="landkreisbetragprivat" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="landkreisjbelastungprivat" /></td>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1sonstige" /></h4>
+				</th>
+				<td align="center"><f:form.checkbox property="sonstigebank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="sonstigebetragbank" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="sonstigejbelastungbank" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="sonstigekommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="sonstigebetragkommune" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="sonstigejbelastungkommune" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="sonstigeprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="sonstigebetragprivat" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="sonstigejbelastungprivat" /></td>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1vorsteuererst" /></h4>
+				</th>
+				<td align="center"><f:form.checkbox property="vorsteuererstbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="vorsteuererstbetragbank" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="vorsteuererstjbelastungbank" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="vorsteuererstkommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="vorsteuererstbetragkommune" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="vorsteuererstjbelastungkommune" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="vorsteuererstprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="vorsteuererstbetragprivat" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="vorsteuererstjbelastungprivat" /></td>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfoerderung" /></h4>
+				</th>
+				<td align="center"><f:form.checkbox property="smfoerderungbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="smfoerderungbetragbank" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="smfoerderungjbelastungbank" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="smfoerderungkommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="smfoerderungbetragkommune" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="smfoerderungjbelastungkommune" /></td>
+			</tr>
+			<tr>
+				<td align="center"><f:form.checkbox property="smfoerderungprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></td>
+				<td align="center"><f:form.textfield class="euro zfbetrag" property="smfoerderungbetragprivat" /></td>
+				<td align="center"><f:form.textfield class="euro zfjbelastung" property="smfoerderungjbelastungprivat" /></td>
+			</tr>
+			
+			<tr>
+				<td align="center"> <b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1gesamt" /></b></td>
+				<td> </td>
+				<td align="center"><f:form.textfield class="euro" id="zfbetraggesamt" property="betragsumme" /></td>
+				<td align="center"><f:form.textfield class="euro" id="zfjbelastunggesamt" property="jbelastungsumme" /></td>
+			</tr>
+			
+			<tr>
+				<th colspan="4"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.beachte1" />
+				</th>
+			</tr>
+			
+			<tr>
+				<th colspan="4" align="left"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear1" /><f:form.textfield class="ear" property="EARvon" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear2" /><f:form.textfield class="ear" property="EARbis" /><br />
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear3" /><br />
+				
+				
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear4" /><f:form.textfield class="schnitt" property="durchschnittsergebnis" /><br />
+				
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear5" />
+				</th>
+			</tr>
+			
+			<tr>
+				<th colspan="4" align="left">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vorzbaupunkt3" /><br />
+				<f:form.checkbox property="wegfalloefffinanzmittel" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_1" /><br />
+				<f:form.checkbox property="fortbestandgefaehrdung" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_2" /><br />
+				<f:form.checkbox property="ersatzloserverlust" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_3" /><br />
+				<f:form.checkbox property="eintrittnachteiligerfolgen" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_4" /><br />
+				<f:form.checkbox property="notwendigkeitsonstige" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_5" /><br />
+				<f:form.textarea rows="5" cols="20" class="textfeld" property="notwendigkeitsonstigetextfeld" />
+				</th>
+			</tr>
+			
+			
+			<tr>
+				<th colspan="4" align="left">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vorzbaupunkt4" /><br />
+				<f:form.checkbox property="vorzbaubeginnerkl1" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt4_1" /><br /><br />
+				<f:form.checkbox property="vorzbaubeginnerkl2" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt4_2" />
+				</th>
+			</tr>
+			
+	
+	
+	
+	
+	
+			
+		</table>
+	</div>
+	
+</f:then></f:if>	
+	
+
+	
+	
+	
+	
+	
+	
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_c" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="2">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_c" /></h2>
+						<f:image class="helpicon" id="hilfsicon14" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" />
+				</th>
+			</tr>
+				<tr>
+				<th colspan="2">
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ertragslage" /></h3>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_anfang" />
+					<f:form.textfield class="datum" property="guvbeginn" value="<f:format.date format='d.m.Y'>@{regelantrag.guvbeginn}</f:format.date>" />
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_bis" />
+					<f:form.textfield id="guvende" class="datum" property="guvende" value="<f:format.date  format='d.m.Y'>@{regelantrag.guvende}</f:format.date>" />
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_ende" /><br />
+					<f:form.radio property="guvbilanz" value="guvbilanz"/>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guvbilanz" />
+					<f:form.radio property="guvbilanz" value="guveuerechnung" checked="checked" />
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guveuerechnung" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guveinnahmengesamt" /> <span class="required">*</span></h4>
+				</th>
+				<td>
+					<f:form.textfield class="euro einnahmengesamt" property="guveinnahmengesamt" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenbeitraege" /> <span class="required">*</span>
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="einnahmenbeitraege" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenspenden" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="einnahmenspenden" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenzuschuesse" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="einnahmenzuschuesse" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guvausgabengesamt" /> <span class="required">*</span></h4>
+				</th>
+				<td>
+					<f:form.textfield class="euro ausgabengesamt" property="guvausgabengesamt" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabeninstandhaltung" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="ausgabeninstandhaltung" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabensportbetrieb" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="ausgabensportbetrieb" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenverwaltung" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="ausgabenverwaltung" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenabschreibung" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="ausgabenabschreibung" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschussfehlbetrag" /></h4>
+				</th>
+				<td>
+					<f:form.textfield class="euro "id="ueberschuss" property="ueberschussfehlbetrag" disabled="disabled" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegenslage" /></h3>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vmlstichtag" />
+				</th>
+				<td>
+					<f:form.textfield class="datumohnepicker" id="vmlstichtag" property="vmlstichtag" value="<f:format.date format='d.m.Y'>@{regelantrag.vmlstichtag}</f:format.date>"  readonly="readonly" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.aktiva" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anlagevermoegen" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegensgegenstaende" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="vermoegensgegenstaende" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sachanlagen" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="sachanlagen" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzanlagen" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="finanzanlagen" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.umlaufvermoegen" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+						<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kassenbestand" /> <span class="required">*</span>
+				</th>
+				<td>
+						<f:form.textfield class="euro "property="kassenbestand" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bankguthaben" /> <span class="required">*</span>
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="bankguthaben" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sonstiges_vermoegen" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="sonstiges_vermoegen" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.passiva" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenkapital" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenfrei" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="ruecklagenfrei" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenzweck" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="ruecklagenzweck" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenbetrieb" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="ruecklagenbetrieb" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeiten" /></h4>
+				</th>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitbank" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="verbindlichkeitbank" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitblssmd" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="verbindlichkeitblssmd" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitsonstige" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="verbindlichkeitsonstige" />
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahreskapitaldienst" />
+				</th>
+				<td>
+					<f:form.textfield class="euro "property="jahreskapitaldienst" />
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="3">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d" />
+					<f:image class="helpicon" id="hilfsicon15" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+				<tr>
+					<th colspan="3">
+						<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d1" /></h3>
+					</th>
+				</tr>
+				<tr>
+					<th colspan="3">
+						<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d11" /></h3>
+					</th>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<table>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand111" />
+								</th>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr111" />
+								</th>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr112" />
+								</th>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr113" />
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmitglied1" />
+								</th>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0110bis26" />
+								</th>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0110ueber26" />
+								</th>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0111bis26" />
+								</th>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0111ueber26" />
+								</th>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0112bis26" />
+								</th>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0112ueber26" />
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandmitglied1',vereinsinfos:vereinsinfos}"/>
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0110bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0110ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0111bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0111ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0112bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0112ueber26" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandsmitglied2',vereinsinfos:vereinsinfos}"/>
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0210bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0210ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0211bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0211ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0212bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0212ueber26" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandsmitglied3',vereinsinfos:vereinsinfos}"/>
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0310bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0310ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0311bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0311ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0312bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0312ueber26" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandsmitglied4',vereinsinfos:vereinsinfos}"/>
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0410bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0410ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0411bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0411ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0412bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0412ueber26" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandsmitglied5',vereinsinfos:vereinsinfos}"/>
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0510bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0510ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0511bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0511ueber26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0512bis26" />
+								</td>
+								<td>
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0512ueber26" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="3">
+						<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d12" /></h3>
+					</th>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<table>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand121" />
+								</th>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr121" />
+								</th>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr122" />
+								</th>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr123" />
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmannschaft1" />
+								</th>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0110" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0110" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0111" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0111" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0112" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0112" />
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandmannschaft1',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0110" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0110" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0111" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0111" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0112" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0112" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandmannschaft2',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0210" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0210" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0211" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0211" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0212" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0212" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandmannschaft3',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0310" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0310" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0311" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0311" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0312" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0312" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandmannschaft4',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0410" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0410" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0411" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0411" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0412" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0412" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandmannschaft5',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0510" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0510" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0511" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0511" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="schuelerjugend0512" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" property="erwachsene0512" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="3">
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d13" /></h3>
+				</th>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<table>
+						<tr>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand131" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr131" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr132" />
+							</th>
+							<th>
+								<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr133" />
+							</th>
+						</tr>
+							<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandueleiter1',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0110" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0111" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0112" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandueleiter2',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0210" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0211" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0212" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandueleiter3',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0310" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0311" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0312" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandueleiter4',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0410" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0411" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0412" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandueleiter5',vereinsinfos:vereinsinfos}"/>
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0510" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0511" />
+							</td>
+							<td>
+								<f:form.textfield class="mitgliederzahlen" class="anzahl" property="anzahl0512" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<f:if condition="0">
+				<f:then>
+					<tr>
+						<th colspan="3">
+							<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d2" /></h3>
+						</th>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<table>
+								<tr>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d21" />
+									</th>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d22" />
+									</th>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d23" />
+									</th>
+									<th colspan="2">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d24" />
+									</th>
+									<th colspan="2">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d25" />
+									</th>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d26" />
+									</th>
+								</tr>
+								<tr>
+									<th>
+										&nbsp;
+									</th>
+									<th>
+										&nbsp;
+									</th>
+									<th>
+										&nbsp;
+									</th>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d241" />
+									</th>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d242" />
+									</th>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d251" />
+									</th>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d252" />
+									</th>
+									<th>
+										&nbsp;
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandnutzung1',vereinsinfos:vereinsinfos}"/>
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="kinderjugendliche1" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="erwachsene1" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugw1" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugm1" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenw1" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenm1" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="lizensierteuel1" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandnutzung2',vereinsinfos:vereinsinfos}"/>
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="kinderjugendliche2" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="erwachsene2" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugw2" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugm2" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenw2" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenm2" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="lizensierteuel2" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandnutzung3',vereinsinfos:vereinsinfos}"/>
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="kinderjugendliche3" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="erwachsene3" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugw3" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugm3" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenw3" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenm3" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="lizensierteuel3" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<f:render partial="Regelantrag/Fachverbaende" arguments="{property:'fachverbandnutzung4',vereinsinfos:vereinsinfos}"/>
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="kinderjugendliche4" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="erwachsene4" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugw4" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschaftschuejugm4" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenw4" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="mannschafterwachsenm4" />
+									</td>
+									<td>
+										<f:form.textfield class="mitgliederzahlen" property="lizensierteuel4" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anzahlboote" />
+						</th>
+						<td>
+							<f:form.textfield class="anzahl" property="anzahlboote" />
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anzahlpferde" />
+						</th>
+						<td>
+							<f:form.textfield class="anzahl" property="anzahlpferde" />
+						</td>
+					</tr>
+				</f:then>
+			</f:if>
+			<tr>
+				<th colspan="3">
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d3" /></h3>
+				</th>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitauslastung" />
+				</th>
+				<td>
+					<f:form.checkbox property="notwendigkeitauslastung" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitausrichtung" />
+				</th>
+				<td>
+					<f:form.checkbox property="notwendigkeitausrichtung" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitbeduerfnis" />
+				</th>
+				<td>
+					<f:form.checkbox property="notwendigkeitbeduerfnis" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitunterhalt" />
+				</th>
+				<td>
+					<f:form.checkbox property="notwendigkeitunterhalt" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="3">
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d4" /></h3>
+				</th>
+			</tr>
+			<tr>
+				<th colspan="3">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.text_d4" />
+				</th>
+				<td>
+			</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.text_d41" />
+				</th>
+				<td>
+				  	<f:for each="{regelantrag.antragsnummer1.uploads.d41}" as="anlage">
+				  	  	<f:link.external uri="{anlage}" defaultScheme="" target="_blank" title="{anlage}"> Dokument </f:link.external> 
+				  
+					</f:for>
+				</td>
+				<td>
+				
+				
+				<input class="upload" type="file" name="text_d41" min="undefined" max="undefined" step="undefined" multiple="multiple" /> 
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.text_d43" />
+				</th>
+				<td>
+					<f:for each="{regelantrag.antragsnummer1.uploads.d43}" as="anlage">
+				  	  	<f:link.external uri="{anlage}"  defaultScheme="" target="_blank" title="{anlage}">Dokument</f:link.external>
+				  
+					</f:for>
+				</td>
+				<td>
+				
+					<input class="upload" type="file" name="text_d43" min="undefined" max="undefined" step="undefined" multiple="multiple" />  
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_e" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="3">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_e" />
+					<f:image class="helpicon" id="hilfsicon18" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<f:form.checkbox  property="eigentum"  value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtveigentum" />
+					<f:form.checkbox property="erbbaurecht" value="1"  /> <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtverbbaurecht" />										
+					<f:form.checkbox property="pachtvertrag" value="1"  /> <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvpachtvertrag" /><br />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtveigentuemer" />
+				</th>
+				<td colspan="2">
+					<f:form.textfield property="egtveigentuemer" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgrundstuecksgroesse" />
+				</th>
+				<td colspan="2">
+					<f:form.textfield property="egtvgrundstuecksgroesse" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvflurnummer" />
+				</th>
+				<td colspan="2">
+					<f:form.textfield property="egtvflurnummer" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgemarkung" />
+				</th>
+				<td colspan="2">
+					<f:form.textfield property="egtvgemarkung" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.text_d44" />
+				</th>
+				<td>
+					<f:for each="{regelantrag.antragsnummer1.uploads.d44}" as="anlage">
+				  	  	<f:link.external uri="{anlage}"  defaultScheme="" target="_blank" title="{anlage}">Dokument</f:link.external>
+				  
+					</f:for>
+				</td>
+				<td>
+				<input class="upload" type="file" name="text_d44" min="undefined" max="undefined" step="undefined" multiple="multiple" /> 
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvlaufzeit" /> <span class="required">*</span>
+					<f:image class="helpicon" id="hilfsicon19" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" />
+				</th>
+				<td colspan="2">
+					<f:form.textfield  property="egtvlaufzeit"  />
+				</td>
+			</tr>
+			<tr>
+				<th colspan="3" class="align-left">
+					<f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.text_e1" />
+				</th>
+			</tr>
+		</table>
+	</div>
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_f" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="2">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_f" />
+					<f:image class="helpicon" id="hilfsicon21" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<f:form.radio property="bauberatungja" value="bauberatungja" checked="checked" />
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungja" />
+					<f:form.textfield class="datum" property="bauberatungdatum" value="<f:format.date  format='d.m.Y'>@{regelantrag.bauberatungdatum}</f:format.date>"  /><br />
+					<f:form.radio property="bauberatungja" value="bauberatungnein" />
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungnein" />
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_g" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="2">
+					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_g" />
+					<f:image class="helpicon" id="hilfsicon22" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+				</th>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate  key="tx_blsvspstbauantrag_domain_model_regelantrag.datumgespraechkv" /> <span class="required">*</span>
+				</th>
+				<td>
+					<f:form.textfield class="datum" property="datumgespraechkv"  value="<f:format.date  format='d.m.Y'>@{regelantrag.datumgespraechkv}</f:format.date>"  /><br />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-right">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_frage" />
+				</th>
+				<td>
+					<f:form.radio property="ortsbesichtigungkv" value="1" checked="checked" />
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_ja" />
+					<f:form.radio property="ortsbesichtigungkv" value="0" />
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_nein" />
+				</td>
+			</tr>
+			<f:if condition="{admin}">
+				<f:then> 
+					<tr>
+						<th class="align-right">
+							<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.absendedatum" /></p>
+						</th>
+						<td>
+							<f:form.textfield class="datum" property="absendedatum"  value="<f:format.date format='d.m.Y'>{regelantrag.absendedatum}</f:format.date>"  /><br />
+						</td>
+					</tr>
+				</f:then>
+			</f:if>
+		</table>
+	</div>
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_h" /></h3>
+	<div>
+		<table>
+			<tr>
+				<th colspan="2">
+						<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_h" />
+						<f:image class="helpicon" id="hilfsicon23" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h2>
+					</th>
+				</tr>
+				<tr>
+					<th class="align-left">
+						<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklrechtsanspruch" /></p>
+					</th>
+					<td>
+						<f:form.checkbox property="erklrechtsanspruch" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<th class="align-left">
+						<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklmeldepflicht" /></p>
+					</th>
+					<td>
+						<f:form.checkbox property="erklmeldepflicht" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<th class="align-left">
+						<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestkenntnisnahme" /></p>
+					</th>
+					<td>
+						<f:form.checkbox property="bestkenntnisnahme" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erkl_antragsteller" /></h3>
+					</th>
+				</tr>
+				<tr>
+					<th class="align-left">
+						<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklbaubeginn" /></p>
+					</th>
+					<td>
+						<f:form.checkbox property="erklbaubeginn" value="1" />
+					</td>
+				</tr>
+				<!-- 
+				<tr>
+					<th>
+						<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklnutzungdritte" />
+					</th>
+					<td>
+						<f:form.checkbox property="erklnutzungdritte" value="1" />
+					</td>
+				</tr>
+				--> 
+				<tr>
+					<th class="align-left">
+						<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklkonzession" /></p>
+					</th>
+					<td>
+						<f:form.checkbox property="erklkonzession" value="1" />
+					</td>
+				</tr>
+				<tr>
+					<th class="align-left">
+						<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklvollstaendigeangaben" /></p>
+					</th>
+					<td>
+					<f:form.checkbox property="erklvollstaendigeangaben" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-left">
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklsubvention" /></p>
+				</th>
+				<td>
+					<f:form.checkbox property="erklsubvention" value="1" />
+				</td>
+			</tr>
+			<tr>
+				<th class="align-left">
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklfinanzierung" /></p>
+				</th>
+				<td>
+					<f:form.checkbox property="erklfinanzierung" value="1" />
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<f:if condition="{kv}">
+		<f:then>
+			<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i" /></h3>
+			<div>
+				<div id="raaccordion01">
+
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i1" /></h3>
+					<div>
+						<table>
+							<tr>
+								<th colspan="10">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung1" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung11" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung1" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung12" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung1" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung13" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung1" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung21" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung211" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2111" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung211" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2112" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung211" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2113" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung211" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung212" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2121" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung212" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2122" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung212" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2123" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung212" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung213" /></h4>
+								</th>
+									</tr>
+									<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2131" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung213" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2132" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung213" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2133" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung213" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung22" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung221" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2211" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung221" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2212" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung221" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2213" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung221" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung222" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2221" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung222" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2222" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung222" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2223" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung222" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung223" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2231" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung223" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2232" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung223" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2233" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung223" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung23" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung231" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2311" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung231" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2312" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung231" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2313" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung231" value="3" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung232" /></h4>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2321" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung232" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2322" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung232" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2323" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung232" value="3" />
+								</td>
+									</tr>
+									<tr>
+								<th colspan="10">
+									<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung233" /></h4>
+								</th>
+									</tr>
+									<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2331" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung233" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2332" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="sportlicheentwicklung233" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2333" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sportlicheentwicklung233" value="3" />
+								</td>
+								</tr>
+								<tr>
+									<th colspan="10">
+										<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung3" /></h3>
+									</th>
+								</tr>
+								<tr>
+									<th colspan="3">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung311" />
+									</th>
+									<td colspan="2">
+										<f:form.radio class="kv" property="sportlicheentwicklung311" value="1" />
+									</td>
+									<th colspan="3">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung312" />
+									</th>
+									<td colspan="2">
+										<f:form.radio class="kv" property="sportlicheentwicklung311" value="2" />
+									</td>
+										</tr>
+										<tr>
+									<th colspan="3">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung321" />
+									</th>
+									<td colspan="2">
+										<f:form.radio class="kv" property="sportlicheentwicklung321" value="1" />
+									</td>
+									<th colspan="3">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung322" />
+									</th>
+									<td colspan="2">
+										<f:form.radio class="kv" property="sportlicheentwicklung321" value="2" />
+									</td>
+								</tr>
+								<tr>
+									<th colspan="3">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung331" />
+									</th>
+									<td colspan="2">
+										<f:form.radio class="kv" property="sportlicheentwicklung331" value="1" />
+									</td>
+									<th colspan="3">
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung332" />
+									</th>
+									<td colspan="2">
+										<f:form.radio class="kv" property="sportlicheentwicklung331" value="2" />
+									</td>
+								</tr>
+								<tr>
+									<th colspan="10">
+										<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung4" /></h3>
+									</th>
+								</tr>
+								<tr>
+									<th colspan="10">
+										<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung41" /></h4>
+									</th>
+								</tr>
+								<tr>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung411" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung411" value="1" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung412" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung411" value="2" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung413" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung411" value="3" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung414" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung411" value="4" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung415" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung411" value="5" />
+									</td>
+								</tr>
+								<tr>
+									<th colspan="10">
+										<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung42" /></h4>
+									</th>
+								</tr>
+								<tr>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung421" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung421" value="1" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung422" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung421" value="2" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung423" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung421" value="3" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung424" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung421" value="4" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung425" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung421" value="5" />
+									</td>
+								</tr>
+								<tr>
+									<th colspan="10">
+										<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung43" /></h4>
+									</th>
+								</tr>
+								<tr>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung431" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung431" value="1" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung432" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung431" value="2" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung433" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung431" value="3" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung434" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung431" value="4" />
+									</td>
+									<th>
+										<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung435" />
+									</th>
+									<td>
+										<f:form.radio class="kv" property="sportlicheentwicklung431" value="5" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i2" /></h3>
+					<div>
+						<table>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten11" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten11" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten12" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten11" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten111" />
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1111" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="bestehendesportstaetten1111" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1112" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox  class="kv" property="bestehendesportstaetten1111" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten21" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten211" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten211" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten212" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten211" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten221" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten221" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten222" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten221" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten3" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten31" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten31" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten32" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten31" value="2" />
+								</td>
+									</tr>
+									<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten4" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten41" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten41" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten42" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten41" value="2" />
+								</td>
+							</tr>
+						<!--	<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten51" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten511" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten511" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten512" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten511" value="2" />
+								</td>
+							</tr> 
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten521" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten521" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten522" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten521" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten531" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten531" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten532" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="bestehendesportstaetten531" value="2" />
+								</td>
+							</tr> -->
+						</table>
+					</div>
+
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i3" /></h3>
+					<div>
+						<table>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme11" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme111" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme111" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme112" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme111" value="2" />
+								</td>
+									</tr>
+									<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme121" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme121" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme122" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme121" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme131" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme131" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme132" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme131" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme2" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme21" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme21" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme21" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22_0" />
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme221" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme221" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme222" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme222" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme223" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme223" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme224" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme224" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme3" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme31" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme32" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme31" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31_0" />
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme311" />
+								</th>
+								<td colspan="2">
+								<f:form.checkbox class="kv" property="stellungnahme311" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme312" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme312" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme313" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme313" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme4" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme41" />
+								</th>
+								<td colspan="2"> 
+									<f:form.textfield class="datum kv " property="stellungnahme41" value="<f:format.date format='d.m.Y'>@{regelantrag.stellungnahme41}</f:format.date>"   />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme5" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme51" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme51" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme51" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52_0" />
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme521" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme521" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme522" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme522" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme523" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme523" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme6" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme61" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme62" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="stellungnahme61" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61_0" />
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme611" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme611" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme612" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme612" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme613" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme613" value="1" />
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i4" /></h3>
+					<div>
+						<table>
+							<tr>
+								<th colspan="10">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung11" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung111" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung111" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung112" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung111" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung121" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung121" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung122" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung121" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung131" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung131" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung132" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung131" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung141" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung141" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung142" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung141" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung21" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung211" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung211" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung212" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung211" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung221" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung221" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung222" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung221" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung231" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung231" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung232" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung231" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung241" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung241" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung242" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung241" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung3" /></h3>
+								</th>
+									</tr>
+									<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung31" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung31" value="1" />
+								</td>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung32" />
+								</th>
+								<td colspan="3">
+									<f:form.radio class="kv" property="finanzierung31" value="2" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="10">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung4" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung41" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="finanzierung41" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung42" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="finanzierung41" value="2" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung43" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="finanzierung41" value="3" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung44" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="finanzierung41" value="4" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung45" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="finanzierung41" value="5" />
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i5" /></h3>
+					<div>
+						<table>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges1" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges11" />
+								</th>
+								<td colspan="2">
+									<f:form.textfield class="datum kv" property="sonstiges11" value="<f:format.date format='d.m.Y'>@{regelantrag.sonstiges11}</f:format.date>"  />{sonstiges11}
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4">
+									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges2" /></h3>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges21" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sonstiges21" value="1" />
+								</td>
+								<th>
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges22" />
+								</th>
+								<td>
+									<f:form.radio class="kv" property="sonstiges21" value="2" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</f:then>
+	</f:if>
+</div>
+
+<f:for each="{hilfetexte}" as="hilfetext">
+	<script>
+		$("#hilfsicon{hilfetext.uid}").attr("title", "{hilfetext.hilfekurz}");
+	</script>
+	<div id="langhilfe{hilfetext.uid}" class="langhilfe">
+		<div class="heading">
+			<h1>{hilfetext.heading}</h1>
+		</div>
+		<div class="content">
+			<hv:hilfetexte htext="{hilfetext.hilfelang}" />
+		</div>
+	</div>
+</f:for>
+
+<script>
+
+$(document).ready(function() {
+	$(".langhilfe").hide();
+	});
+<f:for each="{hilfetexte}" as="hilfetext">
+	$("#hilfsicon{hilfetext.uid}").click(function () {
+		$("#langhilfe{hilfetext.uid}").show("slow"); 
+	});    
+</f:for>
+$(".langhilfe").click(function () {
+	$(this).hide("slow");
+});       
+
+<![CDATA[
+ 		$(document).ready(function() {
+ 			$(".datum").datepicker(
+ 					{
+ 						yearRange: "-100:+0",
+ 					    changeMonth: true,
+ 					    changeYear: true
+ 					 });
+ 			$(".upload").attr('multiple','multiple')
+ 		});
+$(document).ready(function(){
+	$(function() {
+		$( "#raaccordion" ).accordion({
+			autoHeight: false,
+			navigation: true,
+			collapsible: true,
+			active: 0
+		});
+		$( "#raaccordion01" ).accordion({
+			autoHeight: false,
+			navigation: true,
+			collapsible: true,
+			active: false
+		});
+	});
+});
+]]>
+
+
+summeeigenmittel = function(){
+	var summe=0;
+	$( ".eigenmittel" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;    
+};
+
+ischeckedVbb = function(){
+	
+	var n = $( "input.vbbcheck:checked" ).length;
+	return n;    
+};
+
+$( ".vbbcheck" ).change( function(){		
+	if (ischeckedVbb()) {
+		$(".vbb").removeClass("versteckt");
+		
+	}
+	else {
+		$(".vbb").addClass("versteckt");
+		
+	}        
+});
+
+
+
+$( ".eigenmittel" ).change( function(){		
+	if( !$(this).val() ) $(this).val( 0 );	
+	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#summeeigenmittel" ).val( summeeigenmittel() );      
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );    
+	});
+
+summedritter = function(){
+	var summe=0;
+	$( ".leistungendritter" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;
+};
+
+$( ".leistungendritter" ).change( function(){	if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#summedritter" ).val( summedritter() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+
+summefinanzierung = function(){
+	var summe=0;
+	$( ".massnahmefinazierung" ).each(function(){
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;
+};
+
+$( ".finanzierungvorsteuer" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+	$( ".finanzierungzuschuss" ).change( function(){				if( !$(this).val() ) $(this).val( 0 ) ;		if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+
+$( ".einnahmengesamt" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#ueberschuss" ).val( $( ".einnahmengesamt" ).val() - $( ".ausgabengesamt" ).val() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+
+$( ".ausgabengesamt" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#ueberschuss" ).val( $( ".einnahmengesamt" ).val() - $( ".ausgabengesamt" ).val() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+})
+
+ueberschuss= function(){
+	var summe=0;
+	summe=$( ".einnahmengesamt" ).val() - $( ".ausgabengesamt" ).val();
+	return summe;    
+};
+
+$( ".datum1" ).change( function(){
+	$( ".datum2" ).val( $( ".datum1" ).val() );
+});
+
+$( ".massnahmefinazierung" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - summefinanzierung() );      
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );    
+});
+
+massnahmekostenGesamt = function(){
+	var summe=0;
+$( ".massnahmenkosten" ).each(function(){    
+	summe = summe + 1 * $(this).val();
+});return summe;}
+$( ".massnahmenkosten" ).change( function(){
+	$(this).val (parseInt($(this).val()));
+	$( "#gesamtkosten_brutto1" ).val( massnahmekostenGesamt() );
+	$( "#gesamtkosten_brutto2" ).val( $( "#gesamtkosten_brutto1" ).val() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );    
+});
+$( "#guvende" ).change( function(){
+	$( "#vmlstichtag" ).val( $( "#guvende" ).val() );    
+});    
+
+
+zfbetrag = function(){
+	var summe=0;
+	$( ".zfbetrag" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;
+};
+
+
+$( ".zfbetrag" ).change( function(){		
+	if( !$(this).val() ) $(this).val( 0 );	
+	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#zfbetraggesamt" ).val( zfbetrag() );         
+});
+
+$( ".zfjbelastung" ).change( function(){		
+	if( !$(this).val() ) $(this).val( 0 );	
+	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#zfjbelastunggesamt" ).val( zfjbelastung() );         
+});
+
+zfjbelastung = function(){
+	var summe=0;
+	$( ".zfjbelastung" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	
+	return summe;
+};
+
+
+$(document).ready(function() {
+	if (ischeckedVbb()) {
+		$(".vbb").removeClass("versteckt");
+		
+	}
+	else {
+		$(".vbb").addClass("versteckt");
+		
+	}
+	$( "#gesamtkosten_brutto1" ).val( massnahmekostenGesamt() );
+	$( "#gesamtkosten_brutto2" ).val( $( "#gesamtkosten_brutto1" ).val() );
+	$( "#summeeigenmittel" ).val( summeeigenmittel() );
+	$( "#summedritter" ).val( summedritter() );
+	$( "#ueberschuss" ).val( ueberschuss() );
+	$( "#zfbetraggesamt" ).val( zfbetrag() );
+	$( "#zfjbelastunggesamt" ).val( zfjbelastung() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );     
+});   
+
+
+$(function () {
+	$('input').keypress(function (e) {
+		var code = null;
+		code = (e.keyCode ? e.keyCode : e.which);
+		return (code == 13) ? false : true;
+	});    
+});
+
+
+
+</script>
+
+
+<f:if condition="{kv}">
+<f:then>
+<script>    
+<![CDATA[$(document).ready(function() {			$("input").attr('disabled','disabled');			
+	$(".kv").removeAttr('disabled');	
+	$("#submit").removeAttr('disabled');	
+	$("#submit").click( function(){
+		$("input").removeAttr('disabled');
+	});	
+	$("input").each(function(){
+		if(!$(this).val()) {
+			$(this).addClass("warning");
+		}
+		});
+	if($(this).val()==0) {
+		$(this).addClass("warning");
+	}
+	$('textarea').each(function(){
+		$(this).attr( 'disabled', 'disabled' );
+		});
+	$('select').each(function(){
+		$(this).attr( 'disabled', 'disabled' ); 
+	});
+});
+]]>
+</script>
+
+</f:then> 
+</f:if>  

@@ -1,0 +1,41 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<vh:zoombuttons />
+<div class='zoomarea'>
+	<h1>Listing for Kleinantrag</h1>
+	
+	<f:flashMessages />
+	
+	<table  class="tx_blsvspstbauantrag" >
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_kleinantrag.name" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_kleinantrag.vorname" /></th>
+			<th> </th>
+			<th> </th>
+		</tr>
+	
+		<f:for each="{kleinantrags}" as="kleinantrag">
+			<tr>
+				<td><f:link.action action="show" arguments="{kleinantrag : kleinantrag}"> {kleinantrag.name}</f:link.action></td>
+				<td><f:link.action action="show" arguments="{kleinantrag : kleinantrag}"> {kleinantrag.vorname}</f:link.action></td>
+				<td><f:link.action action="edit" arguments="{kleinantrag : kleinantrag}">Edit</f:link.action></td>
+				<td><f:link.action action="delete" arguments="{kleinantrag : kleinantrag}">Delete</f:link.action></td>
+			</tr>
+		</f:for>
+	</table>
+</div>
+<f:link.action action="new">New Kleinantrag</f:link.action>
+</f:section>

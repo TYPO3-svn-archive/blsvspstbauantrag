@@ -1,0 +1,55 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This template displays a EDIT form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Edit.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<vh:zoombuttons />
+<div class='zoomarea'>
+
+	<f:flashMessages />
+	
+	<f:render partial="FormErrors" />
+	
+	<f:form action="abgebenspeichern" name="antragsanforderung" object="{antragsanforderung}" >
+		<f:render partial="Antragsanforderung/FormFieldsAntrag" arguments="{antragsanforderung:antragsanforderung, hilfetexte:hilfetexte}" />	<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.felderpruefen' /><br /><br />	<f:form.submit id="submit" class="linkbutton" value="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.abgeben' />" /> 	<f:link.action class="tx_blsvspstbauantrag_abgeben" action="edit" arguments="{planung : planung}" title="<f:translate key='tx_blsvspstbauantrag.titlebearbeiten' />" >	<div class="editicon">&nbsp;</div><f:translate key='tx_blsvspstbauantrag.bearbeiten' /><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.nochmalbearbeiten' /></f:link.action>	
+		 &nbsp;&nbsp;<f:link.action action="list" class="tx_blsvspstbauantrag_abgeben"><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.zuruebersicht' /></f:link.action><br />
+		
+	</f:form>
+</div>
+
+<script>
+		$(document).ready(function() {
+			
+			$("input").attr('disabled', 'disabled');
+			$("#submit").removeAttr('disabled');
+			$("#submit").click( function(){
+				$("input").removeAttr('disabled');
+				
+			});
+			$("input").each(function(){
+				if(!$(this).val()) {
+					$(this).addClass("warning");
+				}
+
+				if($(this).val()==0) {
+					$(this).addClass("warning");
+				}
+			});
+			$('textarea').each(function(){
+				$(this).attr( 'disabled', 'disabled' ); 
+			});
+		});	
+	</script>
+</f:section>
+
+

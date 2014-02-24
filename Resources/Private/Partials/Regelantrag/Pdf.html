@@ -1,0 +1,1683 @@
+{namespace hv=Tx_Blsvspstbauantrag_ViewHelpers}
+
+<div id="pdf_header">
+	<div class="links">
+		<br />
+		<div class="fett">BLSV-Regelantrag</div>
+	</div>
+	<div class="rechts"><img style="width: 75px; height: 26px;" src="/fileadmin/images/blsvlogo.png" /></div>
+</div>
+
+<div id="pdf_footer">
+	<div class="links">
+		<f:format.date format="d.n.Y">+0 seconds</f:format.date>
+		 - Regelantrag Nr. {regelantrag.antragsnummer1.uid} 
+		 - {regelantrag.vereinsname} ({regelantrag.vereinsnummer}) 
+		 - Kreis {regelantrag.blsvkreis}
+	</div>
+
+	<div class="rechts">
+		Seite ##PAGE## von ##PAGES##</div>
+</div>
+
+
+<div "pdf_content">
+<!--                  -->
+<!-- Allgemeine Daten -->	
+<!--                  -->
+<div id="allgemeine_daten">
+	<h2 ><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.allgemein" /></h2>
+				
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.art{regelantrag.art}" />  
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fall{regelantrag.fall}" /></h3> 
+
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vereinsnummer"/>: {regelantrag.vereinsnummer}</p>
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnummer1"/>: {regelantrag.antragsnummer1.uid}</p>
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.blsvkreis" />: {regelantrag.blsvkreis}</p>
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vereinsname" />: {regelantrag.vereinsname}</p>
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner" /></h3>
+		<p>Name: {regelantrag.ansprechpartnertitel} {regelantrag.ansprechpartnervorname} {regelantrag.ansprechpartnername} 
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnerteldienst" /> {regelantrag.ansprechpartnerteldienst}</p> 
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnertelprivat" />	{regelantrag.ansprechpartnertelprivat}:</p>
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnermobil" /> {regelantrag.ansprechpartnermobil}</p>
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnerfax" /> {regelantrag.ansprechpartnerfax}:</p>
+		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartneremail" /> {regelantrag.ansprechpartneremail}</p>
+</div>			
+
+<!--                     -->
+<!-- Allgemeine Hinweise -->	
+<!-                      -->
+<div id="allgemeine_hinweise"> 
+	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweis" /></h2>
+	<p>
+		<f:if condition="{regelantrag.art}==2"> <f:then>
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1_ra" />					
+		</f:then>
+		<f:else>
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1" />					
+		</f:else></f:if>
+		<br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.hinweistext1}"/></b>
+	</p>
+	<p>
+		<f:if condition="{regelantrag.art}==2"> <f:then>
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2_ra" />
+		</f:then>
+		<f:else>
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2" />					
+		</f:else></f:if>
+		<br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.hinweistext2}"/></b>
+	</p>
+
+	<p>
+		<f:if condition="{regelantrag.art}==2"> <f:then>
+			<f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3_ra" />
+		</f:then>
+		<f:else>
+			<f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3" />					
+		</f:else></f:if><br>
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.hinweistext3}"/></b>
+	</p>
+	
+	<p>
+		<f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext4" /><br>
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.hinweistext4}"/></b>
+	</p>
+</div>		
+
+	
+<!--                                -->
+<!-- A) Maßnahmen/Verwendungszweck  -->
+<!--                                -->
+<pagebreak class="page-break" />
+<div id="a_massnahmen">
+	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a" /></h2> 
+	<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a2" /></p>
+
+	<table border="1">
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl" /></th>
+			<f:if condition="{regelantrag.art}!=1"><f:then>
+				<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vbb" />
+			</f:then></f:if> 
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil" /></th>
+		</tr>
+		
+		<f:if condition="{regelantrag.verwendungszweck1}>0"><f:then>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen{regelantrag.verwendungszweck1}" /></td>				
+			<td align="center"><p>{regelantrag.anzahl1}</p></td>
+			<f:if condition="{regelantrag.art}!=1"><f:then>
+				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb1}" /> </p></td>
+			</f:then></f:if>
+			<td align="right"><p>{regelantrag.kostenanteil1}</p></td>
+		</tr>
+		</f:then></f:if>
+
+		<f:if condition="{regelantrag.verwendungszweck2}>0"><f:then>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen{regelantrag.verwendungszweck2}" /></td>				
+			<td align="center"><p>{regelantrag.anzahl2}</p></td>
+			<f:if condition="{regelantrag.art}!=1"><f:then>
+				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb2}" /> </p></td>
+			</f:then></f:if>
+			<td align="right"><p>{regelantrag.kostenanteil2}</p></td>
+		</tr>
+		</f:then></f:if>
+
+		<f:if condition="{regelantrag.verwendungszweck3}>0"><f:then>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen{regelantrag.verwendungszweck3}" /></td>				
+			<td align="center"><p>{regelantrag.anzahl3}</p></td>
+			<f:if condition="{regelantrag.art}!=1"><f:then>
+				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb3}" /> </p></td>
+			</f:then></f:if>
+			<td align="right"><p>{regelantrag.kostenanteil3}</p></td>
+		</tr>
+		</f:then></f:if>
+
+		<f:if condition="{regelantrag.verwendungszweck4}>0"><f:then>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen{regelantrag.verwendungszweck4}" /></td>				
+			<td align="center"><p>{regelantrag.anzahl4}</p></td>
+			<f:if condition="{regelantrag.art}!=1"><f:then>
+				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb4}" /> </p></td>
+			</f:then></f:if>
+			<td align="right"><p>{regelantrag.kostenanteil4}</p></td>
+		</tr>
+		</f:then></f:if>
+
+		<f:if condition="{regelantrag.verwendungszweck5}>0"><f:then>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen{regelantrag.verwendungszweck5}" /></td>				
+			<td align="center"><p>{regelantrag.anzahl5}</p></td>
+			<f:if condition="{regelantrag.art}!=1"><f:then>
+				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb5}" /> </p></td>
+			</f:then></f:if>
+			<td align="right"><p>{regelantrag.kostenanteil5}</p></td>
+		</tr>
+		</f:then></f:if>
+		
+		<tr>
+		<th align="left" colspan="2" class="align-right" ><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtkosten_brutto" /></h4></th>
+		<th align="right">{regelantrag.summegesamtkosten}</th>
+		</tr>
+	</table>
+</div>	
+	
+	
+
+	
+<!--                  -->
+<!-- B) Finanzierung  -->
+<!--                  -->
+<br/>
+<div id="b_finanzierung">
+
+	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b" /></h2>
+
+	<table border="1">
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtkosten_brutto" /></th>
+			<th align="right"><p>{regelantrag.summegesamtkosten}</p></th>
+		</tr>
+		<tr><th colspan=2"><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenmittel" /></h3></th></tr>
+	
+		<tr><td colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bar" /></h4></td></tr>
+		<tr>
+			<td ><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungbarmittel" /></td>
+			<td align="right"><p>{regelantrag.finanzierungbarmittel}</p></td>
+		</tr>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunggeldspenden" /></td>
+			<td align="right"><p>{regelantrag.finanzierunggeldspenden}</p></td>
+		</tr>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkredit" /></td>
+			<td align="right"><p>{regelantrag.fianzierungkredit}</p></td>
+		</tr>
+	
+		<tr><td colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.unbar" /></h4></td></tr>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungaleistung" /></td>
+			<td align="right"><p>{regelantrag.finanzierungaleistung}</p></td>
+		</tr>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsachleistung" /></td>
+			<td align="right"><p>{regelantrag.finanzierungsachleistung}</p></td>
+		</tr>
+		<tr>
+			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenbeteiligung_gesamt" /></h4></td>
+			<td align="right"><p>{regelantrag.eigenbeteiligung_gesamt}</p></td>
+		</tr>
+	
+		<tr><th colspan="2"><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter" /></h3></th></tr>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkommune" /></td>
+			<td align="right"><p>{regelantrag.fianzierungkommune}</p></td>
+		</tr>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunglkr" /></td>
+			<td align="right"><p>{regelantrag.finanzierunglkr}</p></td>
+		</tr>
+		<tr>
+			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsonstige" /></td>
+			<td align="right"><p>{regelantrag.finanzierungsonstige}</p></td>
+		</tr>
+		<tr>
+			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter_gesamt" /></h4></td>
+			<td align="right"><p>{regelantrag.leistungen_dritter_gesamt}</p></td>
+		</tr>
+		<tr>
+			<th><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungvorsteuer" /></h3></th>
+			<th align="right"><p>{regelantrag.finanzierungvorsteuer}</p></th>
+		</tr>
+		<tr>
+			<th><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungzuschuss" /></h3></th>
+			<th align="right"><p>{regelantrag.finanzierungzuschuss}</p></th>
+		</tr>
+		<tr>
+			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung2" /></h4></td>
+			<td align="right"><p>{regelantrag.staatsmittelfoerderung2}</p></td>
+		</tr>
+		<tr>
+			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3" /></h4></td>
+			<td align="right"><p>{regelantrag.staatsmittelfoerderung3}</p></td>
+		</tr>
+	</table>
+
+	<br />
+	<div>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4" /><br />
+	
+		<f:if condition="{regelantrag.smfgs} == 1">
+			<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfgs" /></b><br /></f:if>
+		<f:if condition="{regelantrag.smfgs} == 2">
+			<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfkbs" /></b><br /></f:if>
+		<f:if condition="{regelantrag.smfgs} == 3">
+			<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfbbs" /></b><br /></f:if>
+	</div>
+</div>
+
+	
+<!--                           -->
+<!-- B2) Vorzeitiger Baubeginn -->
+<!--                           -->
+<f:if condition="{regelantrag.art}==2"><f:then>
+<pagebreak class="page-break" />
+
+
+<div id="b2_vorzeitiger_baubeginn">
+
+<pagebreak class="page-break" />
+
+<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2" /></h2>
+<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2_punkt1" /></h3>
+	<table border="1">	
+			<tr>
+				<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fposition" /></th>
+				<th> <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.durch" /></th>
+				<th> <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.betrag" /></th>
+				<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jbelastung" /></th>
+			</tr>
+			<tr>
+				<td rowspan="2">
+					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></b>
+				</td>
+				<td align="left"><div><f:form.checkbox property="kommunebank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
+				<td align="right"><p>{regelantrag.kommunebetragbank}</p></td>
+				<td align="right"><p>{regelantrag.kommunejbelastungbank}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="kommuneprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
+				<td align="right"><p>{regelantrag.kommunebetragprivat}</p></td>
+				<td align="right"><p>{regelantrag.kommunejbelastungprivat}</p></td>
+			</tr>
+			
+			<tr>
+				<td rowspan="3">
+					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1landkreis" /></b>
+				</td>
+				<td align="left"><div><f:form.checkbox property="landkreisbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
+				<td align="right"><p>{regelantrag.landkreisbetragbank}</p></td>
+				<td align="right"><p>{regelantrag.landkreisjbelastungbank}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="landkreiskommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
+				<td align="right"><p>{regelantrag.landkreisbetragkommune}</p></td>
+				<td align="right"><p>{regelantrag.landkreisjbelastungkommune}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="landkreisprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
+				<td align="right"><p>{regelantrag.landkreisbetragprivat}</p></td>
+				<td align="right"><p>{regelantrag.landkreisjbelastungprivat}</p></td>
+			</tr>
+			
+			<tr>
+				<td rowspan="3">
+					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1sonstige" /></b>
+				</td>
+				<td align="left"><div><f:form.checkbox property="sonstigebank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
+				<td align="right"><p>{regelantrag.sonstigebetragbank}</p></td>
+				<td align="right"><p>{regelantrag.sonstigejbelastungbank}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="sonstigekommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
+				<td align="right"><p>{regelantrag.sonstigebetragkommune}</p></td>
+				<td align="right"><p>{regelantrag.sonstigejbelastungkommune}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="sonstigeprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
+				<td align="right"><p>{regelantrag.sonstigebetragprivat}</p></td>
+				<td align="right"><p>{regelantrag.sonstigejbelastungprivat}</p></td>
+			</tr>
+			
+			<tr>
+				<td rowspan="3">
+					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1vorsteuererst" /></b>
+				</td>
+				<td align="left"><div><f:form.checkbox property="vorsteuererstbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
+				<td align="right"><p>{regelantrag.vorsteuererstbetragbank}</p></td>
+				<td align="right"><p>{regelantrag.vorsteuererstjbelastungbank}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="vorsteuererstkommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
+				<td align="right"><p>{regelantrag.vorsteuererstbetragkommune}</p></td>
+				<td align="right"><p>{regelantrag.vorsteuererstjbelastungkommune}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="vorsteuererstprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
+				<td align="right"><p>{regelantrag.vorsteuererstbetragprivat}</p></td>
+				<td align="right"><p>{regelantrag.vorsteuererstjbelastungprivat}</p></td>
+			</tr>
+			
+			<tr>
+				<td rowspan="3">
+					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfoerderung" /></b>
+				</td>
+				<td align="left"><div><f:form.checkbox property="smfoerderungbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
+				<td align="right"><p>{regelantrag.smfoerderungbetragbank}</p></td>
+				<td align="right"><p>{regelantrag.smfoerderungjbelastungbank}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="smfoerderungkommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
+				<td align="right"><p>{regelantrag.smfoerderungbetragkommune}</p></td>
+				<td align="right"><p>{regelantrag.smfoerderungjbelastungkommune}</p></td>
+			</tr>
+			<tr>
+				<td align="left"><div><f:form.checkbox property="smfoerderungprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
+				<td align="right"><p>{regelantrag.smfoerderungbetragprivat}</p></td>
+				<td align="right"><p>{regelantrag.smfoerderungjbelastungprivat}</p></td>
+			</tr>
+			
+			<tr>
+				<td> <b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1gesamt" /></b></td>
+				<td> </td>
+				<td align="right"><p>{regelantrag.betragsumme}</p></td>
+				<td align="right"><p>{regelantrag.jbelastungsumme}</p></td>
+			</tr>
+		</table>
+		<br/>
+		
+		<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.beachte1" /></b><br/>
+		<br/>
+
+
+		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear1" /><f:format.printf arguments="{0:regelantrag.EARvon}">%02d</f:format.printf>
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear2" /><f:format.printf arguments="{0:regelantrag.EARbis}">%02d</f:format.printf></h3>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear3" /><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear4" />: <b>{regelantrag.durchschnittsergebnis}</b><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear5" /><br />
+		<br />
+		
+		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vorzbaupunkt3" /></h3>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_1" /><br/><b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.wegfalloefffinanzmittel}"/></b><br /><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_2" /><br/><b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.fortbestandgefaehrdung}"/></b><br /><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_3" /><br/><b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.ersatzloserverlust}"/></b><br /><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_4" /><br/><b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.eintrittnachteiligerfolgen}"/></b><br /><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_5" /><br/><b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.notwendigkeitsonstige}"/></b><br />
+		<b>{regelantrag.notwendigkeitsonstigetextfeld}</b><br />
+		<br />		
+
+		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vorzbaupunkt4" /></h3>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt4_1" /><br/><b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.vorzbaubeginnerkl1}"/></b><br /><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.punkt4_2" /><br/><b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.vorzbaubeginnerkl2}"/></b><br />
+		<br />		
+	
+</div>
+</f:then></f:if>	
+
+
+<!--                            -->
+<!-- C) Angaben zur Vermögens-, finanz- und Ertragslage des Vereins -->
+<!--                            -->
+<pagebreak class="page-break" />
+
+<div id="c_angaben_ertragslage">	
+	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_c" /></h2>
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ertragslage" /></h3>
+	
+	<div>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_anfang" />
+		<b><f:format.date format='d.m.Y'>@{regelantrag.guvbeginn}</f:format.date></b>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_bis" />
+		<b><f:format.date format='d.m.Y'>@{regelantrag.guvende}</f:format.date></b>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_ende" />
+		<b>
+			<f:if condition="{regelantrag.guvbilanz}==0"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guveuerechnung" /></f:if>
+			<f:if condition="{regelantrag.guvbilanz}==1"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guvbilanz" /></f:if>
+			<f:if condition="{regelantrag.guvbilanz}==2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guveuerechnung" /></f:if>
+		</b>
+	</div>
+	<br />
+	
+	<table border="1">	
+	<tr>
+		<th><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guveinnahmengesamt" /> </h4></th>
+		<th align="right"><p><b>{regelantrag.guveinnahmengesamt}</b></p></th>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenbeitraege" /></td>
+		<td align="right"><p>{regelantrag.einnahmenbeitraege}</p></td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenspenden" /></td>
+		<td align="right"><p>{regelantrag.einnahmenspenden}</p></td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenzuschuesse" /></td>
+		<td align="right"><p>{regelantrag.einnahmenzuschuesse}</p></td>
+	</tr>
+	<tr>
+		<th><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guvausgabengesamt" /> </h4></th>
+		<th align="right"><p><b>{regelantrag.guvausgabengesamt}</b></p></th>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabeninstandhaltung" /></td>
+		<td align="right"><p>{regelantrag.ausgabeninstandhaltung}</p></td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabensportbetrieb" /></td>
+		<td align="right"><p>{regelantrag.ausgabensportbetrieb}</p></td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenverwaltung" /></td>
+		<td align="right"><p>{regelantrag.ausgabenverwaltung}</p></td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenabschreibung" /></td>
+		<td align="right"><p>{regelantrag.ausgabenabschreibung}</p></td>
+	</tr>
+	<tr>
+		<th><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschussfehlbetrag" /></h4></th>
+		<th align="right"><p><b>{regelantrag.ueberschussfehlbetrag}</b></p></th>
+	</tr>
+	</table>
+	</div>
+	
+	<div>
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegenslage" /></h3>
+	<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vmlstichtag" />: <f:format.date  format='d.m.Y'>@{regelantrag.vmlstichtag}</f:format.date></p>
+
+	<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.aktiva" /></h4>
+	<table border="1" width="100%">	
+			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anlagevermoegen" /></h4></th></tr>
+			<tr>
+				<td width="85%"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegensgegenstaende" /></td>
+				<td align="right"><p>{regelantrag.vermoegensgegenstaende}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sachanlagen" /></td>
+				<td align="right"><p>{regelantrag.sachanlagen}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzanlagen" /></td>
+				<td align="right"><p>{regelantrag.finanzanlagen}</p></td>
+			</tr>
+			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.umlaufvermoegen" /></h4></th></tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kassenbestand" /></td>
+				<td align="right"><p>{regelantrag.kassenbestand}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bankguthaben" /></td>
+				<td align="right"><p>{regelantrag.bankguthaben}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sonstiges_vermoegen" /></td>
+				<td align="right"><p>{regelantrag.sonstiges_vermoegen}</p></td>
+			</tr>
+	</table>
+	<br />
+		
+	<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.passiva" /></h4>
+	<table border="1" width="100%">	
+			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenkapital" /></h4></th></tr>
+			<tr>
+				<td width="85%"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenfrei" /></td>
+				<td align="right"><p>{regelantrag.ruecklagenfrei}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenzweck" /></td>
+				<td align="right"><p>{regelantrag.ruecklagenzweck}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenbetrieb" /></td>
+				<td align="right"><p>{regelantrag.ruecklagenbetrieb}</p></td>
+			</tr>
+			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeiten" /></h4></th></tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitbank" /></td>
+				<td align="right"><p>{regelantrag.verbindlichkeitbank}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitblssmd" /></td>
+				<td align="right"><p>{regelantrag.verbindlichkeitblssmd}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitsonstige" /></td>
+				<td align="right"><p>{regelantrag.verbindlichkeitsonstige}</p></td>
+			</tr>
+			<tr>
+				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahreskapitaldienst" /></td>
+				<td align="right"><p>{regelantrag.jahreskapitaldienst}</p></td>
+			</tr>
+		</table>
+</div>
+
+
+<!-                                      -->
+<!-- D) Sportliche Situation des Vereins -->
+<!--                                     -->
+<pagebreak class="page-break" />
+<div>
+	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d" /></h2>
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d1" /></h3>
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d11" />:</h3>
+				
+	<table border="1">
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand111" /></th>
+			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr111" /></th>
+			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr112" /></th>
+			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr113" /></th>
+		</tr>
+		
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmitglied1" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0110bis26" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0110ueber26" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0111bis26" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0111ueber26" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0112bis26" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0112ueber26" /></th>
+		</tr>
+
+
+		<f:if condition="{regelantrag.fachverbandmitglied1} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandmitglied1,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.mitglieder0110bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0110ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0111bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0111ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0112bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0112ueber26}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandsmitglied2} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandsmitglied2,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.mitglieder0210bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0210ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0211bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0211ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0212bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0212ueber26}</p></td>
+		</tr>
+		</f:if>
+		
+		<f:if condition="{regelantrag.fachverbandsmitglied3} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandsmitglied3,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.mitglieder0310bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0310ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0311bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0311ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0312bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0312ueber26}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandsmitglied4} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandsmitglied4,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.mitglieder0410bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0410ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0411bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0411ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0412bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0412ueber26}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandsmitglied5} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandsmitglied5,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.mitglieder0510bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0510ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0511bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0511ueber26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0512bis26}</p></td>
+			<td align="center"><p>{regelantrag.mitglieder0512ueber26}</p></td>
+		</tr>
+		</f:if>
+	</table>
+
+	<br/>
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d12" /></h3>
+				
+	<table border="1">
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand121" /></th>
+			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr121" /></th>
+			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr122" /></th>
+			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr123" /></th>
+		</tr>
+		
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmannschaft1" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0110" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0110" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0111" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0111" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0112" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0112" /></th>
+		</tr>
+		
+		<f:if condition="{regelantrag.fachverbandmannschaft1} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandmannschaft1,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0110}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0110}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0111}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0111}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0112}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0112}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandmannschaft2} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandmannschaft2,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0210}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0210}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0211}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0211}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0212}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0212}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandmannschaft3} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandmannschaft3,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0310}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0310}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0311}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0311}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0312}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0312}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandmannschaft4} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandmannschaft4,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0410}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0410}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0411}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0411}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0412}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0412}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandmannschaft5} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandmannschaft5,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0510}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0510}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0511}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0511}</p></td>
+			<td align="center"><p>{regelantrag.schuelerjugend0512}</p></td>
+			<td align="center"><p>{regelantrag.erwachsene0512}</p></td>
+		</tr>
+		</f:if>
+	</table>
+
+	<br/>			
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d13" /></h3>
+				
+	<table border="1">
+		<tr>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand131" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr131" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr132" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr133" /></th>
+		</tr>
+
+		<f:if condition="{regelantrag.fachverbandueleiter1} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandueleiter1,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.anzahl0110}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0111}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0112}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandueleiter2} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandueleiter2,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.anzahl0210}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0211}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0212}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandueleiter3} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandueleiter3,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.anzahl0310}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0311}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0312}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandueleiter4} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandueleiter4,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.anzahl0410}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0411}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0412}</p></td>
+		</tr>
+		</f:if>
+
+		<f:if condition="{regelantrag.fachverbandueleiter5} > 0">
+		<tr>
+			<td><f:render partial="Regelantrag/FachverbaendeView" arguments="{value:regelantrag.fachverbandueleiter5,vereinsinfos:vereinsinfos}"/></td>
+			<td align="center"><p>{regelantrag.anzahl0510}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0511}</p></td>
+			<td align="center"><p>{regelantrag.anzahl0512}</p></td>
+		</tr>
+		</f:if>
+	</table>
+
+	<br/>
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d3" /></h3>
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitauslastung" />:<br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.notwendigkeitauslastung}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitausrichtung" />:<br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.notwendigkeitausrichtung}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitbeduerfnis" />:<br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.notwendigkeitbeduerfnis}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitunterhalt" />:<br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.notwendigkeitunterhalt}"/></b><br />
+	<br />
+</div>
+
+<!--                          -->
+<!-- E) Eigentumsverhältnisse -->
+<!--                          -->
+<pagebreak class="page-break" />
+<div>
+	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_e" /></h2>
+
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtveigentum" />:
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.eigentum}"/></b><br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtverbbaurecht" />:
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erbbaurecht}"/></b><br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvpachtvertrag" />:
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.pachtvertrag}"/></b><br />
+	<br />	
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtveigentuemer" />: {regelantrag.egtveigentuemer}<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgrundstuecksgroesse" />: {regelantrag.egtvgrundstuecksgroesse}<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvflurnummer" />: {regelantrag.egtvflurnummer}<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgemarkung" />: {regelantrag.egtvgemarkung}<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvlaufzeit" /> {regelantrag.egtvlaufzeit}<br />
+	<f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.text_e1" /><br />
+</div>	
+
+
+<!--                            -->
+<!-- F) Sportstättenbauberatung -->
+<!--                            -->
+<div>
+<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_f" /></h2>
+	<f:if condition="{regelantrag.bauberatungja} == 1">
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungja" />, 
+		<f:format.date  format='d.m.Y'>@{regelantrag.bauberatungdatum}</f:format.date>
+		<br />
+	</f:if>
+	<f:if condition="{regelantrag.bauberatungja} == 2">
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungnein" />
+		<br />
+	</f:if>
+</div>	
+
+
+
+
+<!--                                -->
+<!-- G) Einbindung des BLSV-Kreises -->
+<!--                                -->
+<div>
+<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_g" /></h2>
+
+<f:translate  key="tx_blsvspstbauantrag_domain_model_regelantrag.datumgespraechkv" /><br />
+<b><f:format.date  format='d.m.Y'>@{regelantrag.datumgespraechkv}</f:format.date></b><br />
+<br />
+<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_frage" /><br />
+<b>
+	<f:if condition="{regelantrag.ortsbesichtigungkv} == 1">
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_ja" /><br />
+	</f:if>
+	<f:if condition="{regelantrag.ortsbesichtigungkv} == 2">
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_nein" /><br />
+	</f:if>
+</b>
+<br />
+	
+<f:if condition="{admin}">
+	<f:then> 
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.absendedatum" /><br />
+		<f:form.textfield class="datum" property="absendedatum"  value="<f:format.date format='d.m.Y'>{regelantrag.absendedatum}</f:format.date>"  /><br />
+	</f:then>
+</f:if>
+</div>	
+
+
+<!--                -->
+<!-- H) Erklärungen -->
+<!--                -->
+<pagebreak class="page-break" />
+<div>
+	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_h" /></h2>
+
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklrechtsanspruch" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklrechtsanspruch}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklmeldepflicht" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklmeldepflicht}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestkenntnisnahme" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.bestkenntnisnahme}"/></b><br />
+
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erkl_antragsteller" /></h3>
+	
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklbaubeginn" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklbaubeginn}"/></b><br />
+	<br />
+<!-- 
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklnutzungdritte" />
+	<f:form.checkbox property="erklnutzungdritte" value="1" />
+--> 
+
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklkonzession" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklkonzession}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklvollstaendigeangaben" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklvollstaendigeangaben}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklsubvention" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklsubvention}"/></b><br />
+	<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.erklfinanzierung" /><br />
+	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklfinanzierung}"/></b><br />
+</div>
+
+
+<!-- I) Stellungnahme des BLSV-Kreises -->
+<pagebreak class="page-break" />
+
+<div>
+	<f:if condition="{kv; admin}">
+		<f:then>
+			<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i" /></h2>
+			<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i1" /></h3>
+
+			<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung1" /></h4>
+			<f:if condition="{regelantrag.sportlicheentwicklung11} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung11" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung11} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung12" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung11} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung13" /><br />
+			</f:if>
+
+			<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2" /></h4>
+			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung21" /></h5>
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung211" /></h6>
+			<f:if condition="{regelantrag.sportlicheentwicklung211} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2111" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung211} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2112" /><br />
+			</f:if>								
+			<f:if condition="{regelantrag.sportlicheentwicklung211} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2113" /><br />
+			</f:if>							
+			</td>
+
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung212" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung212} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2121" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung212} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2122" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung212} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2123" /><br />
+			</f:if>
+
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung213" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung213} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2131" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung213} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2132" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung213} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2133" /><br />
+			</f:if>
+
+			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung22" /></h5>
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung221" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung221} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2211" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung221} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2212" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung221} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2213" /><br />
+			</f:if>
+
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung222" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung222} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2221" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung222} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2222" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung222} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2223" /><br />
+			</f:if>
+
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung223" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung223} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2231" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung223} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2232" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung223} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2233" /><br />
+			</f:if>
+
+			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung23" /></h5>
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung231" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung231} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2311" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung231} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2312" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung231} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2313" /><br />
+			</f:if>
+
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung232" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung232} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2321" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung232} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2322" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung232} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2323" /><br />
+			</f:if>
+
+			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung233" /></h6>
+		 	<f:if condition="{regelantrag.sportlicheentwicklung233} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2331" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung233} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2332" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sportlicheentwicklung233} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2333" /><br />
+			</f:if>
+
+			<!-- 3. -->					
+			<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung3" /></h4>
+			 	<f:if condition="{regelantrag.sportlicheentwicklung311} == 1">
+			 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung311" /><br />
+			 	</f:if>
+				<f:if condition="{regelantrag.sportlicheentwicklung311} == 2">
+					vereinseigene Anlagen: <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung312" /><br />
+				</f:if>
+
+			 	<f:if condition="{regelantrag.sportlicheentwicklung321} == 1">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung321" /><br />
+				</f:if>
+				<f:if condition="{regelantrag.sportlicheentwicklung321} == 2">
+					Anlagen anderer Vereine: <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung322" /><br />
+				</f:if>
+
+			 	<f:if condition="{regelantrag.sportlicheentwicklung331} == 1">
+					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung331" /><br />
+				</f:if>
+				<f:if condition="{regelantrag.sportlicheentwicklung331} == 2">
+					kommunale Anlagen: <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung332" /><br />
+				</f:if>
+
+			<!-- 4. -->					
+			<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung4" /></h4>
+			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung41" /></h5>
+			 <f:if condition="{regelantrag.sportlicheentwicklung411} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung411" /><br />
+			</f:if>										
+			 <f:if condition="{regelantrag.sportlicheentwicklung411} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung412" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung411} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung413" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung411} == 4">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung414" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung411} == 5">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung415" /><br />
+			</f:if>	
+
+			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung42" /></h5>
+			 <f:if condition="{regelantrag.sportlicheentwicklung421} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung421" /><br />
+			</f:if>										
+			 <f:if condition="{regelantrag.sportlicheentwicklung421} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung422" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung421} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung423" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung421} == 4">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung424" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung421} == 5">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung425" /><br />
+			</f:if>										
+				
+			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung43" /></h5>
+			 <f:if condition="{regelantrag.sportlicheentwicklung431} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung431" /><br />
+			</f:if>										
+			 <f:if condition="{regelantrag.sportlicheentwicklung431} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung432" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung431} == 3">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung433" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung431} == 4">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung434" /><br />
+			</f:if>	
+			 <f:if condition="{regelantrag.sportlicheentwicklung431} == 5">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung435" /><br />
+			</f:if>										
+
+		<!--  b) Bestehende Sportstätten -->
+		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i2" /></h3>
+
+
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1" />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten111" /></h4>
+			<f:if condition="{regelantrag.bestehendesportstaetten11} == 1">
+				<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten11" /></b><br />
+			</f:if>
+			<f:if condition="{regelantrag.bestehendesportstaetten11} == 2">
+				<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten12" /></b><br />
+				
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1111" />:
+				<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.bestehendesportstaetten1111}"/></b><br />
+				
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1112" />:
+				<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.bestehendesportstaetten1112}"/></b><br />
+			</f:if>
+		
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten21" /></h4>
+		
+	 	<f:if condition="{regelantrag.bestehendesportstaetten211} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten211" /><br /></f:if>
+		<f:if condition="{regelantrag.bestehendesportstaetten211} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten212" /><br /></f:if>
+
+	 	<f:if condition="{regelantrag.bestehendesportstaetten221} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten221" /><br /></f:if>
+		<f:if condition="{regelantrag.bestehendesportstaetten221} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten222" /><br /></f:if>
+
+
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten3" /></h4>
+	 	<f:if condition="{regelantrag.bestehendesportstaetten31} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten31" /><br /></f:if>
+		<f:if condition="{regelantrag.bestehendesportstaetten31} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten32" /><br /></f:if>
+								
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten4" /></h4>
+	 	<f:if condition="{regelantrag.bestehendesportstaetten41} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten41" /><br /></f:if>
+		<f:if condition="{regelantrag.bestehendesportstaetten41} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten42" /><br /></f:if>
+								
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten51" /></h4>
+	 	<f:if condition="{regelantrag.bestehendesportstaetten511} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten511" /><br /></f:if>
+		<f:if condition="{regelantrag.bestehendesportstaetten511} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten512" /><br /></f:if>
+								
+	 	<f:if condition="{regelantrag.bestehendesportstaetten521} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten521" /><br /></f:if>
+		<f:if condition="{regelantrag.bestehendesportstaetten521} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten522" /><br /></f:if>						
+								
+	 	<f:if condition="{regelantrag.bestehendesportstaetten531} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten531" /><br /></f:if>
+		<f:if condition="{regelantrag.bestehendesportstaetten531} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten532" /><br /></f:if>
+
+
+		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i3" /></h3>
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme11" /></h4>
+	 	<f:if condition="{regelantrag.stellungnahme111} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme111" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.stellungnahme111} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme112" /><br />
+		</f:if>
+
+		<f:if condition="{regelantrag.stellungnahme121} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme121" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.stellungnahme121} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme122" /><br />
+		</f:if>
+		
+		<f:if condition="{regelantrag.stellungnahme131} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme131" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.stellungnahme131} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme132" /><br />
+		</f:if>
+								
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme2" /></h4>
+
+		<f:if condition="{regelantrag.stellungnahme21} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme21" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.stellungnahme21} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme22" /><br />
+		</f:if>
+								
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22_0" />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme221" />
+
+		<br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme221}"/></b><br />
+		<br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme222" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme222}"/></b><br />
+		<br />
+
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme223" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme223}"/></b><br />
+		<br />
+
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme224" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme224}"/></b><br />
+		<br />
+
+		<!-- 3. -->
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme3" /></h4>
+		<f:if condition="{regelantrag.stellungnahme31} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme31" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.stellungnahme31} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme32" /><br />
+		</f:if>
+								
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31_0" />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme311" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme311}"/></b><br />
+		<br />
+
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme312" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme312}"/></b><br />
+		<br />
+
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme313" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme313}"/></b><br />
+		<br />
+
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme4" /></h4>
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme41" />
+		<b><f:format.date  format='d.m.Y'>@{regelantrag.stellungnahme41}</f:format.date></b><br />
+
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme5" /></h4>
+		<f:if condition="{regelantrag.stellungnahme51} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme51" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.stellungnahme51} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme52" /><br />
+		</f:if>
+								
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52_0" /><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme521" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme521}"/></b><br />
+		<br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme522" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme522}"/></b><br />
+		<br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme523" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme523}"/></b><br />
+
+		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme6" /></h4>
+		<f:if condition="{regelantrag.stellungnahme61} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme61" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.stellungnahme61} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme62" /><br />
+		</f:if>
+								
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61_0" />
+
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme611" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme611}"/></b><br />
+		<br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme612" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme612}"/></b><br />
+		<br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme613" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme613}"/></b><br />
+					
+					
+ 
+<!--                 -->
+<!-- d) Finanzierung -->
+<!--                 -->
+		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i4" /></h3>
+		
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung11" /><br />
+		<f:if condition="{regelantrag.Finanzierung111} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung111" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung111} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung112" /><br />
+		</f:if>
+
+		<br />
+		<f:if condition="{regelantrag.Finanzierung121} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung121" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung121} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung122" /><br />
+		</f:if>
+		
+		<f:if condition="{regelantrag.Finanzierung131} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung131" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung131} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung132" /><br />
+		</f:if>
+		
+		<f:if condition="{regelantrag.Finanzierung141} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung141" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung141} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung142" /><br />
+		</f:if>
+		
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung21" /><br />
+		<f:if condition="{regelantrag.Finanzierun211} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung211" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung211} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung212" /><br />
+		</f:if>
+		
+		<f:if condition="{regelantrag.Finanzierung221} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung221" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung221} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung222" /><br />
+		</f:if>
+		
+		<f:if condition="{regelantrag.Finanzierung231} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung231" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung231} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung232" /><br />
+		</f:if>
+			
+		<f:if condition="{regelantrag.Finanzierung241} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung241" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung241} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung242" /><br />
+		</f:if>
+		
+		<br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung3" /><br />
+		<f:if condition="{regelantrag.Finanzierung31} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung31" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung31} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung32" /><br />
+		</f:if>
+		<br />
+			
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung4" /><br />
+		<f:if condition="{regelantrag.Finanzierung41} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung41" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung41} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung42" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung41} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung43" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung41} == 2">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung44" /><br />
+		</f:if>
+		<f:if condition="{regelantrag.Finanzierung41} == 1">
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung45" /><br />
+		</f:if>
+		<br />
+
+<!--              -->
+<!-- e) Sonstiges -->
+<!--              -->
+		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i5" /></h3>
+		
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges1" />
+			<b><f:format.date format='d.m.Y'>@{regelantrag.sonstiges11}</f:format.date></b><br />
+	
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges2" />
+			<b>
+			<f:if condition="{regelantrag.sonstiges21} == 1">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges21" /><br />
+			</f:if>
+			<f:if condition="{regelantrag.sonstiges21} == 2">
+				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges22" /><br />
+			</f:if>
+			</b><br />
+		</f:then>
+	</f:if>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<f:for each="{hilfetexte}" as="hilfetext">
+	<script>
+		$("#hilfsicon{hilfetext.uid}").attr("title", "{hilfetext.hilfekurz}");
+	</script>
+	<div id="langhilfe{hilfetext.uid}" class="langhilfe">
+		<div class="heading">
+			<h1>{hilfetext.heading}</h1>
+		</div>
+		<div class="content">
+			<hv:hilfetexte htext="{hilfetext.hilfelang}" />
+		</div>
+	</div>
+</f:for>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+$(document).ready(function() {
+	$(".langhilfe").hide();
+	});
+<f:for each="{hilfetexte}" as="hilfetext">
+	$("#hilfsicon{hilfetext.uid}").click(function () {
+		$("#langhilfe{hilfetext.uid}").show("slow"); 
+	});    
+</f:for>
+$(".langhilfe").click(function () {
+	$(this).hide("slow");
+});       
+
+<![CDATA[
+ 		$(document).ready(function() {
+ 			$(".datum").datepicker(
+ 					{
+ 						yearRange: "-100:+0",
+ 					    changeMonth: true,
+ 					    changeYear: true
+ 					 });
+ 			$(".upload").attr('multiple','multiple')
+ 		});
+$(document).ready(function(){
+	$(function() {
+		$( "#raaccordion" ).accordion({
+			autoHeight: false,
+			navigation: true,
+			collapsible: true,
+			active: 0
+		});
+		$( "#raaccordion01" ).accordion({
+			autoHeight: false,
+			navigation: true,
+			collapsible: true,
+			active: false
+		});
+	});
+});
+]]>
+
+
+summeeigenmittel = function(){
+	var summe=0;
+	$( ".eigenmittel" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;    
+};
+
+ischeckedVbb = function(){
+	
+	var n = $( "input.vbbcheck:checked" ).length;
+	return n;    
+};
+
+$( ".vbbcheck" ).change( function(){		
+	if (ischeckedVbb()) {
+		$(".vbb").removeClass("versteckt");
+		
+	}
+	else {
+		$(".vbb").addClass("versteckt");
+		
+	}        
+});
+
+
+
+$( ".eigenmittel" ).change( function(){		
+	if( !$(this).val() ) $(this).val( 0 );	
+	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#summeeigenmittel" ).val( summeeigenmittel() );      
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );    
+	});
+
+summedritter = function(){
+	var summe=0;
+	$( ".leistungendritter" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;
+};
+
+$( ".leistungendritter" ).change( function(){	if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#summedritter" ).val( summedritter() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+
+summefinanzierung = function(){
+	var summe=0;
+	$( ".massnahmefinazierung" ).each(function(){
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;
+};
+
+$( ".finanzierungvorsteuer" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+	$( ".finanzierungzuschuss" ).change( function(){				if( !$(this).val() ) $(this).val( 0 ) ;		if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+
+$( ".einnahmengesamt" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#ueberschuss" ).val( $( ".einnahmengesamt" ).val() - $( ".ausgabengesamt" ).val() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+});
+
+$( ".ausgabengesamt" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#ueberschuss" ).val( $( ".einnahmengesamt" ).val() - $( ".ausgabengesamt" ).val() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
+})
+
+ueberschuss= function(){
+	var summe=0;
+	summe=$( ".einnahmengesamt" ).val() - $( ".ausgabengesamt" ).val();
+	return summe;    
+};
+
+$( ".datum1" ).change( function(){
+	$( ".datum2" ).val( $( ".datum1" ).val() );
+});
+
+$( ".massnahmefinazierung" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - summefinanzierung() );      
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );    
+});
+
+massnahmekostenGesamt = function(){
+	var summe=0;
+$( ".massnahmenkosten" ).each(function(){    
+	summe = summe + 1 * $(this).val();
+});return summe;}
+$( ".massnahmenkosten" ).change( function(){
+	$(this).val (parseInt($(this).val()));
+	$( "#gesamtkosten_brutto1" ).val( massnahmekostenGesamt() );
+	$( "#gesamtkosten_brutto2" ).val( $( "#gesamtkosten_brutto1" ).val() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );    
+});
+$( "#guvende" ).change( function(){
+	$( "#vmlstichtag" ).val( $( "#guvende" ).val() );    
+});    
+
+
+zfbetrag = function(){
+	var summe=0;
+	$( ".zfbetrag" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	return summe;
+};
+
+
+$( ".zfbetrag" ).change( function(){		
+	if( !$(this).val() ) $(this).val( 0 );	
+	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#zfbetraggesamt" ).val( zfbetrag() );         
+});
+
+$( ".zfjbelastung" ).change( function(){		
+	if( !$(this).val() ) $(this).val( 0 );	
+	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	$(this).val( parseInt( $(this).val() ) );
+	$( "#zfjbelastunggesamt" ).val( zfjbelastung() );         
+});
+
+zfjbelastung = function(){
+	var summe=0;
+	$( ".zfjbelastung" ).each(function(){    
+		summe = summe + 1 * $(this).val();
+	});
+	
+	return summe;
+};
+
+
+$(document).ready(function() {
+	if (ischeckedVbb()) {
+		$(".vbb").removeClass("versteckt");
+		
+	}
+	else {
+		$(".vbb").addClass("versteckt");
+		
+	}
+	$( "#gesamtkosten_brutto1" ).val( massnahmekostenGesamt() );
+	$( "#gesamtkosten_brutto2" ).val( $( "#gesamtkosten_brutto1" ).val() );
+	$( "#summeeigenmittel" ).val( summeeigenmittel() );
+	$( "#summedritter" ).val( summedritter() );
+	$( "#ueberschuss" ).val( ueberschuss() );
+	$( "#zfbetraggesamt" ).val( zfbetrag() );
+	$( "#zfjbelastunggesamt" ).val( zfjbelastung() );
+	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );     
+});   
+
+
+$(function () {
+	$('input').keypress(function (e) {
+		var code = null;
+		code = (e.keyCode ? e.keyCode : e.which);
+		return (code == 13) ? false : true;
+	});    
+});
+
+
+
+</script>
+
+
+<f:if condition="{kv}">
+<f:then>
+<script>    
+<![CDATA[$(document).ready(function() {			$("input").attr('disabled','disabled');			
+	$(".kv").removeAttr('disabled');	
+	$("#submit").removeAttr('disabled');	
+	$("#submit").click( function(){
+		$("input").removeAttr('disabled');
+	});	
+	$("input").each(function(){
+		if(!$(this).val()) {
+			$(this).addClass("warning");
+		}
+		});
+	if($(this).val()==0) {
+		$(this).addClass("warning");
+	}
+	$('textarea').each(function(){
+		$(this).attr( 'disabled', 'disabled' );
+		});
+	$('select').each(function(){
+		$(this).attr( 'disabled', 'disabled' ); 
+	});
+});
+]]>
+</script>
+
+</f:then> 
+</f:if>  
+

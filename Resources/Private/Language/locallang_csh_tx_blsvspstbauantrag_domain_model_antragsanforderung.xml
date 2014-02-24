@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Context Sensitive Help (CSH) for table tx_blsvspstbauantrag_domain_model_antragsanforderung</description>
+		<type>CSH</type>
+		<csh_table>tx_blsvspstbauantrag_domain_model_antragsanforderung</csh_table>
+	</meta>
+	<data type="array">
+	<languageKey index="default" type="array">
+	   
+			<label index="status.description">Status des Antrags</label>
+			<label index="art.description">Art des Antrags</label>
+			<label index="fall.description">fall</label>
+			<label index="vereinsnummer.description">vereinsnummer</label>
+			<label index="telefon.description">telefon tagsüber</label>
+			<label index="baugenehmigungspflichtig.description">baugenehmigungspflichtig</label>
+			<label index="massnahme1.description">Bschreibung der Maßnahme 1</label>
+			<label index="massnahmekosten1.description">Kosten der Maßnahme 1</label>
+			<label index="begruendung.description">Kurze Begründung der geplanten Maßnahme</label>
+			<label index="vorzeitigerbaubeginn.description"> Vorzeitiger Baubeginn ist erlaubt</label>
+		</languageKey>
+	</data>
+</T3locallang>

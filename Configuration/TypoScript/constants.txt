@@ -1,0 +1,14 @@
+plugin.tx_blsvspstbauantrag {
+	view {
+		# cat=plugin.tx_blsvspstbauantrag/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:blsvspstbauantrag/Resources/Private/Templates/
+		# cat=plugin.tx_blsvspstbauantrag/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:blsvspstbauantrag/Resources/Private/Partials/
+		# cat=plugin.tx_blsvspstbauantrag/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:blsvspstbauantrag/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_blsvspstbauantrag//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+}

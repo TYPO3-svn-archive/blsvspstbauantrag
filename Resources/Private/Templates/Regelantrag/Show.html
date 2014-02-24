@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Regelantrag</h1>
+
+<f:flashMessages />
+<f:form action="update" name="regelantrag" object="{regelantrag}" >
+     <f:render partial="Regelantrag/Pdf" arguments="{regelantrag:regelantrag,vereinsinfos:vereinsinfos,art:art,kv:kv}" />
+</f:form>
+
+<!-- 
+<br />
+<f:link.action action="list" controller="Antragsanforderung">zurück zur Übersicht</f:link.action><br />
+-->
+
+<!--
+<script>
+		$(document).ready(function() {
+			
+			$("input").attr('disabled', 'disabled');
+			$("#submit").removeAttr('disabled');
+			
+			$('textarea').each(function(){
+				$(this).attr( 'disabled', 'disabled' ); 
+			});
+			
+			$('select').each(function(){
+				$(this).attr( 'disabled', 'disabled' ); 
+			});
+		});	
+	</script>
+-->
+</f:section>

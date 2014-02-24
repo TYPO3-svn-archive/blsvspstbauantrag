@@ -1,0 +1,28 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This template displays a NEW form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        New.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<vh:zoombuttons />
+<div class='zoomarea'>
+	<f:flashMessages />
+	
+	<f:render partial="FormErrors" />
+	
+	<f:form action="create"  name="newAntragsanforderung" object="{newAntragsanforderung}">
+	<br />
+	<f:render partial="Antragsanforderung/FormFields" arguments="{hilfetexte:hilfetexte, antragsanforderung:newAntragsanforderung}" />
+		<f:form.submit value="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.create' />" />
+	</f:form>
+</div>
+</f:section>

@@ -1,0 +1,118 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<vh:zoombuttons />
+<div class='zoomarea'>
+	<h1><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.listheading" /></h1>
+	<f:translate htmlEscape="FALSE" key="tx_blsvspstbauantrag_domain_model_antragsanforderung.listtext" />
+	<f:flashMessages class="flashMessages" />
+	<f:if condition="{admin}"> 
+		<f:render partial="Antragsanforderung/Search" arguments="{searchtext:searchtext,art:art,fall:fall,kreis:kreis,bezirk:bezirk,status:status,vorzeitigerbaubeginn:vorzeitigerbaubeginn}" />
+	</f:if>
+	<table  class="tx_blsvspstbauantrag" >
+		<tr>
+			<th class="linksoben"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.status" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.verein" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.uid" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall" /></th>
+			<th class="rechtsoben"><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.aktionen' /> </th>
+			
+		</tr>
+	
+		<f:for each="{antragsanforderungen}" as="antragsanforderung">
+			<tr>
+				<td>
+					<div class="status{antragsanforderung.status}" title="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.status{antragsanforderung.status}' />">&nbsp;</div>
+					<f:if condition="{antragsanforderung.vorzeitigerbaubeginn}">
+						<div class="vorzeitigerbaubeginn1" title="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn1' />">&nbsp;</div>
+					</f:if>
+				</td>
+				<td>{antragsanforderung.vereinsnummer} - {antragsanforderung.vereinsname}</td>
+				<td>{antragsanforderung.uid}</td>
+				<td>				<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art{antragsanforderung.art}" />				 <f:if condition="{antragsanforderung.status} < 4">			   		<f:then>						- Anforderung					</f:then>				</f:if>				</td>
+				<td>			
+					<f:if condition="{antragsanforderung.fall1}"> <f:then><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall1" /><br /></f:then></f:if> 
+					<f:if condition="{antragsanforderung.fall2}"> <f:then><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall2" /><br /></f:then></f:if> 
+					<f:if condition="{antragsanforderung.fall3}"> <f:then><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall3" /></f:then></f:if>
+					
+				</td>	 
+				<td>	
+				   <f:if condition="{antragsanforderung.status}==1">  
+				   		<f:then>
+				   			<f:link.action action="show" arguments="{antragsanforderung:antragsanforderung}"><div class="viewicon">&nbsp;</div></f:link.action>
+							<f:if condition="{verein}"> <f:then><f:link.action action="edit" arguments="{antragsanforderung:antragsanforderung}"><div class="editicon">&nbsp;</div></f:link.action><f:link.action action="abgeben" arguments="{antragsanforderung:antragsanforderung}">
+								<div class="sendicon">&nbsp;</div></f:link.action> 
+							</f:then></f:if>						
+							<f:if condition="{admin}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div></f:then></f:if>
+							<f:if condition="{kv}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div><div class="sendicon nichtklickbar">&nbsp;</div></f:then></f:if>
+						</f:then>
+						<f:else>  
+							<f:if condition="{antragsanforderung.status} < 4"><f:then>	
+										<f:link.action action="show" arguments="{antragsanforderung:antragsanforderung}"><div class="viewicon">&nbsp;</div></f:link.action>				   			
+										<f:if condition="{verein}"> <f:then><div class="editicon nichtklickbar">&nbsp;</div><div class="sendicon nichtklickbar">&nbsp;</div></f:then></f:if>
+										<f:if condition="{admin}"> <f:then><f:link.action action="entscheiden" arguments="{antragsanforderung:antragsanforderung}"><div class="entscheidenicon">&nbsp;</div></f:link.action></f:then></f:if>
+										<f:if condition="{kv}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div><div class="sendicon nichtklickbar">&nbsp;</div></f:then></f:if>
+							</f:then>						
+							<f:else>
+								<f:if condition="{antragsanforderung.status} < 6"><f:then>						   			
+										<f:link.action action="show" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}" additionalParams="{type:123,attachment:1,filename:'BLSVSportstaettenantragAntrag{antragsanforderung.uid}.pdf'}"><div class="viewicon">&nbsp;</div></f:link.action>
+										<f:if condition="{verein}"> <f:then><f:link.action action="edit" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="editicon">&nbsp;</div></f:link.action>
+													<!--  	<f:link.action action="abgeben" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="sendicon">&nbsp;</div></f:link.action> -->
+														
+											</f:then></f:if>
+										
+										<f:if condition="{admin}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div><f:link.action controller="Antragsanforderung" action="baubeginn" arguments="{antragsanforderung:antragsanforderung}"><div class="baubeginnicon">&nbsp;</div></f:link.action></f:then></f:if>
+										<f:if condition="{kv}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div><div class="sendicon nichtklickbar">&nbsp;</div></f:then></f:if>											
+								</f:then>							
+								<f:else>  	
+									<f:link.action action="show" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}" additionalParams="{type:123,attachment:1,filename:'BLSVSportstaettenantragAntrag{antragsanforderung.uid}.pdf'}" ><div class="viewicon">&nbsp;</div></f:link.action>
+									<f:if condition="{verein}"><f:then> <div class="editicon nichtklickbar">&nbsp;</div><div class="sendicon nichtklickbar">&nbsp;</div></f:then></f:if>
+									<f:if condition="{antragsanforderung.status} < 8">
+										<f:then>	
+											<f:if condition="{kv}"><f:then>
+													<f:link.action action="edit" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="entscheidenicon">&nbsp;</div></f:link.action>
+													<f:link.action action="abgeben" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="sendicon">&nbsp;</div></f:link.action>
+											</f:then></f:if>	
+											<f:if condition="{admin}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div><f:link.action controller="Antragsanforderung" action="baubeginn" arguments="{antragsanforderung:antragsanforderung}"><div class="baubeginnicon">&nbsp;</div></f:link.action></f:then></f:if>	
+										</f:then>
+										<f:else>
+											<f:if condition="{kv}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div></f:then></f:if>
+											<f:if condition="{admin}"> <f:then><f:link.action controller="Regelantrag" action="entscheiden" arguments="{antragsanforderung:antragsanforderung}"><div class="entscheidenicon">&nbsp;</div></f:link.action><f:link.action controller="Antragsanforderung" action="baubeginn" arguments="{antragsanforderung:antragsanforderung}"><div class="baubeginnicon">&nbsp;</div></f:link.action></f:then></f:if>
+										</f:else>
+									</f:if>
+										
+										
+									</f:else></f:if>						
+								</f:else>							
+								</f:if>					
+						</f:else>				
+					</f:if>	
+			</td>
+			</tr>
+		</f:for>
+	</table>
+	<br />
+	               	<f:if condition="{gesperrt}"> <f:then>
+	               		<div class="gesperrt"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.gesperrthinweis" /></div>
+	               	</f:then>
+					<f:else>  
+						<f:if condition="{verein}"> <f:then>
+	                   		<h2> <f:link.action action="new"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.neueAntragsunterlagen" /></f:link.action><br /><f:render partial="Antragsanforderung/Legende"  /></h2>
+	                   	</f:then></f:if>
+	                </f:else>
+	                </f:if>
+</div>
+</f:section>

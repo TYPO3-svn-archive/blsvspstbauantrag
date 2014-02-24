@@ -1,0 +1,28 @@
+<button  id="zoomOut" style="font-size: 2em;background-color:#fff; padding: 10px;height:60px;" ><span style="font-size: 30px;"  class="blueicons_1_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>klein</span></button> 
+<button id="zoomNormal" style="font-size: 2em;background-color:#fff; padding: 10px;height:60px;" ><span style="font-size: 30px;"  class="blueicons_1_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>normal</button> 
+<button id="zoomIn" style="font-size: 2em;background-color:#fff; padding: 10px;height:60px;" ><span style="font-size: 30px;"  class="blueicons_1_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>groß</button>
+<button id="zoomExtra" style="font-size: 2em;background-color:#fff; padding: 10px;height:60px;" ><span style="font-size: 30px;"  class="blueicons_1_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>extra groß</button>
+
+<script>
+$(document).ready(function(){
+ 
+  $("#zoomOut").click(function(){
+  $("#c930").css("zoom", 0.8);
+    $("#c930").css("transform","scale(0.8) translate(-5%,-12%)");
+  });
+ $("#zoomNormal").click(function(){
+      $("#c930").css("zoom",1.0);
+    $("#c930").css("transform","scale(1) translate(0,0)");
+  });
+ $("#zoomIn").click(function(){
+  $("#c930").css("zoom", 1.4);
+    $("#c930").css("transform","scale(1.4) translate(14%,15%)");
+  });
+$("#zoomExtra").click(function(){
+       $("#c930").css("zoom",1.6);
+    $("#c930").css("transform","scale(1.6) translate(22%,22%)");
+  });
+
+
+});
+</script>

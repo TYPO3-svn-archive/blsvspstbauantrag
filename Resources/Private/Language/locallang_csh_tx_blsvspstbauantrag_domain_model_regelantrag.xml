@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Context Sensitive Help (CSH) for table tx_blsvspstbauantrag_domain_model_regelantrag</description>
+		<type>CSH</type>
+		<csh_table>tx_blsvspstbauantrag_domain_model_regelantrag</csh_table>
+	</meta>
+	<data type="array">
+	<languageKey index="default" type="array">
+	   
+			<label index="vereinsnummer.description">BLSV-Mitgliedsnummer
+kl + re</label>
+			<label index="blsvkreis.description">Kreis
+kl + re</label>
+			<label index="feuser.description">User der geändert hat
+kl + re</label>
+			<label index="stimmkreis.description">politischer Stimmkreis
+kl + re</label>
+			<label index="ansprechpartnername.description">Name
+kl + re</label>
+			<label index="ansprechpartnervorname.description">Vorname
+kl + re</label>
+			<label index="ansprechpartenertitel.description">Titel
+kl + re</label>
+			<label index="ansprechpartnerteldienst.description">Tel. dienstl.:
+kl + re</label>
+			<label index="ansprechpartnertelprivat.description">Tel. privat
+kl + re</label>
+			<label index="ansprechpartnermobil.description">Handy:
+kl + re</label>
+			<label index="ansprechpartneremail.description">E-mail:
+kl + re</label>
+			<label index="verwendungszweck1.description">Maßnahme 1
+kl + re</label>
+			<label index="anzahl1.description">Anzahl
+kl + re</label>
+			<label index="vbb1.description">Ja/nein
+re</label>
+			<label index="kostenanteil1.description">Teilbaukosten 1
+kl + re</label>
+			<label index="verwendungszweck2.description">Maßnahme 2</label>
+			<label index="anzahl2.description">Anzahl</label>
+			<label index="vbb2.description">ja/nein</label>
+			<label index="kostenanteil2.description">Teilbaukosten 2</label>
+			<label index="verwendungszweck3.description">Maßnahme 3</label>
+			<label index="anzahl3.description">Anzahl</label>
+			<label index="vbb3.description">ja/nein</label>
+			<label index="kostenanteil3.description">Teilbaukosten 3</label>
+			<label index="verwendungszweck4.description">Maßnahme 4</label>
+			<label index="anzahl4.description">Anzahl</label>
+			<label index="vbb4.description">ja/nein</label>
+			<label index="kostenanteil4.description">Teilbaukosten 4</label>
+			<label index="verwendungszweck5.description">Maßnahme 5</label>
+			<label index="anzahl5.description">Anzahl</label>
+			<label index="vbb5.description">ja/nein</label>
+			<label index="kostenenteil5.description">Teilbaukosten 5</label>
+			<label index="verwendungszweck6.description">Maßnahme 6</label>
+			<label index="anzahl6.description">Anzahl</label>
+			<label index="vbb6.description">ja/nein</label>
+			<label index="kostenanteil6.description">Teilbaukosten 6</label>
+			<label index="verwendungszweck7.description">Maßnahme 7</label>
+			<label index="anzahl7.description">Anzahl</label>
+			<label index="vbb7.description">ja/nein</label>
+			<label index="kostenanteil7.description">Teilbaukosten 7</label>
+			<label index="verwendungszweck8.description">Maßnahme 8</label>
+			<label index="anzahl8.description">Anzahl</label>
+			<label index="vbb8.description">ja/nein</label>
+			<label index="kostenanteil8.description">Teilbaukosten 8</label>
+			<label index="verwendungszweck9.description">Maßnahme 9</label>
+			<label index="anzahl9.description">Anzahl</label>
+			<label index="vbb9.description">ja/nein</label>
+			<label index="kostenanteil9.description">Teilbaukosten 9</label>
+			<label index="verwendungszweck10.description">Maßnahme 10</label>
+			<label index="anzahl10.description">Anzahl</label>
+			<label index="vbb10.description">ja/nein</label>
+			<label index="kostenanteil10.description">Teilbaukosten 10</label>
+			<label index="verwendungszweck11.description">Maßnahme 11</label>
+			<label index="anzahl11.description">Anzahl</label>
+			<label index="vbb11.description">ja/nein</label>
+			<label index="kostenanteil11.description">Teilbaukosten 11</label>
+			<label index="verwendungszweck12.description">Maßnahme 12</label>
+			<label index="anzahl12.description">Anzahl</label>
+			<label index="vbb12.description">ja/nein</label>
+			<label index="kostenanteil12.description">Teilbaukosten 12</label>
+			<label index="verwendungszweck13.description">Maßnahme 13</label>
+			<label index="anzahl13.description">Anzahl</label>
+			<label index="vbb13.description">ja/nein</label>
+			<label index="kostenanteil13.description">Teilbaukosten 13</label>
+			<label index="verwendungszweck14.description">Maßnahme 14</label>
+			<label index="anzahl14.description">Anzahl</label>
+			<label index="vbb14.description">ja/nein</label>
+			<label index="kostenanteil14.description">Teilbaukosten 14</label>
+			<label index="verwendungszweck15.description">Maßnahme 15</label>
+			<label index="anzahl15.description">Anzahl</label>
+			<label index="vbb15.description">ja/nein</label>
+			<label index="kostenanteil15.description">Teilbaukosten 15</label>
+			<label index="verwendungszweck16.description">Maßnahme 16</label>
+			<label index="anzahl16.description">Anzahl</label>
+			<label index="vbb16.description">ja/nein</label>
+			<label index="kostenanteil16.description">Teilbaukosten 16</label>
+			<label index="verwendungszweck17.description">Maßnahme 17</label>
+			<label index="anzahl17.description">Anzahl</label>
+			<label index="vbb17.description">ja/nein</label>
+			<label index="kostenanteil17.description">Teilbaukosten 17</label>
+			<label index="verwendungszweck18.description">Maßnahme 18</label>
+			<label index="anzahl18.description">Anzahl</label>
+			<label index="vbb18.description">ja/nein</label>
+			<label index="kostenanteil18.description">Teilbaukosten 18</label>
+			<label index="verwendungszweck19.description">Maßnahme 19</label>
+			<label index="anzahl19.description">Anzahl</label>
+			<label index="vbb19.description">ja/nein</label>
+			<label index="kostenanteil19.description">Teilbaukosten 19</label>
+			<label index="verwendungszweck20.description">Maßnahme 20</label>
+			<label index="anzahl20.description">Anzahl</label>
+			<label index="vbb20.description">ja/nein</label>
+			<label index="kostenanteil20.description">Teilbaukosten 20</label>
+			<label index="verwendungszweck21.description">Maßnahme 21</label>
+			<label index="anzahl21.description">Anzahl</label>
+			<label index="vbb21.description">ja/nein</label>
+			<label index="kostenanteil21.description">Teilbaukosten 21</label>
+			<label index="verwendungszweck22.description">Maßnahme 22</label>
+			<label index="anzahl22.description">Anzahl</label>
+			<label index="kostenanteil22.description">Teilbaukosten 22</label>
+			<label index="vbb22.description">ja/nein</label>
+			<label index="verwendungszweck23.description">Maßnahme 23</label>
+			<label index="anzahl23.description">Anzahl</label>
+			<label index="vbb23.description">ja/nein</label>
+			<label index="kostenanteil23.description">Teilbaukosten</label>
+			<label index="verwendungszweck24.description">Maßnahme 24</label>
+			<label index="anzahl24.description">Anzahl</label>
+			<label index="vbb24.description">ja/nein</label>
+			<label index="kostenanteil24.description">Teilbaukosten 24</label>
+			<label index="verwendungszweck25.description">Maßnahme 25</label>
+			<label index="anzahl25.description">Anzahl</label>
+			<label index="vbb25.description">ja/nein</label>
+			<label index="kostenanteil25.description">Teilbaukosten 25</label>
+			<label index="finanzierungbarmittel.description">Barmittel
+kl + re</label>
+			<label index="finanzierunggeldspenden.description">Geldspenden
+kl + re</label>
+			<label index="fianzierungkredit.description">Darlehen/Kredite
+kl + re</label>
+			<label index="finanzierungaleistung.description">Eigene Arbeitsleistung
+kl + re</label>
+			<label index="finanzierungsachleistung.description">Unentgeltliche Sachleistung 
+kl + re</label>
+			<label index="fianzierungkommune.description">Kommunen
+kl + re</label>
+			<label index="finanzierunglkr.description">Landkreis
+kl + re</label>
+			<label index="finanzierungsonstige.description">Sonstige
+kl + re</label>
+			<label index="finanzierungvorsteuer.description">Vorsteuererstattung
+kl + re</label>
+			<label index="finanzierungzuschuss.description">Staatszuschuss
+re</label>
+			<label index="finanzierungdarlehen.description">Staatsmitteldarlehen
+re</label>
+			<label index="sicherunggrundschuld.description">Grundschuld
+re</label>
+			<label index="sicherungkbuergschaft.description">Kommunalbürgschaft
+re</label>
+			<label index="sicherungbbuergschaft.description">Bankbürgschaft
+re</label>
+			<label index="zwfkommune1.description">Bank
+re</label>
+			<label index="zwfkommune2.description">Betrag Bank
+re</label>
+			<label index="zwfkommune3.description">jährliche Belastung Bank
+re</label>
+			<label index="zwfkommune4.description">Privat
+re</label>
+			<label index="zwfkommune5.description">Betrag Privat
+re</label>
+			<label index="zwfkommune6.description">jährliche Belastung Privat
+re</label>
+			<label index="zwflandkreis1.description">Bank
+re</label>
+			<label index="zwflandkreis2.description">Betrag Bank
+re</label>
+			<label index="zwflandkreis3.description">jährliche Belastung Bank
+re</label>
+			<label index="zwflandkreis4.description">Kommune
+re</label>
+			<label index="zwflandkreis5.description">Betrag Kommune
+re</label>
+			<label index="zwflandkreis6.description">jährliche Belastung Kommune / re</label>
+			<label index="zwflandkreis7.description">Privat
+re</label>
+			<label index="zwflandkreis8.description">Betrag Privat
+re</label>
+			<label index="zwflandkreis9.description">jährliche Belastung Privat
+re</label>
+			<label index="zwfsonstige1.description">Bank
+re</label>
+			<label index="zwfsonstige2.description">Betrag Bank
+re</label>
+			<label index="zwfsonstige3.description">jährliche Belastung Bank
+re</label>
+			<label index="zwfsonstige4.description">Kommune
+re</label>
+			<label index="zwfsonstige5.description">Betrag Kommune
+re</label>
+			<label index="zwfsonstige6.description">jährliche Belastung Kommune / re</label>
+			<label index="zwfsonstige7.description">Privat
+re</label>
+			<label index="zwfsonstige8.description">Betrag Privat
+re</label>
+			<label index="zwfsonstige9.description">jährliche Belastung Privat
+re</label>
+			<label index="zwfvorsteuer1.description">Bank
+re</label>
+			<label index="zwfvorsteuer2.description">Betrag Bank
+re</label>
+			<label index="zwfvorsteuer3.description">jährliche Belastung Bank
+re</label>
+			<label index="zwfvorsteuer4.description">Kommune
+re</label>
+			<label index="zwfvorsteuer5.description">Betrag Kommune
+re</label>
+			<label index="zwfvorsteuer6.description">jährliche Belastung Kommune / re</label>
+			<label index="zwfvorsteuer7.description">Privat
+re</label>
+			<label index="zwfvorsteuer8.description">Betrag Privat
+re</label>
+			<label index="zwfvorsteuer9.description">jährliche Belastung Privat
+re</label>
+			<label index="zwfsmf1.description">Bank
+re</label>
+			<label index="zwfsmf2.description">Betrag Bank
+re</label>
+			<label index="zwfsmf3.description">jährliche Belastung Bank
+re</label>
+			<label index="zwfsmf4.description">Kommune
+re</label>
+			<label index="zwfsmf5.description">Betrag Kommune
+re</label>
+			<label index="zwfsmf6.description">jährliche Belastung Kommune / re</label>
+			<label index="zwfsmf7.description">Privat
+re</label>
+			<label index="zwfsmf8.description">Betrag Privat
+re</label>
+			<label index="zwfsmf9.description">jährliche Belastung Privat
+re</label>
+			<label index="jahreszahl1.description">1. Jahr GuV
+re</label>
+			<label index="jahreszahl2.description">3. Jahr GuV
+re</label>
+			<label index="guvdurchschnittsergebnis.description">3 Jahresergebnis
+re</label>
+			<label index="vbbgruende1.description">Wegfall Finanzierungsmittel
+re</label>
+			<label index="vbbgruende2.description">Fortbestand Sportanlage
+re</label>
+			<label index="vbbgruende3.description">Verlust Sportanlage
+re</label>
+			<label index="vbbgruende4.description">Katastrophenfall
+re</label>
+			<label index="vbbgruende5.description">jSonstige
+re</label>
+			<label index="begruendungsonstige.description">Sonstige Begründung
+re</label>
+			<label index="vbberklaerung1.description">Erklärung 1
+re</label>
+			<label index="vbberklaerung2.description">Erklärung2
+re</label>
+			<label index="vmlstichtag.description">Datum
+re</label>
+			<label index="anzahlboote.description">Anzahl Boote
+kl +re</label>
+			<label index="anzahlpferde.description">Anzahl Pferde
+kl+re</label>
+			<label index="datumbauberatung.description">Sportstättenbauberatung
+kl+re</label>
+			<label index="datumgespraechkv.description">Erstes Gespräch mit BLSV-Kreis / kl+re</label>
+			<label index="ortsbesichtigungkv.description">Ortsbesichtung durch BLSV-Kreis / kl+re</label>
+			<label index="absendedatum.description">Sonstige Verbindlichkeiten</label>
+			<label index="eigentum.description">Eigentumsverhältnisse/Eigentum / kl + re</label>
+			<label index="erbbaurecht.description">Eigentumsverhältnisse/Erbbaurecht / kl +re</label>
+			<label index="pachtvertrag.description">Eigentumsverhältnisse/Pachtvertrag / kl+re</label>
+			<label index="eigentuemer.description">Grundbuchamtlicher Eigentümer / kl+re</label>
+			<label index="grundstuecksgroesse.description">Grundstücksgröße
+kl+re</label>
+			<label index="flurnummer.description">Flurnummer
+kl+re</label>
+			<label index="gemarkung.description">Sonstige Verbindlichkeiten
+kl+re</label>
+			<label index="laufzeit.description">Datum Laufzeitende
+kl+re</label>
+			<label index="erklrechtsanspruch.description">Kein Rechtsanspruch auf Förderung /kl+re</label>
+			<label index="erklmeldepflicht.description">Zweckbindung und Meldepflicht / kl+re</label>
+			<label index="erklbaubeginn.description">Kein Baubeginn erfolgt
+kl+re</label>
+			<label index="erklvollstaendigeangaben.description">vollständige Angaben
+kl+re</label>
+			<label index="erklsubvention.description">Subvention
+kl+re</label>
+			<label index="erklfinanzierung.description">gesicherte Finanzierung
+kl+re</label>
+			<label index="masnahmenart.description">Maßnahmenart
+kl + re</label>
+			<label index="ansprechpartnerfax.description">FAX
+kl + re</label>
+			<label index="finanzierungzuschusskl.description">Beantragter Zuschuss bis max. € 30.000,-- kl</label>
+			<label index="guvbeginn.description">Beginn des Rechnungsjahres / kl</label>
+			<label index="guvende.description">Ende des Rechnungsjahres
+kl</label>
+			<label index="guvbilanz.description">Wahlkästchen A
+kl</label>
+			<label index="guveuerechnung.description">Wahlkästchen B
+kl</label>
+			<label index="guveinnahmengesamt.description">Gesamteinnahmen
+kl</label>
+			<label index="einnahmenbeitraege.description">Mitgliedsbeiträge
+kl</label>
+			<label index="einnahmenspenden.description">nichtzweckgebunde Spenden / kl</label>
+			<label index="einnahmenzuschuesse.description">Zuschüsse für Investitions-maßnahmen / kl</label>
+			<label index="guvausgabengesamt.description">Gesamtausgaben
+kl</label>
+			<label index="ausgabeninstandhaltung.description">Instandhaltung Gebäude
+kl</label>
+			<label index="ausgabensportbetrieb.description">Betriebsmittel für den Sportbetrieb / kl</label>
+			<label index="ausgabenverwaltung.description">Betriebsmitel für die Verwaltung / kl</label>
+			<label index="ausgabenabschreibung.description">Abschreibungen
+kl</label>
+			<label index="ueberschussfehlbetrag.description">Überschus/Fehlbetrag des letzten Geschäftsjahres / kl</label>
+			<label index="vermoegensgegenstaende.description">Immaterielle Vermögens-gegenstände / kl + re</label>
+			<label index="sachanlagen.description">Sachanlagen
+kl + re</label>
+			<label index="finanzanlagen.description">Finanzanlagen
+kl + re</label>
+			<label index="kassenbestand.description">Kassenbestand
+kl + re</label>
+			<label index="bankguthaben.description">Bankguthaben
+kl + re</label>
+			<label index="ruecklagenfrei.description">Freie Rücklagen
+kl + re</label>
+			<label index="ruecklagenzweck.description">Zweckgebundene Rücklagen / kl + re</label>
+			<label index="ruecklagenbetrieb.description">Betriebsrücklagen
+kl + re</label>
+			<label index="verbindlichkeitbank.description">Kreditinstitute
+kl + re</label>
+			<label index="verbindlichkeitblssmd.description">BLSV-Staatsmitteldarlehen
+kl + re</label>
+			<label index="verbindlichkeitsonstige.description">Rückstellungen/sonstige Verbindlichkeiten / kl + re</label>
+			<label index="jahreskapitaldienst.description">Jährlicher Kapitaldienst
+kl + re</label>
+			<label index="fachverbandmitglied1.description">Liste Fachverbände
+kl + re</label>
+			<label index="mitglieder0110bis26.description">Mitgliederzahl 2010 bis 26
+kl + re</label>
+			<label index="mitglieder0110ueber26.description">Mitgliederzahl 2010 ü26
+kl + re</label>
+			<label index="mitglieder0111bis26.description">Mitgliederzahl 2011 bis 26
+kl + re</label>
+			<label index="mitglieder0111ueber26.description">Mitgliederzahl 2011 ü26
+kl + re</label>
+			<label index="mitglieder0112bis26.description">Mitgliederzahl 2012 bis 26 
+kl+re</label>
+			<label index="mitglieder0112ueber26.description">Mitgliederzahl 2012 ü26
+kl + re</label>
+			<label index="fachverbandsmitglied2.description">Liste Fachverbände
+kl +re</label>
+			<label index="mitglieder0210bis26.description"> kl + re</label>
+			<label index="mitglieder0210ueber26.description">kl + re</label>
+			<label index="mitglieder0211bis26.description">kl + re</label>
+			<label index="mitglieder0211ueber26.description">kl + re</label>
+			<label index="mitglieder0212bis26.description">kl + re</label>
+			<label index="mitglieder0212ueber26.description">kl + re</label>
+			<label index="fachverbandsmitglied3.description">kl + re</label>
+			<label index="mitglieder0310bis26.description">kl + re</label>
+			<label index="mitglieder0310ueber26.description">kl + re</label>
+			<label index="mitglieder0311bis26.description">kl + re</label>
+			<label index="mitglieder0311ueber26.description">kl + re</label>
+			<label index="mitglieder0312bis26.description">kl + re</label>
+			<label index="mitglieder0312ueber26.description">kl + re</label>
+			<label index="fachverbandsmitglied4.description">kl + re</label>
+			<label index="mitglieder0410bis26.description">kl + re</label>
+			<label index="mitglieder0410ueber26.description">kl + re</label>
+			<label index="mitglieder0411bis26.description">kl + re</label>
+			<label index="mitglieder0411ueber26.description">kl + re</label>
+			<label index="mitglieder0412bis26.description">kl + re</label>
+			<label index="mitglieder0412ueber26.description">kl + re</label>
+			<label index="fachverbandsmitglied5.description">kl + re</label>
+			<label index="mitglieder0510bis26.description">kl + re</label>
+			<label index="mitglieder0510ueber26.description">kl + re</label>
+			<label index="mitglieder0511bis26.description">kl + re</label>
+			<label index="mitglieder0511ueber26.description">kl + re</label>
+			<label index="mitglieder0512bis26.description">kl + re</label>
+			<label index="mitglieder0512ueber26.description">kl + re</label>
+			<label index="fachverbandmannschaft1.description">Gemeldete Mannschaften Fachverband / kl + re</label>
+			<label index="schuelerjugend0110.description">Anzahl Mannschaften
+kl + re</label>
+			<label index="erwachsene0110.description">Anzahl Mannschaften
+kl + re</label>
+			<label index="schuelerjugend0111.description">Anzahl Mannschaften
+kl + re</label>
+			<label index="erwachsene0111.description">Anzahl Mannschaften
+kl + re</label>
+			<label index="schuelerjugend0112.description">Anzahl Mannschaften
+kl + re</label>
+			<label index="erwachsene0112.description">Anzahl Mannschaften
+kl + re</label>
+			<label index="fachverbandmannschaft2.description">kl + re</label>
+			<label index="schuelerjugend0210.description">kl + re</label>
+			<label index="erwachsene0210.description">kl + re</label>
+			<label index="schuelerjugend0211.description">kl + re</label>
+			<label index="erwachsene0211.description">kl + re</label>
+			<label index="schuelerjugend0212.description">kl + re</label>
+			<label index="erwachsene0212.description">kl + re</label>
+			<label index="fachverbandmannschaft3.description">kl + re</label>
+			<label index="schuelerjugend0310.description">kl + re</label>
+			<label index="erwachsene0310.description">kl + re</label>
+			<label index="schuelerjugend0311.description">kl + re</label>
+			<label index="erwachsene0311.description">kl + re</label>
+			<label index="schuelerjugend0312.description">kl + re</label>
+			<label index="erwachsene0312.description">kl + re</label>
+			<label index="fachverbandmannschaft4.description">kl + re</label>
+			<label index="schuelerjugend0410.description">kl + re</label>
+			<label index="erwachsene0410.description">kl + re</label>
+			<label index="schuelerjugend0411.description">kl + re</label>
+			<label index="erwachsene0411.description">kl + re</label>
+			<label index="schuelerjugend0412.description">kl + re</label>
+			<label index="erwachsene0412.description">kl + re</label>
+			<label index="fachverbandmannschaft5.description">kl + re</label>
+			<label index="schuelerjugend0510.description">kl + re</label>
+			<label index="erwachsene0510.description">kl + re</label>
+			<label index="schuelerjugend0511.description">kl + re</label>
+			<label index="erwachsene0511.description">kl + re</label>
+			<label index="schuelerjugend0512.description">kl + re</label>
+			<label index="erwachsene0512.description">kl + re</label>
+			<label index="fachverbandueleiter1.description">Fachverband lizentierte Übungsleiter / kl + re</label>
+			<label index="anzahl0110.description">Anzahl 2010
+kl + re</label>
+			<label index="anzahl0111.description">Anzahl 2011
+kl + re</label>
+			<label index="anzahl0112.description">Anzahl 2012
+kl + re</label>
+			<label index="fachverbandueleiter2.description">kl + re</label>
+			<label index="anzahl0210.description">kl + re</label>
+			<label index="anzahl0211.description">kl + re</label>
+			<label index="anzahl0212.description">kl + re</label>
+			<label index="fachverbandueleiter3.description">kl + re</label>
+			<label index="anzahl0310.description">kl + re</label>
+			<label index="anzahl0311.description">kl + re</label>
+			<label index="anzahl0312.description">kl + re</label>
+			<label index="fachverbandueleiter4.description">kl + re</label>
+			<label index="anzahl0410.description">kl + re</label>
+			<label index="anzahl0411.description">kl + re</label>
+			<label index="anzahl0412.description">kl + re</label>
+			<label index="fachverbandueleiter5.description">kl + re</label>
+			<label index="anzahl0510.description">kl + re</label>
+			<label index="anzahl0511.description">kl + re</label>
+			<label index="anzahl0512.description">kl + re</label>
+			<label index="fachverbandnutzung1.description">Sparten die Anlage künftig nutzen
+kl + re</label>
+			<label index="kinderjugendliche1.description">Anzahl der Nutzter
+kl + re</label>
+			<label index="erwachsene1.description">Anzahl der Nutzter
+kl + re</label>
+			<label index="mannschaftschuejugw1.description">Anzahl Manschaften Schüler / Jugend w /kl + re</label>
+			<label index="mannschaftschuejugm1.description">Anzahl Manschaften Schüler / Jugend m /kl + re</label>
+			<label index="mannschafterwachsenw1.description">Anzahl Manschaften Erwachsene w / kl + re</label>
+			<label index="mannschafterwachsenm1.description">Anzahl Manschaften Erwachsene m / kl + re</label>
+			<label index="lizensierteuel1.description">Anzahl Übungsleiter 
+kl + re</label>
+			<label index="fachverbandnutzung2.description">kl + re</label>
+			<label index="kinderjugendliche2.description">kl + re</label>
+			<label index="erwachsene2.description">kl + re</label>
+			<label index="mannschaftschuejugw2.description">kl + re</label>
+			<label index="mannschaftschuejugm2.description">kl + re</label>
+			<label index="mannschafterwachsenw2.description">kl + re</label>
+			<label index="mannschafterwachsenm2.description">kl + re</label>
+			<label index="lizensierteuel2.description">kl + re</label>
+			<label index="fachverbandnutzung3.description">kl + re</label>
+			<label index="kinderjugendliche3.description">kl + re</label>
+			<label index="erwachsene3.description">kl + re</label>
+			<label index="mannschaftschuejugw3.description">kl + re</label>
+			<label index="mannschaftschuejugm3.description">kl + re</label>
+			<label index="mannschafterwachsenw3.description">kl + re</label>
+			<label index="mannschafterwachsenm3.description">kl + re</label>
+			<label index="lizensierteuel3.description">kl + re</label>
+			<label index="fachverbandnutzung4.description">kl + re</label>
+			<label index="kinderjugendliche4.description">kl + re</label>
+			<label index="erwachsene4.description">kl + re</label>
+			<label index="mannschaftschuejugw4.description">kl + re</label>
+			<label index="mannschaftschuejugm4.description">kl + re</label>
+			<label index="mannschafterwachsenw4.description">kl + re</label>
+			<label index="mannschafterwachsenm4.description">kl + re</label>
+			<label index="lizensierteuel4.description">kl + re</label>
+			<label index="notwendigkeitauslastung.description">X-Feld 
+kl + re</label>
+			<label index="notwendigkeitausrichtung.description">X-Feld
+kl + re</label>
+			<label index="notwendigkeitbeduerfnis.description">X-Feld
+kl + re</label>
+			<label index="notwendigkeitunterhalt.description">x-Feld
+kl + re</label>
+			<label index="bauberatungja.description">Sportstättenbauberatung ja
+kl+re</label>
+			<label index="bauberatungdatum.description">Datum der Berratung
+kl + re</label>
+			<label index="bauberatungnein.description">Sportstättenbauberatung nein / kl
+kl+re</label>
+			<label index="bestkenntnisnahme.description">Kenntnisnahme an-Bestp + Hinweisblatt /kl
+kl + re</label>
+			<label index="erklnutzungdritte.description">ERklärung Nutzung dritte4r
+kl + re</label>
+			<label index="erklkonzession.description">Gaststättenkonzession
+kl + re</label>
+			<label index="antragsnummer.description">antragsnummer</label>
+		</languageKey>
+	</data>
+</T3locallang>

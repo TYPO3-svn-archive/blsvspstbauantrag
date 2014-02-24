@@ -1,0 +1,65 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This template displays a EDIT form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Edit.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<vh:zoombuttons />
+<div class='zoomarea'>
+
+
+	<f:render partial="FormErrors" />
+	 
+	
+	<f:form action="abgebenspeichern" name="regelantrag" object="{regelantrag}" >
+		<f:render partial="Regelantrag/FormFields" arguments="{regelantrag:regelantrag, hilfetexte:hilfetexte,abgeben:abgeben,kv:kv}" /><br /><br />
+		<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.felderpruefen' /><br /><br />
+	</f:form>	
+	
+	
+		<f:flashMessages class="flashMessages" />
+			
+		
+		<f:if condition="{abgeben}"><f:then><f:link.action class="tx_blsvspstbauantrag_abgeben"  controller="Antragsanforderung" action="abgebenspeichern" arguments="{antragsanforderung:regelantrag.antragsnummer1}" title="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.abgeben' />" ><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.abgeben' /></f:link.action></f:then></f:if>
+		
+		<f:link.action class="tx_blsvspstbauantrag_abgeben" action="edit" arguments="{antragsanforderung:regelantrag.antragsnummer1}" title="<f:translate key='tx_blsvspstbauantrag.titlebearbeiten' />" >
+				<div class="editicon">&nbsp;</div><f:translate key='tx_blsvspstbauantrag.bearbeiten' /><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.nochmalbearbeiten' /></f:link.action>
+		 &nbsp;&nbsp;<f:link.action action="list"  controller="Antragsanforderung" class="tx_blsvspstbauantrag_abgeben"><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.zuruebersicht' /></f:link.action><br />
+</div>
+
+<script>
+		$(document).ready(function() {
+			
+			$("input").attr('disabled', 'disabled');
+			$("#submit").removeAttr('disabled');
+			$("#submit").click( function(){
+				$("input").removeAttr('disabled');
+				
+			});
+			$("input").each(function(){
+				if(!$(this).val()) {
+					$(this).addClass("warning");
+				}
+
+				if($(this).val()==0) {
+					$(this).addClass("warning");
+				}
+			});
+			$('textarea').each(function(){
+				$(this).attr( 'disabled', 'disabled' ); 
+			});
+		});	
+	</script>
+</f:section>
+
+

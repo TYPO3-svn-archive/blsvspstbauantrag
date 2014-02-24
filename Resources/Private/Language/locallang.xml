@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>module</type>
+        <description>Language labels for the Sportstättenbau Antragsstellung extension in the FRONTEND</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung">Antragsanforderung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status">Status</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status1">Antragsanforderung in Bearbeitung durch Verein</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status2">Antragsanforderung abgegeben, Antrag wird vom BLSV geprüft</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status3">Antragsanforderung abgelehnt</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status4">Antrag zur Bearbeitung für Verein freigeschaltet</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status5">Antrag in Bearbeitung durch Verein</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status6">Antrag abgegeben,, Antrag wird vom BLSV geprüft</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status7">Antrag in Bearbeitung durch KV</label>    
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status8">Stellungnahme vom Kreisvorsitzenden ist erfolgt, Antrag wird vom BLSV geprüft</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status9">Antrag abgelehnt</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status10">Antrag angenommen</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.titel0">Prof. Dr.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.titel1">Dr.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.gesperrthinweis">Ihr Verein ist im Moment gesperrt und darf keine Anträge abgeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ganzeZahlenHinweis">ganze Eurobeträge ohne Punkt und Komma z.B. 100000 </label>
+
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn">vorzeitiger Baubeginn</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn0">kein vorzeitiger Baubeginn</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn1">vorzeitiger Baubeginn</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn_heading">Vorzeitiger Baubeginn für Antrag</label>
+                        
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsnummer1">Antragsnummer</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art">Art des Antrags</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall">Fall</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vereinsnummer">Vereinsnummer</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.verein">Verein</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsnummer">Antragsnummer</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.telefon">Telefon tagsüber</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.baugenehmigungspflichtig">baugenehmigungspflichtig</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme1">Bschreibung der Maßnahme 1</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten1">Kosten der Maßnahme 1</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.begruendung">Kurze Begründung der geplanten Maßnahme(n)</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnername">Name</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnervorname">Vorname</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnertitel">Titel</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnertelefondienst">Telefon tagsüber</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnertelefonprivat">Telefon privat</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnermobil">Telefon mobil</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartnerfax">Fax</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ansprechpartneremail">Email</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.baugenehmigungspflichtig">baugenehmigungspflichtig</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme1">Bschreibung der Maßnahme 1</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten1">Kosten der Maßnahme 1</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme2">M2</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten2">M2</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme3">M3</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten3">M3 K</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme4">M4</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten4">M2</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme5">M5</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten5">M5 K</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.barmittel">Barmittel</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.unendgeltlichesachleistungen">unendgeltliche Sachleistungen</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.eigeneleistungen">eigene Arbeitsleistungen</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.geldspenden">Geldspenden</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.zuschuesse">sonstige Zuschüsse (DJK, etc.)</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fianzierungkommune">Zuschüsse der Kommune</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierunglkr">Zuschüsse des Landkreises</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierungvorsteuer">Vorsteuererstattung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fremdgelder">Fremdgelder / Darlehen</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.beantragtefoerderung">Beantragte Staatsmittelförderung </label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.erklaerung1">Es wird versichert, dass entsprechend der Zifffer 2 Vorbemerkungen mit den angeführten Maßnahmen noch nicht begonnen worden ist</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.erklaerung2">Dem Antragsteller ist bekannt, dass eine Zustimmung zum vorzeitigen Baubeginn nicht erteilt ist</label>
+          	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.begruendungablehnung">Begründung der Ablehnung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigungablehnunganforderung"><![CDATA[
+Sehr geehrte Damen und Herren,<br /><br /> 
+
+aus folgenden Gründen kann der Kleinantrag nicht zur weiteren Bearbeitung freigegeben werden:<br /><br />
+
+
+%1$s
+
+<br /><br />
+Bei Fragen steht Ihnen gerne Ihr Sportstättenbau-Team (Tel.: 089/15702-462, E-Mail sportstaettenbau@blsv.de) zur Verfügung.<br /><br /> 
+
+Mit freundlichen Grüßen<br />
+Bayerischer Landes-Sportverband e.V.<br />
+GB 3 Referat Sportstättenbau<br />
+Georg-Brauchle Ring 93<br />
+80992 München<br />
+            ]]></label>
+            
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigungannahmeanforderung"><![CDATA[
+Sehr geehrte Damen und Herren,<br /><br /> 
+
+gemäß Ihrer Anforderung der Antragsunterlagen wurde Ihnen zur weiteren Bearbeitung in myBLSV der Kleinantrag freigeschaltet.<br /><br />  
+
+%1$s
+
+<br /><br />
+Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Mitteilung nicht erteilt.
+
+<br /><br />
+Unter Berücksichtigung der oben genannten Hinweise können Sie jederzeit die Antragsunterlagen neu anfordern.<br />   
+Bei Fragen steht Ihnen gerne Ihr Sportstättenbau-Team (Tel.: 089/15702-462, E-Mail sportstaettenbau@blsv.de) zur Verfügung.<br /><br /> 
+
+Mit freundlichen Grüßen<br />
+Bayerischer Landes-Sportverband e.V.<br />
+GB 3 Referat Sportstättenbau<br />
+Georg-Brauchle Ring 93<br />
+80992 München<br />
+            ]]></label>
+            
+           <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigungablehnungantrag"><![CDATA[
+Sehr geehrte Damen und Herren,<br /><br /> 
+
+aus folgenden Gründen kann der Kleinantrag nicht angenommen werden:<br /><br />
+
+
+%1$s
+
+<br /><br />
+ 
+Bei Fragen steht Ihnen gerne Ihr Sportstättenbau-Team (Tel.: 089/15702-462, E-Mail sportstaettenbau@blsv.de) zur Verfügung.<br /><br /> 
+
+Mit freundlichen Grüßen<br />
+Bayerischer Landes-Sportverband e.V.<br />
+GB 3 Referat Sportstättenbau<br />
+Georg-Brauchle Ring 93<br />
+80992 München<br />
+            ]]></label>
+            
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigungannahmeantrag"><![CDATA[
+Sehr geehrte Damen und Herren,<br /><br /> 
+
+Ihr Antrag wurde angenommen.<br /><br />  
+
+%1$s
+
+<br /><br />
+Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Mitteilung noch nicht erteilt.
+
+<br /><br />
+  
+Bei Fragen steht Ihnen gerne Ihr Sportstättenbau-Team (Tel.: 089/15702-462, E-Mail sportstaettenbau@blsv.de) zur Verfügung.<br /><br /> 
+
+Mit freundlichen Grüßen<br />
+Bayerischer Landes-Sportverband e.V.<br />
+GB 3 Referat Sportstättenbau<br />
+Georg-Brauchle Ring 93<br />
+80992 München<br />
+            ]]></label>
+          
+            
+            <label index="tx_blsvspstbauantrag_domain_model_kleinantrag">Kleinantrag</label>
+            <label index="tx_blsvspstbauantrag_domain_model_kleinantrag.name">Name des Ansprechpartners</label>
+            <label index="tx_blsvspstbauantrag_domain_model_kleinantrag.vorname">Vorname des Ansprechpartners</label>
+            <label index="tx_blsvspstbauantrag_domain_model_kleinantrag.antragsnummer">Antragsnummer</label>
+            <label index="tx_blsvspstbauantrag_domain_model_bestandssicherung">Bestandssicherung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_bestandssicherung.antragsnummer">Antragsnummer</label>
+            <label index="tx_blsvspstbauantrag_domain_model_hilfetexte">Hilfetexte</label>
+            <label index="tx_blsvspstbauantrag_domain_model_hilfetexte.heading">Überschift</label>
+            <label index="tx_blsvspstbauantrag_domain_model_hilfetexte.hilfekurz">Hilfekurz</label>
+            <label index="tx_blsvspstbauantrag_domain_model_hilfetexte.hilfelang">ausführliche hilfe</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art1">Kleinantrag</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art2">regulärer Antrag</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art3">Katastrophenfall</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.artkurz1">KA</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.artkurz2">RA</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.artkurz3">KF</label>
+            
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall1">Bestandssicherung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall2">Bestandserweiterung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall3">Objekterwerb</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.neueAntragsunterlagen">Neue Antragsunterlagen anfordern</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.neuHeading">Anforderung Antragsunterlagen</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.create">Daten speichern</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fuer">für</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorbmerkungenhead">Vorbemerkungen</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailsporttstaetenbaublsvde">sportstaettenbau@blsv.de</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorbmerkungentext"><![CDATA[ Mit der Maßnahme darf <b>erst</b> begonnen werden, wenn der Antragsteller die <b>ausdrückliche, schriftliche Zustimmung zum vorzeitigen Baubeginn durch den Geschäftsbereich Finanzen-Referat Sportstättenbau des BLSV</b> erhalten hat. Als Maßnahmen-/Baubeginn ist bereits die Verpflichtung zur Auftragsvergabe eines der Ausführung zuzurechnender <b>Lieferungs- oder Leistungsvertrag</b> (z.B. Versand der Ausschreibungsunterlagen, Materialeinkauf, Auftragsvergabe) aber auch die eigene Arbeitsleistung zu werten. Bereits <b>angefangene</b> bzw. <b>durchgeführte Maßnahmen</b> werden <b>nicht</b> gefördert. 
+<br /><br /><b>Beachte:</b> <br />
+ <b>Zusagen von anderen Stellen</b> des BLSV haben <b>keine Rechtsverbindlichkeit.</b> <br /><br />
+Mit der Zusendung der Antragsunterlagen kann kein Rechtsanspruch auf eine staatliche Förderung abgeleitet werden. <br /><br /><br />
+
+<b>Bitte beachten:</b>  <br />
+Bei Kleinanträgen beträgt die Förderung 20% Zuschuss bis maximal € 30.000,-- aus den zuwendungsfähig anerkannten Kosten. Die zuwendungsfähigen Kosten können von den veranschlagten Kosten abweichen.
+ <br /><br />
+Baugenehmigungspflichtige Maßnahmen sowie Maßnahmen mit einer beantragten Zuwendung über € 30.000,-- können <b>nur dann</b> in ein Antragsverfahren aufgenommen werden, wenn vor der Antragstellung eine Sportstättenbauberatung durch den BLSV erfolgt ist. Zu gegebener Zeit ist ein Termin für ein Beratungsgespräch bei der zuständigen BLSV-Bezirksgeschäftsstelle zu vereinbaren. Die für eine Beratung vorgesehenen Termine sind auf der Homepage des BLSV in myblsv -> Dateien -> Sportstättenbau Info -> Kalender eingestellt. 
+            
+            
+            
+            
+            
+         ]]></label>
+         <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigungheader">Empfangsbestätigung Ihrer Antragsanforderung aus myBLSV</label>
+         
+		 <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigung"><![CDATA[         
+		Empfangsbestätigung
+		Ihre Anforderung der Antragsunterlagen wurde erfolgreich übermittelt.
+		Nach Prüfung der angegebenen Daten erhalten Sie in den folgenden Tagen weitere Informationen auf die uns genannte E-Mailadresse. 
+		Die gesendeten Daten sowie den Status des Antrages können Sie jederzeit in myBLSV einsehen. 
+		
+		Mit freundlichen Grüßen
+		Bayerischer Landes-Sportverband e.V.
+		GB 3 Referat Sportstättenbau
+		Georg-Brauchle Ring 93
+		80992 München ]]></label>
+		
+		 <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigunghtml"><![CDATA[         
+		<h2>Empfangsbestätigung</h2>
+		<p>Ihre Anforderung der Antragsunterlagen wurde erfolgreich übermittelt.</p>
+		<p>Nach Prüfung der angegebenen Daten erhalten Sie in den folgenden Tagen weitere Informationen auf die uns genannte E-Mailadresse.</p> 
+		<p>Die gesendeten Daten sowie den Status des Antrages können Sie jederzeit in myBLSV einsehen. </p>
+		
+		<p><br />Mit freundlichen Grüßen<br /><br />
+		<b>Bayerischer Landes-Sportverband e.V.</b><br />
+		GB 3 Referat Sportstättenbau<br />
+		Georg-Brauchle Ring 93<br />
+		80992 München</p> ]]></label>
+		
+		
+		
+		 <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.emailablehnung"><![CDATA[ 
+		
+<h2>Anforderung Antragsunterlagen vom %datum</h2>
+
+<p>Sehr geehrte Damen und Herren,</br> 
+
+aus folgenden Gründen kann der Kleinantrag nicht zur weiteren Bearbeitung freigegeben werden:</p>
+
+<p>%freitext</p>
+
+
+
+<p>Bei Fragen steht Ihnen gerne  %name (Tel.: %tel, E-Mail sportstaettenbau@blsv.de) zur Verfügung.</p> 
+
+<p>Mit freundlichen Grüßen<br />
+Bayerischer Landes-Sportverband e.V.<br />
+GB 3 Referat Sportstättenbau<br />
+Georg-Brauchle Ring 93<br />
+80992 München</p>
+ ]]>		</label>
+         
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ja">ja</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.nein">nein</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vereinsdaten">Ansprechpartner des Vereins zur Antragsabwicklung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.geplantemassnahmen">Geplante Maßnahmen</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.voraussichtlichekosten">Voraussichtliche Kosten</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierung">Voraussichtliche Finanzierung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.erklärung">Erklärungen</label>
+            
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeinFall">Sie müssen mindestens einen Fall (Bestandssicherung, Bestandserweiterung oder Objekterwerb) auswählen.</label>
+             <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeinName">Sie müssen den Namen angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeinVorname">Sie müssen den Voramen angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeinEmail">Sie müssen eine gültige Emailadresse angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeinTelefon">Sie müssen die Telefonnummer tagsüber angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeineMassnahme">Sie müssen mindestens eine Maßnahme auswählen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeineMassnahmenkosten">Sie müssen jeweils Art und Kosten der Maßnahme angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeineBegruendung">Begründen Sie kurz den Bedarf der Maßnahme(n).</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeineErklaerung">Sie müssen beide Erklärungen bestätigen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValzuHoheFoerderungKA">Die Förderung darf nicht mehr als 20% der Gesamtkosten bzw. nicht mehr als € 30.000.- betragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValzuHoheFoerderungRA">Die Förderung darf nicht mehr als 30% der Gesamtkosten betragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValzuHoheFoerderungKF">Die Förderung darf nicht mehr als 50% der Gesamtkosten betragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValkeinRegelantragRA">Kein Regelantrag möglich (Beantragte Staatsmittelförderung mindestens €30.000,-).  Stellen Sie stattdessen einen Kleinantrag.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValzugeringeGesamtkostenKA">Die Gesamtkosten müssen größer €10.000.- sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValzugeringeGesamtkostenRA">Die Gesamtkosten müssen größer €150.000.- sein oder stellen Sie einen Kleinantrag.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValzugeringeGesamtkostenKF">Die Gesamtkosten müssen größer €10.000.- sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValnegativeFremdgelder">Eine Förderung in angebener  Höhe ist nicht möglich. Überarebten Sie Ihren Antrgag so, dass die Fremdgelder/Darlehen größer oder gleich 0 ergeben.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValzuNiedrigeEigenbeteiligung">Ihre Eigenbeteiligung muss mindestens 10% der Gesamtkosten betragen. </label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.ValkeineFoerderung">Sie haben keine Förderung eingetragen.</label>
+           	
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinFall">Sie müssen mindestens einen Fall (Bestandssicherung, Bestandserweiterung oder Objekterwerb) auswählen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinName">Sie müssen den Namen angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinVorname">Sie müssen den Voramen angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinEmail">Sie müssen eine gültige Emailadresse angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinTelefon">Sie müssen die Telefonnummer tagsüber angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineMassnahme">Sie müssen mindestens eine Maßnahme auswählen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineMassnahmenkosten">Sie müssen jeweils Art, Anzahl und Kosten der Maßnahme angeben.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineHinweis">Sie müssen die Hinweise bestätigen</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineBegruendung">Begründen Sie kurz den Bedarf der Maßnahme(n).</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineErklaerung">Sie müssen alle Erklärungen bestätigen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzuHoheFoerderungRA">Die Förderung darf nicht mehr als 20% der Gesamtkosten bzw. nicht mehr als € 30.000.- betragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzuHoheFoerderungRA1">Die Förderung darf nicht mehr als 30% der Gesamtkosten betragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzuHoheFoerderungKF">Die Förderung darf nicht mehr als 50% der Gesamtkosten betragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeinRegelantragRA">Kein Regelantrag möglich. Stellen Sie sattdessen einen Kleinantrag.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzugeringeGesamtkostenKA">Die Gesamtkosten müssen größer €10.000.- sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzugeringeGesamtkostenRA">Die Gesamtkosten müssen größer €150.000.- sein oder stellen Sie einen Kleinantrag.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzugeringeGesamtkostenKF">Die Gesamtkosten müssen größer €10.000.- sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValnegativeFremdgelder">Eine Förderung in angebener  Höhe ist nicht möglich. Überarebten Sie Ihren Antrgag so, dass die Fremdgelder/Darlehen größer oder gleich 0 ergeben.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzuNiedrigeEigenbeteiligung">Ihre Eigenbeteiligung muss mindestens 10% der Gesamtkosten betragen. </label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineFoerderung">Sie haben keine Förderung eingetragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzugeringeFinanzierungzuschuss">Die Förderung darf nicht negativ sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValzugeringeFianzierungkredit">Die Kredite dürfen nicht negativ sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValGuveinnahmengesamt">Die Einnahmen gesamt darf nicht leer sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvausgabengesamt">Die Ausgaben gesamt darf nicht leer sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValEinnahmenbeitraege">Die Mitgliedsbeiträge darf nicht leer sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKassenbestand">Der Kassenbestand darf nicht leer sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValBankguthaben">Das Bankguthaben darf nicht leer sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValEgtvlaufzeit">Das Datum der Vertragsvereinbarung darf nicht leer sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValDatumgespraechkv">Das Besprechungsdatum mit dem Kreisvertreter darf nicht leer sein.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinFachverbandMitglieder">Für die Mitglieder ist kein Fachverband ausgewählt.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineMitglieder">Sie haben keine Mitglieder eingetragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinFachverbandMannschaft">Für die Mannschaften ist kein Fachverband ausgewählt.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineMannschaft">Sie haben keine Mannschaften eingetragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeinFachverbandUebungsleiter">Für die Übungsleiter ist kein Fachverband ausgewählt.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineUebungsleiter">Sie haben keine Übungsleiter eingetragen.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.haken"><![CDATA[nein]]></label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.haken1"><![CDATA[ja]]></label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.farbehaken">red</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.farbehaken1">green</label>
+           	
+           	
+         	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.Vorantraggespeichert">Ihre Änderungen wurden gespeichert.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.Validierungsfehler">Ihre Antragsanforderung enthält noch Fehler. Bitte beheben Sie diese. Sobald alle Fehler behoben sind, können Sie die Antragsanforderung abschicken. </label>
+           	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.keineValidierungsfehler">Sie können jetzt Ihre Antragsanforderung abschicken.</label>
+           	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.keineValidierungsfehler">Sie können jetzt den Antrag abschicken.</label>
+           <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.voraussichtlichegesamtkosten">voraussichtliche Gesamtkosten</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.finazierungsart">Art der Finanzierung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.finanzierungswert">Betrag</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.summefinazierung">Summe Finanzierung</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.speichern">speichern</label>
+              <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.filtern">filtern bzw. suchen</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.listheading">Anträge zum Sportstättenbau</label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.listtext"><![CDATA[Hier finden Sie Ihre Anträge zum Sportstättenbau bzw. können einen neuen Antrag stellen. ... <br /><br /><br />]]></label>
+            <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.felderpruefen">Bitte überprüfen Sie alle Eingaben noch einmal, bevor Sie Ihren Antrag endgültig abgeben. Beachten Sie vor allem die rot umrandeten Felder.</label>
+        	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.abgeben">endgültig abgeben</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.titlebearbeiten">Hier können Sie Ihren Antrag noch einmal bearbeiten</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.nochmalbearbeiten">noch einmal bearbeiten</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.zuruebersicht">zurück zur Übersicht</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsbewilligung">Antragsannahme</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsanforederungablehnen">Antragsanforderung ablehnen</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsanforederungbewilligen">Antragsanforderung annehmen</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragablehnen">Antrag ablehnen</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragbewilligen">Antrag annehmen</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.entscheiden">Entscheidung senden</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.legende">Legende</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.aktionen">Mögliche Aktionen</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.viewaktion">Antrag/Antragsanforderung ansehen</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.editaktion">Antrag/Antragsanforderung bearbeiten</label>
+       		<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.abgebenaktion">Antrag/Antragsanforderung abgeben</label>
+       	 	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.abgebengespeichert"> Ihre Angaben wurden gespeichert und an den BLSV weitergeleitet!</label>
+       	  	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.entscheidenspeichern"> Ihre Entscheidung wurde gespeichert. </label>
+       	 	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.FehlerUpload">Fehler beim Hochladen folgender Datei: </label>
+       	  	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.reset">zurücksetzen</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweis">Allgemeine Hinweise</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1">1.	Eine Umstellung des Klein-Antrags auf eine Regelfallförderung ist, auch im Falle von Kostenmehrungen, nicht vorgesehen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2">2.	Der vollständig ausgefüllte Antrag ist mit den erforderlichen Unterlagen in digitaler Form über myblsv einzureichen. Ab diesem Zeitpunkt ist die Einsichtnahme der Antragsdaten durch den BLSV-Kreis zur Bewertung des Bedarfs gegeben. Erst nach dem Vorliegen der Stellungnahme des BLSV-Kreises im Referat Sportstättenbau kann die Bearbeitung des Antrags aufgenommen werden. 
+Beachte: Mit dem postalischen Eingang des Klein-Antrags beim BLSV ist keine automatische Baufreigabe verbunden. Mit der Maßnahme kann erst dann begonnen werden, wenn die schriftliche Zustimmung durch das Referat Sportstättenbau des BLSV erteilt wurde.
+            </label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3"><![CDATA[ 3.	Nach schriftlich erteilter Zustimmung durch den BLSV kann mit der Maßnahme förderunschädlich im Sinne der Sportförderrichtlinien begonnen werden. Nach Fertigstellung der Maßnahme hat der Verein zur abschließenden Bewertung, die in den  <b>Hinweisen zur Antragstellung</b> angesprochenen Nachweise zu erbringen. 
+            <a target="new" href="http://www.blsv.de/fileadmin/user_upload/pdf/sportstaettenbau/Hinweise_zur_Antragsstellung_und_Anforderung_Unterlagen.pdf" > Download Hinweise</a>
+             ]]></label>
+             <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1_ra">1.	Der vollständig ausgefüllte Antrag ist in digitaler Form über myblsv einzureichen. Ab diesem Zeitpunkt ist die Einsichtnahme der Antragsdaten durch den BLSV-Kreis zur Bewertung des Bedarfs gegeben. Erst nach dem Vorliegen der Stellungnahme des BLSV-Kreises im Referat Sportstättenbau kann die Bearbeitung des Antrags aufgenommen werden. Die zur Bearbeitung des Antrags erforderlichen Unterlagen und Nachweise sowie die Erklärung mit den Unterschriften der Vereinsführung sind auf dem Postweg vorzulegen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2_ra"> 2.	Mit der Maßnahme darf erst begonnen werden, wenn der Antragsteller die ausdrückliche, schriftliche Zustimmung zum vorzeitigen Baubeginn durch den Geschäftsbereich 3 - Sportstättenbau des BLSV erhalten hat. Als Maßnahmen-/Baubeginn ist bereits die Verpflichtung zur Auftragsvergabe eines der Ausführung zuzurechnender Lieferungs- oder Leistungsvertrag (z.B. Versand der Ausschreibungsunterlagen, Materialeinkauf, Auftragsvergabe) aber auch die eigene Arbeitsleistung zu werten. Bereits angefangene bzw. durchgeführte Maßnahmen werden nicht gefördert. 
+Beachte: Zusagen von anderen Stellen des BLSV haben keine Rechtsverbindlichkeit!
+            </label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3_ra"> 3.	Anträge, die vor der Antragstellung keine Sportstättenbauberatung durch den Geschäftsbereich Finanzen Referat Sportstättenbau erfahren haben, können nicht in ein Verfahren aufgenommen werden.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext4"> <![CDATA[ 4.	Vergabe von Aufträgen: 
+Bei einer Gesamtförderung aus der öffentlichen Hand - Staatsmittel BLSV, Bundes-, weitere Landes-, Bezirks-, Landkreis- und kommunale Mittel - ab € 25.000,-- sind bei der Vergabe von Aufträgen und bei der Bauausführung insbesondere die Bestimmungen der Vergabe- und Vertragsordnung für Bauleistungen (VOB) und für andere Leistungen (VOL) einzuhalten. Für Architekten- und Ingenieurleistungen gilt die Vergabeordnung für freiberufliche Leistungen (VOF). Beachten Sie hierbei auch die Allgemeinen Nebenbestimmungen für Zuwendungen zur Projektförderung (ANBest-P) welche <a target="new" href="http://www.blsv.de/fileadmin/user_upload/pdf/sportstaettenbau/Allg._Nebenbestimmungen"> H&nbsp;I&nbsp;E&nbsp;R  </a> eingesehen werden können. ]]>
+            </label>
+       	  
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.allgemein">Allgemeine Daten</label> 
+       	  <label index="tx_blsvspstbauantrag_domain_model_regelantrag">Regelantrag</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vereinsnummer">BLSV-Mitgliedsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.blsvkreis">Kreis</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.feuser">User der geändert hat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.stimmkreis">politischer Stimmkreis </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vereinsname">Vereinsname</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner">Ansprechpartner des Vereins zur Antragsabwicklung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnername">Anpsrechpartner-Name</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnervorname">Vorname</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartenertitel">Titel</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnerteldienst">Telefon dienstl.:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnertelprivat">Telefon privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnermobil">Telefon mobil:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartneremail">Email:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a">A) Maßnahme(n) / Verwendungszweck</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a2">(vBB = vorzeitiger Baubeginn; bitte die Maßnahmen ankreuzen, für die eine Zustimmung zum vorzeitigen Baubeginn erteilt werden soll.)</label>
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck">Maßnahme(n)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb">vBB Ja/Nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil">Kostenanteil an den Gesamtkosten brutto</label> 
+
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck1">Maßnahme 1</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl1">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb1">Ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil1">Teilbaukosten 1</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck2">Maßnahme 2</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl2">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb2">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil2">Teilbaukosten 2</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck3">Maßnahme 3</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl3">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb3">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil3">Teilbaukosten 3</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck4">Maßnahme 4</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl4">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb4">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil4">Teilbaukosten 4</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck5">Maßnahme 5</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl5">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb5">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenenteil5">Teilbaukosten 5</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck6">Maßnahme 6</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl6">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb6">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil6">Teilbaukosten 6</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck7">Maßnahme 7</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl7">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb7">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil7">Teilbaukosten 7</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck8">Maßnahme 8</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl8">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb8">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil8">Teilbaukosten 8</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck9">Maßnahme 9</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl9">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb9">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil9">Teilbaukosten 9</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck10">Maßnahme 10</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl10">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb10">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil10">Teilbaukosten 10</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck11">Maßnahme 11</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl11">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb11">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil11">Teilbaukosten 11</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck12">Maßnahme 12</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl12">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb12">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil12">Teilbaukosten 12</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck13">Maßnahme 13</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl13">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb13">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil13">Teilbaukosten 13</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck14">Maßnahme 14</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl14">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb14">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil14">Teilbaukosten 14</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck15">Maßnahme 15</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl15">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb15">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil15">Teilbaukosten 15</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck16">Maßnahme 16</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl16">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb16">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil16">Teilbaukosten 16</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck17">Maßnahme 17</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl17">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb17">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil17">Teilbaukosten 17</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck18">Maßnahme 18</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl18">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb18">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil18">Teilbaukosten 18</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck19">Maßnahme 19</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl19">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb19">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil19">Teilbaukosten 19</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck20">Maßnahme 20</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl20">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb20">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil20">Teilbaukosten 20</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck21">Maßnahme 21</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl21">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb21">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil21">Teilbaukosten 21</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck22">Maßnahme 22</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl22">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil22">Teilbaukosten 22</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb22">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck23">Maßnahme 23</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl23">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb23">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil23">Teilbaukosten</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck24">Maßnahme 24</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl24">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb24">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil24">Teilbaukosten 24</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck25">Maßnahme 25</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl25">Anzahl</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbb25">ja/nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kostenanteil25">Teilbaukosten 25</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b">B) Finanzierung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtkosten_brutto">Veranschlagte Gesamtkosten Brutto</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.eigenmittel">1) Eigenmittel des Vereins</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bar">a) Bare Aufwendungen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.unbar">b) unbare Aufwendungen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.eigenbeteiligung_gesamt">Eigenbeteiligung gesamt</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter">2) Leistungen Dritter</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter_gesamt">Leistungen Dritter gesamt</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungbarmittel">Barmittel </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunggeldspenden">Geldspenden </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkredit">Darlehen/Kredite </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungaleistung">Eigene Arbeitsleistung </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsachleistung">Unentgeltliche Sachleistung </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkommune">Kommunen </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunglkr">Landkreis </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsonstige">Sonstige </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungvorsteuer">3) Vorsteuererstattung </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungzuschuss">4) Staatsmittelförderung gesamt</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung2">Davon beantragter Zuschuss</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3">Davon beantragtes Staatsmitteldarlehen</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4">Die Sicherung der staatlichen Zuwendung richtet sich nach Nr. C 3.5 der Sportförderrichtlinien. Welche der nachstehend genannten Sicherungen (zutreffendes bitte ankreuzen) kann zu gegebener Zeit angeboten werden?</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.smfgs">Grundschuld</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.smfkbs">Kommunalbürgschaft</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.smfbbs">Bankbürgschaft</label>  
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungdarlehen">Staatsmitteldarlehen re</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sicherunggrundschuld">Grundschuld re</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sicherungkbuergschaft">Kommunalbürgschaft re</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sicherungbbuergschaft">Bankbürgschaft re</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfkommune1">Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfkommune2">Betrag Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfkommune3">jährliche Belastung Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfkommune4">Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfkommune5">Betrag Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfkommune6">jährliche Belastung Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis1">Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis2">Betrag Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis3">jährliche Belastung Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis4">Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis5">Betrag Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis6">jährliche Belastung Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis7">Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis8">Betrag Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwflandkreis9">jährliche Belastung Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige1">Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige2">Betrag Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige3">jährliche Belastung Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige4">Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige5">Betrag Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige6">jährliche Belastung Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige7">jährliche Belastung Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige8">Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsonstige9">jährliche Belastung Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer1">Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer2">Betrag Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer3">jährliche Belastung Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer4">Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer5">Betrag Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer6">jährliche Belastung Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer7">Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer8">Betrag Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfvorsteuer9">jährliche Belastung Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf1">Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf2">Betrag Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf3">jährliche Belastung Bank</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf4">Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf5">Betrag Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf6">jährliche Belastung Kommune</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf7">Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf8">Betrag Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwfsmf9">jährliche Belastung Privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahreszahl1">1. Jahr GuV</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahreszahl2">3. Jahr GuV</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.guvdurchschnittsergebnis">3 Jahresergebnis</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbbgruende1">Wegfall Finanzierungsmittel</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbbgruende2">Fortbestand Sportanlage</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbbgruende3">Verlust Sportanlage</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbbgruende4">Katastrophenfall</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbbgruende5">jSonstige</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.begruendungsonstige">Sonstige Begründung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbberklaerung1">Erklärung 1</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbberklaerung2">Erklärung2</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.datumbauberatung">Sportstättenbauberatung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigungkv">Ortsbesichtung durch BLSV-Kreis </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.eigentum">Eigentumsverhältnisse/Eigentum / </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erbbaurecht">Eigentumsverhältnisse/Erbbaurecht / </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.pachtvertrag">Eigentumsverhältnisse/Pachtvertrag </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.eigentuemer">Grundbuchamtlicher Eigentümer </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.grundstuecksgroesse">Grundstücksgröße </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.flurnummer">Flurnummer </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.gemarkung">Sonstige Verbindlichkeiten </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.laufzeit">Datum Laufzeitende </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.masnahmenart">Maßnahmenart </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnerfax">FAX </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungzuschusskl">Beantragter Zuschuss bis max. € 30.000,--</label> 
+ <label index="tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungheader">Empfangsbestättigung Ihres Antrages Nr. %1$s für den Verein %2$s </label> 
+ <label index="tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigung"><![CDATA[
+ 
+ Sehr geehrte Damen und Herren, <br /><br />
+Ihr Antrag wurde an den zuständigen BLSV-Kreis zur Stellungnahme weitergeleitet und in die Daten in der BLSV-Zentrale gespeichert. <br /><br />
+
+Sobald die Stellungnahme des BLSV-Kreis in der BLSV-Zentrale vorliegt erhalten Sie eine weitere Benachrichtigung.<br /><br />
+
+<b>Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Nachricht nicht erteilt.</b><br /><br />
+
+Bitte laden Sie sich folgendes Formular herunter und schicken es ausgefüllt und unterschrieben an uns zurück:<br /><br />
+
+<a href="http://www.blsv.de/fileadmin/user_upload/pdf/sportstaettenbau/ErklaerungUnterschriftenKleinantrag.pdf">Download Formular</a><br /><br />
+
+Mit freundlichen Grüßen<br />
+Bayerischer Landes-Sportverband e.V.<br />
+GB 3 Referat Sportstättenbau<br />
+Georg-Brauchle Ring 93<br />
+80992 München<br />
+ 
+ 
+ 
+ ]]></label> 
+ 
+ <label index="tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungheaderKV">Stellungahme des BLSV-Kreises zu Ihrem Antrag </label> 
+ <label index="tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungKV"><![CDATA[
+ 
+ Sehr geehrte Damen und Herren, <br /><br />
+Die Stellungnahme des BLSV-Kreises wurde erfolgreich übermittelt.<br /><br />
+Nach Prüfung und Auswertung der angegebenen Daten erhalten Sie in den folgenden Tagen weitere Informationen auf die uns genannte E-Mailadresse.<br /><br />
+Die gesendeten Daten sowie den Status des Antrages können Sie jederzeit in myBLSV einsehen. <br /><br />
+Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Nachricht nicht erteilt.<br /><br />
+
+Mit freundlichen Grüßen<br />
+Bayerischer Landes-Sportverband e.V.<br />
+GB 3 Referat Sportstättenbau<br />
+Georg-Brauchle Ring 93<br />
+80992 München<br /> 
+ 
+ ]]></label> 
+ 
+ 
+ 
+ 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.editHeader">Antrag bearbeiten</label>
+		  
+		  
+		  
+		  
+		  
+		  
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_c">C) Angaben zur Vermögens-, Finanz- und Ertragslage des Vereins</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_anfang">Die Gewinnermittlung des Vereins für das letzte Geschäftsjahr vom </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.guvbeginn">Beginn des Rechnungsjahres</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_bis"> bis </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.guvende">Ende des Rechnungsjahres</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_ende">erfolgte anhand einer </label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.guvbilanz">Bilanz mit Gewinn u. Verlustrechnung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.guveuerechnung">Einnahmen-/Überschuss-Rechnung</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ertragslage">Ertragslage</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.guveinnahmengesamt">Einnahmen / Erträge gesamt</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenbeitraege">davon Mitgliedsbeiträge</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenspenden">davon nichtzweckgebunde Spenden</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenzuschuesse">davon Zuschüsse für Investitionsmaßnahmen</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.guvausgabengesamt">Ausgaben / Aufwendungen gesamt</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabeninstandhaltung">davon Instandhaltung Gebäude</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabensportbetrieb">davon Betriebsmittel für den Sportbetrieb</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenverwaltung">davon Betriebsmitel für die Verwaltung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenabschreibung">davon Abschreibungen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschussfehlbetrag">Überschuss/Fehlbetrag des letzten Geschäftsjahres</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegenslage">Vermögenslage</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vmlstichtag">Stichtag (Ende d. letzten Geschäftsjahres)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.aktiva">A) Aktiva</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anlagevermoegen">Anlagevermögen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegensgegenstaende">Immaterielle Vermögensgegenstände</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sachanlagen">Sachanlagen </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzanlagen">Finanzanlagen </label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.umlaufvermoegen">Umlaufvermögen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kassenbestand">Kassenbestand </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bankguthaben">Bankguthaben </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sonstiges_vermoegen">Sonstiges Vermögen</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.passiva">B) Passiva</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.eigenkapital">Eigenkapital</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenfrei">Freie Rücklagen </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenzweck">Zweckgebundene Rücklagen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenbetrieb">Betriebsrücklagen </label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeiten">Verbindlichkeiten</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitbank">Kreditinstitute </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitblssmd">BLSV-Staatsmitteldarlehen </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitsonstige">Rückstellungen/sonstige Verbindlichkeiten</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahreskapitaldienst">Jährlicher Kapitaldienst </label> 
+
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d">D) Sportliche Situation des Vereins</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d1">Sportliche Entwicklung der Sparten des Vereins in den letzten 3 Jahren bezogen auf die beantragte Maßnahme</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d11">Mitgliederzahlen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d12">Mannschaften</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d13">Lizensierte Übungsleiter</label> 
+
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.stand111">Mitglieder zum 01.01.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr111">(2011)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr112">(2012)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr113">(2013)</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmitglied1">Liste Fachverbände </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0110bis26">Mitgliederzahl  bis 26 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0110ueber26">Mitgliederzahl  ü26 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0111bis26">Mitgliederzahl  bis 26 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0111ueber26">Mitgliederzahl  ü26 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0112bis26">Mitgliederzahl  bis 26 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0112ueber26">Mitgliederzahl  ü26 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandsmitglied2">Liste Fachverbände </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0210bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0210ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0211bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0211ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0212bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0212ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandsmitglied3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0310bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0310ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0311bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0311ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0312bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0312ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandsmitglied4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0410bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0410ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0411bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0411ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0412bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0412ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandsmitglied5"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0510bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0510ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0511bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0511ueber26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0512bis26"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder0512ueber26"></label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.stand121">GemeldeteMannschaften im Jahr</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr121">(2011)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr122">(2012)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr123">(2013)</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmannschaft1">Gemeldete Mannschaften Fachverband / </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0110">Schüler Jugend</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0110">Erwachsene</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0111">Schüler Jugend</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0111">Erwachsene</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0112">Schüler Jugend</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0112">Erwachsene</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmannschaft2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0210"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0210"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0211"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0211"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0212"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0212"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmannschaft3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0310"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0310"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0311"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0311"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0312"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0312"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmannschaft4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0410"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0410"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0411"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0411"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0412"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0412"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandmannschaft5"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0510"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0510"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0511"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0511"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.schuelerjugend0512"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene0512"></label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.stand131">Fachverband (z.B. Fußball, Tennis, etc.)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr131">Anzahl im Jahr (2011)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr132">Anzahl im Jahr (2012)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jahr133">Anzahl im Jahr (2013)</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandueleiter1">Fachverband lizentierte Übungsleiter / </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0110">Anzahl 2011 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0111">Anzahl 2012 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0112">Anzahl 2013 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandueleiter2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0210"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0211"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0212"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandueleiter3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0310"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0311"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0312"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandueleiter4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0410"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0411"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0412"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandueleiter5"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0510"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0511"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl0512"></label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d2"> Geben Sie die Sparten, welche die geplante(n) Maßnahme(n) künftig sportlich nutzen sollen, mit der Anzahl der Mitglieder bzw. der Wettkampfsportler oder der Mannschaften sowie die Anzahl der Übungsleiter, die beim jeweiligen Fachverband gemeldet sind, bekannt:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d21">Fachverband</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d22">Kinder, Jugendliche</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d23">Erwachsene</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d24">Mannschaften Schüler/Jugend</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d241">w</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d242">m</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d25">Mannschaften Erwachsene</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d251">w</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d252">m</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d26">Lizensierte ÜL</label>
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandnutzung1">Sparten die Anlage künftig nutzen </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kinderjugendliche1">Anzahl der Nutzter </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene1">Anzahl der Nutzter </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugw1">Anzahl Manschaften Schüler / Jugend w /</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugm1">Anzahl Manschaften Schüler / Jugend m /</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenw1">Anzahl Manschaften Erwachsene w / </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenm1">Anzahl Manschaften Erwachsene m / </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.lizensierteuel1">Anzahl Übungsleiter </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandnutzung2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kinderjugendliche2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugw2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugm2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenw2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenm2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.lizensierteuel2"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandnutzung3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kinderjugendliche3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugw3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugm3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenw3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenm3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.lizensierteuel3"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fachverbandnutzung4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.kinderjugendliche4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erwachsene4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugw4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschaftschuejugm4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenw4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mannschafterwachsenm4"></label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.lizensierteuel4"></label>
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahlboote">Wie viele Boote sind im Besitz des Vereins? (nur auszufüllen bei Förderung von Steganlagen) </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahlpferde">Wie viele Pferde sind im Besitz des Vereins? (nur auszufüllen bei Förderung von Reitanlagen) </label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d3"> Gründe zur Notwendigkeit der geplanten Maßnahme(n) (zutreffendes bitte ankreuzen/mehrere Antworten möglich)</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitauslastung">Bestehende Anlagen des Vereins sind voll ausgelastet und genügen nicht dem künftigen sportlichen Bedarf des Vereins</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitausrichtung">Veränderung in der sportlichen Ausrichtung des Vereins</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitbeduerfnis">Bestehende Anlagen veraltet und entsprechen nicht mehr den sportlichen Bedürfnissen des Vereins</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.notwendigkeitunterhalt">Die Unterhaltskosten der bestehenden Anlagen sind aus energetischer Sicht zu hoch</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d4"> Unterlagen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.text_d4">Dem Bedarfsnachweis sind vom Verein nachstehende Unterlagen in digitaler Form beizufügen:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.text_d41">Bestandspläne</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.text_d42">Luftbildaufnahmen der Sportstätten</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.text_d43">Lagepläne mit Flurnummer der mit Sportstätten bebauten Grundstücksflächen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.text_d44">aktuelle Grundstücksnachweise</label> 
+
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_e">E) Eigentumsverhältnisse</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtveigentum">Eigentum</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtverbbaurecht">Erbbaurecht</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtvpachtvertrag">Pachtvertrag</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtveigentuemer">Grundbuchamtlicher Eigentümer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgrundstuecksgroesse">Grundstücksgröße</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtvflurnummer">Flurnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgemarkung">Gemarkung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.egtvlaufzeit">Das Erbbaurecht bzw. Pacht und Überlassungsrecht ist vertraglich vereinbart bis</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.text_e1">
+		  <![CDATA[ 
+		  <p> <b>Bitte Beachten:</b></br > 
+		  1.	Zur Sicherstellung der sportlichen Nutzung kann eine Grunddienstbarkeit an allen für die zweckmäßige sportliche Nutzung erforderlichen Objekten eingefordert werden. (vgl. Nr. C 3.5.1 Sportförderrichtlinien)</br >
+		  2.	Beim Eigentum ist der aktuelle Grundbuchauszug, beim Erbbaurecht der notarielle Vertrag und der aktuelle Auszug aus dem Erbbaugrundbuch und beim Pachtvertrag das vollständige Vertragswerk vorzulegen.
+		  ]]>
+		  
+		  </label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_f">F) Sportstättenbauberatung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungja">Die Sportstättenbauberatung war erforderlich und erfolgte am: ja</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungdatum">Datum der Berratung </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungnein">Die Sportstättenbauberatung war nicht erforderlich</label> 
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_g">G) Einbindung des BLSV-Kreises</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.datumgespraechkv">Wann wurde das geplante Bauvorhaben mit dem Vertreter des BLSV-Kreises besprochen?</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_frage">Erfolgte eine Ortsbesichtigung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_ja">ja</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_nein">nein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.absendedatum">Wann wurde der ausgefüllte Antrag dem BLSV-Kreis zur Einsichtnahme vorgelegt?</label> 
+
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_h">H) Erklärungen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklrechtsanspruch">Dem Verein ist bekannt, dass mit der Antragstellung auch nach erfolgter Baufreigabe durch den BLSV kein Rechtsanspruch auf eine staatliche Förderung abgeleitet werden kann. Eine Entscheidung über eine Förderung sowohl dem Grunde als auch in der betragsmäßigen Höhe kann erst nach Abschluss des Bauvorhabens getroffen werden. Im Falle einer Ablehnung hat der Verein die Finanzierung selbst zu tragen. Der Verein trägt somit das volle Risiko.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklmeldepflicht">Dem Verein ist bekannt, dass die beantragten und durch den BLSV zu fördernden Maßnahmen einer in den Sportförderrichtlinien bestimmten Zweckbindung ab Fertigstellung des Bauvorhabens unterliegen. Weiter ist bekannt, dass wir verpflichtet sind, subventionserhebliche Tatsachen (z.B. Planungs- oder Nutzungsänderungen gegenüber den vorgelegten Antragsunterlagen, nachträglich geltend gemachter Vorsteuerabzug, usw.) unverzüglich dem BLSV mitzuteilen. Diese Verpflichtung geht bei unserem Ausscheiden aus der Vereinsvorstandschaft an unsere Nachfolger über. Wir erklären mit unserer Unterschrift, diese Information über die Mitteilungspflicht an unsere Nachfolger weiterzugeben.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestkenntnisnahme">Es wird von den Unterzeichnern bestätigt, dass das „Hinweisblatt zum Klein - Antrag“ zur Kenntnis genommen wurden.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erkl_antragsteller">Der Antragsteller erklärt, </label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklbaubeginn">dass mit dem Bauvorhaben noch nicht im Sinne der Sportförderrichtlinien begonnen worden ist.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklnutzungdritte">dass eine Nutzung durch private Dritte (z.B. Tennisschulen, Fußballschulen etc.) zu deren privaten Gewinnerzielung nur in untergeordneter Bedeutung gegeben ist und auch für die Dauer der Zweckbindung bleiben wird.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklkonzession">dass die zu fördernden Anlagen in keine Gaststättenkonzession bzw. in eine kleine Schankerlaubnis eingebunden sind bzw. nicht beantragt wird.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklvollstaendigeangaben">dass die in diesem Antrag (einschließlich Antragsunterlagen) gemachten Angaben vollständig und wahrheitsgemäß sind und dass alle mit dem Zuwendungszweck zusammenhängenden Einnahmen angegeben wurden.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklsubvention">dass die Angaben in den vorgelegten Unterlagen subventionserheblich sind und dass die Strafbarkeit eines Subventionsbetruges gemäß § 264 StGB bekannt ist.</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.erklfinanzierung">dass unter Berücksichtigung bereits bestehender Darlehensverbindlichkeiten die Gesamtfinanzierung einschließlich der Zwischenfinanzierung gesichert ist. </label> 
+
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i">I) Stellungnahme des BLSV-Kreises</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i1">a) Sportliche Entwicklung im BLSV-Kreis</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i2">b) Bestehende Sportstätten</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i3">c) Stellungnahme zum Bedarfsnachweis des Vereins</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i4">d) Finanzierung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i5">e) Sonstiges</label> 
+
+
+
+
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1">1. Ist der Verein im Besitz von vereinseigenen Sportstätten?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten11">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten111">Wenn nein, welche Anlagen nutzt der Verein für seinen Sportbetrieb?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1111">Nutzung von kommunalen und schulischen Anlagen</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten1112">Nutzung von Sportanlagen benachbarter Vereine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten12">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten21">2. Nutzt der Verein neben seiner vereinseigenen Sportstätten weitere Sportanlagen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten211">ja, kommunale Anlagen</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten212">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten22">Nutzt der Verein neben seiner vereinseigenen Sportstätten weitere Sportanlagen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten221">ja, Anlagen benachbarter Vereine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten222">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten3">3. Sind sämtliche vom Verein genutzte Sportstätten dem BLSV-Kreis bekannt?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten31">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten32">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten4">4. Wurden die vom Verein genutzten Sportstätten seitens des BLSV-Kreises vor Ort in der Vergangenheit eingesehen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten41">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten42">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten51">5. Besteht aus Sicht des BLSV-Kreises die Möglichkeit, durch eine verstärkte Nutzung der vereinseigenen oder anderer Sportanlagen im Einzugsgebiet des Vereins den angeführten Bedarf auf Dauer abzudecken? </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten511">ja, vereinseigene Anlage</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten512">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten521">ja, Anlagen anderer Vereine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten522">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten531">ja, kommunale Anlagen </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten532">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung11">1. Kann der Verein die in Ansatz gebrachte Eigenbeteiligung erbringen? </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung111">ja; in Bezug auf Barmittel </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung112">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung121">ja; in Bezug auf eigene Arbeitsleistung </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung122">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung131">ja; in Bezug auf Geldspenden </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung132">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung141">ja; in Bezug auf unentgeltliche Sachleistungen</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung142">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung21">2. Sind die beantragten nachstehenden Förderungen realistisch?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung211">ja; in Bezug auf die Kommune </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung212">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung221">ja; in Bezug auf Landkreis </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung222">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung231">ja; in Bezug auf Bezirk </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung232">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung241">ja; in Bezug auf Sonstige außer Staatsmittel </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung242">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung3">3. Kann der Verein die Folgekosten aus dem Fremdkapital und einer ggf. kurzzeitigen Zwischenfinanzierung tragen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung31">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung32">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung4">4. Wie ist die derzeitige Verschuldung des Vereins einzustufen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung41">sehr hoch</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung42">hoch</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung43">mittelmäßig</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung44">gering</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung45">keine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges1">Die Einsichtnahme der vom Verein ausgefüllten Antragsunterlagen erfolgte am</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges11">Datum:</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges2">Auf der Grundlage des Bedarfsnachweises des Vereins wird hiermit der Bedarf der geplanten Maßnahme</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges21">befürwortet</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges22">abgelehnt</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung1"> 1. Welche Tendenz ist bei der Mitgliederentwicklung in den letzten Jahren zu verzeichnen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung11">steigend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung12">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung13">sinkend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2">2. Sportliche Entwicklung der vom Verein im Antrag angeführte(n) Sparte(n) im BLSV - Kreis.</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung21">2.1. Im Schüler und Jugendbereich</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung211">2.1.1. Entwicklungstendenz in der Sparte im BLSV-Kreis</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2111">steigend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2112">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2113">sinkend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung212">2.1.2. Tendenz in der Sparte im Verein </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2121">steigend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2122">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2123">sinkend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung213">2.1.3. Weicht die Entwicklung der Sparte im Verein von der Entwicklung im BLSV-Kreis ab?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2131">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2132">ja, positiv</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2133">ja, negativ</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung22">2.2. Im Bereich der jungen Erwachsenen bis einschließlich 26. Lebensjahr</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung221">2.2.1. Entwicklungstendenz in der Sparte im BLSV-Kreis</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2211">steigend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2212">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2213">sinkend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung222">2.2.2. Tendenz in der Sparte im Verein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2221">steigend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2222">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2223">sinkend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung223">2.2.3. Weicht die Entwicklung der Sparte im Verein von der Entwicklung im BLSV-Kreis ab?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2231">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2232">ja, positiv</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2233">ja, negativ</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung23">2.3. Im Erwachsenenbereich</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung231">2.3.1. Entwicklungstendenz in der Sparte im BLSV-Kreis</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2311">steigend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2312">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2313">sinkend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung232">2.3.2. Tendenz in der Sparte im Verein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2321">steigend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2322">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2323">sinkend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung233">2.3.3. Weicht die Entwicklung der Sparte im Verein von der Entwicklung im BLSV-Kreis ab?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2331">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2332">ja, positiv</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2333">ja, negativ</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung3">3. Besteht aus Sicht des BLSV-Kreises die Möglichkeit, durch eine verstärkte Nutzung der vereinseigenen oder anderer Sportanlagen im Einzugsgebiet des Vereins den angeführten Bedarf auf Dauer abzudecken? </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung311">ja, vereinseigene Anlage</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung312">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung321">ja, Anlagen anderer Vereine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung322">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung331">ja, kommunale Anlagen</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung332">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung4">4. Kooperation des Vereins mit dem BLSV-Kreis</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung41">4.1. Wie ist das Verhältnis der Vereinsvorstandschaft zum BLSV-Kreis?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung411">1</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung412">2</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung413">3</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung414">4</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung415">5</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung42">4.2. Wie rege ist die Teilnahme der Vereinsvorstandschaft an Veranstaltungen des BLSV-Kreises?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung421">1</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung422">2</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung423">3</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung424">4</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung425">5</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung43">4.3. Wie ist die Mitwirkung des Vereins bei Veranstaltungen des BLSV-Kreises?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung431">1</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung432">2</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung433">3</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung434">4</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung435">5</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme11">1. Zeichnen sich in Bezug auf die Mitglieder im Einzugsbereich des Vereins Veränderungen ab?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme111">ja, Ausweisung neuer Wohnbaugebiete</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme112">keine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme121">ja, Wandel in der Infrastruktur</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme122">keine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme131">ja, Änderungen in der Bevölkerungszusammensetzung</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme132">keine</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme2">2. Wird mit dem geplanten Vorhaben dem vom Verein angeführten Bedarf ausreichend Rechnung getragen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme21">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22_0">Wenn nein, was sind die Gründe?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme221">Die geplanten Sportstätten genügen nicht dem Bedarf in der Größe</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme222">Die Anzahl der geplanten Sportstätten sind für den Bedarf des Vereins nicht ausreichend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme223">Die geplante Nutzung der neuen Sportstätten entspricht nicht den Bedürfnissen des Vereins</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme224">Mit den geplanten Sportstätten kann das künftige, vom Verein aufgezeichnete Sportkonzept auf Dauer nicht in vollem Umfang umgesetzt werden</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme3">3. Besteht die  Möglichkeit der Koordinierung des geplanten Vorhabens mit gleichgearteten Bauvorhaben im Einzugsbereich des Vereins bzw. im BLSV-Kreis?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme32">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31_0">Wenn ja, welche?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme311">Mit einem bzw. mehreren Nachbarsvereinen</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme312">Mit der Kommune</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme313">Mit einer zentralen Sportstätte im BLSV-Kreis</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme4">4. Wann wurden Sie in die Planungen des Vereins vor der Antragstellung eingebunden?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme41">Datum:</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme5">5. Wurde eine Besichtigung zum Zustand der bestehenden Sportanlagen vorgenommen und der angemeldete Bedarf vor Ort überprüft?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme51">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52_0">Wenn nein, warum?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme521">Der Zustand der Vereinsanlagen ist bekannt</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme522">Die Notwendigkeit des Vorhabens wurde bei der/n Besprechung/en ausführlich vom Verein erläutert</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme523">Der Bedarf ist dem BLSV-Kreis seit langem bekannt.</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme6">6. Ist eine Mitbenutzung durch weitere Personen gegeben?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme62">nein</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61_0">Wenn ja, durch wen?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme611">Gewerbliche Sportanbieter (z.B. private Sportschulen, Reitlehrer etc.)</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme612">Betriebsportgruppen (z.B. Polizei, Feuerwehr, Firmen etc.)</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme613">Öffentliche Einrichtungen (z.B. Schulen, Kindergärten, etc.)</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme614">Privatpersonen </label>
+
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnummer">antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.alvimmvermoegen">Immater. Vermögensgegenstände</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.alvsachanlagen">Sachanlagen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.alvfinanzanlagen">Finanzanlagen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ulvkassenbestand">integer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ulvbankguthaben">Bankguthaben</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sonstigesvermoegen">Sonstiges Vermögen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ekfreieruecklagen">Freie Rücklagen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ekzweckgebundeneruecklagen">Zweckgebundene Rücklagen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ekbetriebsmittelruecklagen">Betriebsmittelrücklagen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbkkreditinstitut">Verbindlichkeiten Kreditinstitute</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbkstaatsmitteldarlehen">Verbindlichkeiten BLSV-Staatsmitteldarlehen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.vbksonstigeverbindlichkeiten">Sonstige Verbindlichkeiten</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtdarlehenssumme">Ursprüngliche Gesamtdarlehenssumme</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.jaehrlicherkapitaldienst">Jährlicher Kapitaldienst</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bdnvanzahlboote">Anzahl Boote</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bdnvanzahlpferde">Anzahl Pferde</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bdnvsportlicheentwicklung">Sportliche Entwicklung im Verein</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bdnvnotwendigkeit">Notwendigkeit dergeplanten Maßnahmen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bdnvalternative">Alternativen zum geplanten Bauvorhaben</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bdnvauswirkungen">Auswirkungen auf die sportliche Entwicklung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.mitglieder12bis26">Mitgliederzahl  bis 26 </label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sicherung1">Grundschuld</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sicherung2">Kommunalbürgschaft</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sicherung3">Bankbürgschaft</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung1">Barmittel</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung2">Geldspenden</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierung3">Darlehen/Kredite</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung4">Eigene Arbeitsleistung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung6">Unentgeltliche Sach- und Maschienenleistung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierung7">Kommunen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung8">Landkreis</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung9">Sonstige</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung10">Vorsteuererstattung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung11">Staatszuschuss</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierung12">Staatsmitteldarlehen</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnummer1">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner6mobil">Handy:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnernmae">Name</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner1">Name</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner2">Vorname</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartener3">Titel</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner4">Telefon dienstl.:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner5">Telefon privat</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner6">Telefon mobil:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner8">Email:</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.namenamenamename">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.name">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnr1ffdfna">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnr1ffdfn">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnr1ffdf">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnr1ffd">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnr1f">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnr1">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.antragsnr">Antragsnummer</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.test2">Name des Ansprechpartners</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.test1">Name des Ansprechpartners</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.save">Änderungen speichern</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.new">Daten absenden</label>
+		  
+		   <label index="tx_blsvspstbauantrag_domain_model_regelantrag.art1">Kleinantrag</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.art2">regulärer Antrag</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.art3">Katastrophenfall</label>
+		  
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall1">Bestandssicherung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall2">Bestandserweiterung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall3">Bestandssicherung / -erweiterung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall4">Objekterwerb</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall5">Objekterwerb / Bestandssicherung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall6">Objekterwerb / Bestandserweiterung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall7">Objekterwerb / Bestandssicherung/-erweiterung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall8">K-Fall / Bestandssicherung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.fall9">K-Fall / Bestandssicherung / -erweiterung</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValKeineHinweis">Kreuzen Sie bitte alle allgemeinen Hinweise an.</label>
+		  
+		  
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung1">Kreuzen Sie bitte unter I) a) eine Tendenz an.</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung1">Kreuzen Sie bitte unter I) a) 1. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung211">Kreuzen Sie bitte unter I) a) 2.1.1. eine Tendenz an.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung212">Kreuzen Sie bitte unter I) a) 2.1.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung213">Kreuzen Sie bitte unter I) a) 2.1.3. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung22">Kreuzen Sie bitte unter I) a) 2.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung221">Kreuzen Sie bitte unter I) a) 2.2.1. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung222">Kreuzen Sie bitte unter I) a) 2.2.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung223">Geben Sie bitte unter I) a) 2.2.3. eine Einschätzung zur Entwicklung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung231">Kreuzen Sie bitte unter I) a) 2.3.1. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung232">Kreuzen Sie bitte unter I) a) 2.3.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung233">Geben Sie bitte unter I) a) 2.3.3. eine Einschätzung zur Entwicklung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung3">Geben Sie bitte unter I) a) 3. eine Einschätzung zur Nutzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung41">Geben Sie bitte unter I) a) 4.1. eine Einschätzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung42">Geben Sie bitte unter I) a) 4.2. eine Einschätzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung43">Geben Sie bitte unter I) a) 4.3. eine Einschätzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung1">Kreuzen Sie bitte unter I) a) 1. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung211">Kreuzen Sie bitte unter I) a) 2.1.1. eine Tendenz an.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung212">Kreuzen Sie bitte unter I) a) 2.1.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung213">Kreuzen Sie bitte unter I) a) 2.1.3. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung22">Kreuzen Sie bitte unter I) a) 2.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung221">Kreuzen Sie bitte unter I) a) 2.2.1. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung222">Kreuzen Sie bitte unter I) a) 2.2.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung223">Geben Sie bitte unter I) a) 2.2.3. eine Einschätzung zur Entwicklung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung231">Kreuzen Sie bitte unter I) a) 2.3.1. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung232">Kreuzen Sie bitte unter I) a) 2.3.2. eine Tendenz an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung233">Geben Sie bitte unter I) a) 2.3.3. eine Einschätzung zur Entwicklung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung3">Geben Sie bitte unter I) a) 3. eine Einschätzung zur Nutzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung41">Geben Sie bitte unter I) a) 4.1. eine Einschätzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung42">Geben Sie bitte unter I) a) 4.2. eine Einschätzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung43">Geben Sie bitte unter I) a) 4.3. eine Einschätzung an.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten11">Geben Sie bitte unter I) b) 1. eine Einschätzung an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten211">Kreuzen Sie bitte unter I) b) 2. jeweils "ja" oder "nein" an.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten31">Wählen Sie bitte unter I) b) 3. eine Antwort aus.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten41">Wählen Sie bitte unter I) b) 4. eine Antwort aus.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten511">Kreuzen Sie bitte unter I) b) 5. jeweils "ja" oder "nein" an.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme111">Kreuzen Sie bitte unter I) c) 1. jeweils "ja" oder "nein" an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme21">Kreuzen Sie bitte unter I) c) 2. Füllen sie vollständig aus.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme31">Kreuzen Sie bitte unter I) c) 3. Füllen sie vollständig aus.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme41">Bitte geben Sie ein gültiges Datum unter I) c) 4 an. </label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme51">Kreuzen Sie bitte unter I) c) 5. Füllen sie vollständig aus.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme61">Füllen sie bitte vollständig unter I) C) 6.aus.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineFinanzierung111">Füllen sie bitte vollständig unter I) d) 1.aus.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineFinanzierung211">Füllen sie bitte vollständig unter I) d) 2.aus.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineFinanzierung31">Kreuzen Sie bitte unter I) d) 3."ja" oder "nein" an.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineFinanzierung41">Geben Sie bitte unter I) d) 4.eine Einschätzung ab.</label>
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineSonstiges11">Geben Sie bitte unter I) e) ein gültiges Datum ein.</label>
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineSonstiges21">Geben Sie bitte unter I) e) ihr Zu- oder Ablehnung an.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeindurchschnittsergebnis">Geben Sie bei B2 Punkt 2 ein Durchschnittsergebnis an.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeinVorzbaubeginnerkl1">Bitte stimmen Sie beiden Erklärungen bei B2 Punkt 4 zu.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValkeinVorzbaubeginnerkl2">Bitte stimmen Sie beiden Erklärungen bei B2 Punkt 4 zu.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinhakenpunkt3b2">Bitte kreuzen sie mindestens ein Kästchen bei B2 Punkt 3 an.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinsmfhakenpunkt1b2">Bitte kreuzen sie mindestens ein Kästchen bei B2 Punkt 1 unter Staatsmittelförderung an.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinsmfoerderung">Die Staatsmittelförderung gesamt darf nicht mehr als 30% der veranschlagten Gesamtkosten betragen. </label>
+
+
+<!-- B2 Vorzeitiger Baubeginn labels -->
+
+
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2_punkt1">1. Zwischenfinanzierung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2">B2) Vorzeitiger Baubeginn</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.bank">Bank</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.kommune">Kommune</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.privat">Privat</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.landkreis">Landkreis</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.sonstige">Sonstige</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.vorsteuererstattung">Vorsteuererstattung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.zwischenfinanzierung">Zwischenfinanzierung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsposi">Finanzierungsposition</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.betrag">Betrag</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.jbelastung">jährliche Belastung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.smfoerderung">Staatsmittelförderung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.allghinweisehilfetext">Beachte: Eine Zustimmung zum vorzeitigen Baubeginn kann erst erteilt werden, wenn</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.beachte1">Beachte: Die Zwischenfinanzierung kann durch mehrere Stellen erfolgen und ist jeweils mit Nachweis zu belegen.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ear1">2. Einnahmen-Ausgaben-Rechnung der letzten drei Geschäftsjahre von 20</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ear2"> bis 20</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ear3">(Erfolgt die Rechnungslegung des Vereins für die Geschäftsjahre nicht gemäß dem Kalenderjahr, so ist dies entsprechend anzuführen. Des Weiteren sind die Jahresabschlüsse der letzten 3 Jahre beizulegen.)</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ear4">Durchschnittsergebnis der letzten drei Geschäftsjahre </label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ear5">Sollte das durchschnittliche Jahresergebnis die jährliche Belastung aus der langfristigen Finanzierung und der Zwischenfinanzierung nicht decken ist die Tragbarkeit der Gesamtfinanzierung einschließlich der Zwischenfinanzierung nachzuweisen. (z.B. durch eine Wirtschaftlichkeits- und Folgekostenrechnung) </label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.vorzbaupunkt3">3. Welche der in Nr. C 6.2.3 bzw. C 6.2.5 der Sportförderrichtlinien Gründe zur Notwendigkeit der Zustimmung zum vorzeitigen Baubeginn liegen vor?</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_1">Wegfall anderer öffentlicher Finanzierungsmittel</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_2">Gefährdung des Fortbestandes einer Sportanlage oder Sportvereins durch verzögerten Baubeginn der Maßnahme</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_3">Ersatzloser Verlust einer vorhandenen Sportanlage, insbesondere nach einer Kündigung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_4">Eintritt nachteiliger Folgen für den Sportbetrieb aufgrund eines Katastrophenfalls</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.punkt3_5">Sonstige: (Gründe bitte unten anführen)</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.vorzbaupunkt4">4. Erklärung des Vereins zur Zustimmung zum vorzeitigen Baubeginn</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.punkt4_1">Es wird hiermit ausdrücklich und verbindlich erklärt, dass die Zwischenfinanzierung aufgebracht werden kann und die Finanzierung unter Berücksichtigung bereits bestehender und der hier dargestellten Darlehensverbindlichkeiten gesichert ist. Es ist bekannt, dass die Zwischenfinanzierungsdauer von der Rangstelle für die Festsetzung des Antrags und von der Mittelbereitstellung des Freistaates Bayern abhängt und deshalb nicht festlegbar ist.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.punkt4_2">Es wird hiermit verbindlich erklärt, den BLSV unverzüglich zu unterrichten, für den Fall der Einlegung eines Rechtsmittels gegen den (die) Baugenehmigungsbescheid(e).</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.fposition">Finanzierungsposition</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.durch">durch</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.betrag">Betrag</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.1landkreis">Landkreis</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.1sonstige">Sonstige</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.1vorsteuererst">Vorsteuererstattung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.1smfoerderung">Staatsmittelförderung</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.1gesamt">Gesamt</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.b2vbb1">Ja / Nein</label>
+
+
+
+<!--  <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfoerderung" />-->
+ 
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen1">Rasenspielfeld Spielfeld</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen2">Rasenspielfeld Spielfeld TYP A (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen3">Rasenspielfeld Spielfeld TYP B (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen4">Rasenspielfeld Spielfeld TYP C (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen5">Rasenspielfeld Kleinspielfeld</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen6">Rasenspielfeld Kleinspielfeld TYP A (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen7">Rasenspielfeld Kleinspielfeld TYP B (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen8">Rasenspielfeld Kleinspielfeld TYP C (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen9">Rasenspielfeld Beregnungsanlage</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen10">Rasenspielfeld Ballfangzaun</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen11">Rasenspielfeld Baseball</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen12">Rasenspielfeld Baseball mit Dugout</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen13">Rasenspielfeld Korbball</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen14">Rasenspielfeld Faustball</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen15">Kunstrasenspielfeld (DIN SPEC 18035/7) Spielfeld</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen16">Kunstrasenspielfeld (DIN SPEC 18035/7) Spielfeld TYP A (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen17">Kunstrasenspielfeld (DIN SPEC 18035/7) Spielfeld TYP B (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen18">Kunstrasenspielfeld (DIN SPEC 18035/7) Spielfeld TYP C (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen19">Kunstrasenspielfeld (DIN SPEC 18035/7) Kleinspielfeld</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen20">Kunstrasenspielfeld (DIN SPEC 18035/7) Kleinspielfeld TYP A (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen21">Kunstrasenspielfeld (DIN SPEC 18035/7) Kleinspielfeld TYP B (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen22">Kunstrasenspielfeld (DIN SPEC 18035/7) Kleinspielfeld TYP C (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen23">Kunstrasenspielfeld (DIN SPEC 18035/7) Beregnungsanlage</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen24">Kunstrasenspielfeld (DIN SPEC 18035/7) Ballfangzaun</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen25">Tennenspielfeld Spielfeld</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen26">Tennenspielfeld Spielfeld TYP A (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen27">Tennenspielfeld Spielfeld TYP B (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen28">Tennenspielfeld Spielfeld TYP C (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen29">Tennenspielfeld Kleinspielfeld</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen30">Tennenspielfeld Kleinspielfeld TYP A (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen31">Tennenspielfeld Kleinspielfeld TYP B (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen32">Tennenspielfeld Kleinspielfeld TYP C (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen33">Tennenspielfeld Beregnungsanlage</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen34">Tennenspielfeld Ballfangzaun</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen35">Allwetterplatz 20/28</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen36">Allwetterplatz 28/44</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen37">Allwetterplatz benutzerdefiniert</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen38">Beleuchtungsanlage (DIN 12193 Kl. III) </label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen39">Tennisplatz (DIN 18035) Sand</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen40">Tennisplatz (DIN 18035) Hardcourt</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen41">Tennisplatz (DIN 18035) Rasen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen42">Tennisplatz (DIN 18035) Kunstrasen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen43">Tennisplatz (DIN 18035) Kindertennisplatz</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen44">Tennisplatz (DIN 18035) Ballwand/ Übungswand</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen45">Reitplatz 20/40</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen46">Reitplatz 20/60</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen47">Reitplatz benutzerdefiniert</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen48">Kletteranlage Outdoor (DIN EN 12572) Seilklettern (Vorstieg, Toprope)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen49">Kletteranlage Outdoor (DIN EN 12572) Boulder</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen50">Kletteranlage Outdoor (DIN EN 12572) kombiniert</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen51">Leichtathletikanlage Laufbahn 100m/ 4 Bahnen (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen52">Leichtathletikanlage Laufbahn 100m/ 6 Bahnen (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen53">Leichtathletikanlage Laufbahn 400m/ 4 Bahnen (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen54">Leichtathletikanlage Laufbahn 400m/ 6 Bahnen (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen55">Leichtathletikanlage Wettkampfanlage TYP A (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen56">Leichtathletikanlage Wettkampfanlage TYP B (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen57">Leichtathletikanlage Wettkampfanlage TYP C (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen58">Leichtathletikanlage Wettkampfanlage TYP D (DIN 18035)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen59">Leichtathletikanlage Sprungrube</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen60">Leichtathletikanlage Weitsprunganlage</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen61">Leichtathletikanlage benutzerdefiniert</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen62">Beachanlagen Volleyball</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen63">Beachanlagen Handball</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen64">Beachanlagen Fussball</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen65">Beachanlagen Tennis</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen66">Beachanlagen Multifunktional</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen67">Sportbad 6 Bahnen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen68">Sportbad 8 Bahnen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen69">Sportbad 10 Bahnen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen70">Wintersportanlage Bob-/ Rodelbahn</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen71">Wintersportanlage Sprungschanze</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen72">weitere sportartspezifische Anlage Rollsportbahn</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen73">weitere sportartspezifische Anlage BMX-Bahn</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen74">weitere sportartspezifische Anlage Bahnengolfanlage</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen75">weitere sportartspezifische Anlage Bootssteg</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen76">sonstige Maßnahmen Erschließung</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen77">sonstige Maßnahmen Zisterne</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen78">sonstige Maßnahmen Tiefbrunnen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen79">sonstige Maßnahmen Lärmschutz</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen80">Betriebsräume </label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen81">Funktionsräume Gymnastik</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen82">Funktionsräume Fitness</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen83">Funktionsräume Kraft</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen84">Funktionsräume Kampfsport</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen85">Funktionsräume Boxen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen86">Funktionsräume Tanzen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen87">Funktionsräume Tischtennis</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen88">Funktionsräume multifunktional</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen89">Sporthalle 1 fach</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen90">Sporthalle 2 fach</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen91">Sporthalle 2,5 fach (Ballsport)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen92">Sporthalle 3 fach</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen93">Sporthalle benutzerdefiniert</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen94">sportartspezifische Halle Tennis</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen95">sportartspezifische Halle Squash</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen96">sportartspezifische Halle Reiten</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen97">sportartspezifische Halle Stockschützen</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen98">sportartspezifische Halle Kampfsport</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen99">sportartspezifische Halle Tischtennis</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen100">sportartspezifische Halle Tanzsport</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen101">Kletteranlage Indoor (DIN EN 12572) Seilklettern (Vorstieg, Toprope)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen102">Kletteranlage Indoor (DIN EN 12572) Boulder</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen103">Kletteranlage Indoor (DIN EN 12572) kombiniert</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen104">Kegelbahn</label>
+       </languageKey>
+    </data>
+</T3locallang>

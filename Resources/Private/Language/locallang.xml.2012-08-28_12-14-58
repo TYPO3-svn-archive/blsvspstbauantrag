@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Sportstättenbau Antragsstellung extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+		
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung">Antragsanforderung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status">Status</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.uid">Antragsnummer</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art">Art des Antrags</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall">Fall</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vereinsnummer">Vereinsnummer</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.telefon">Telefon tagsüber</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.baugenehmigungspflichtig">baugenehmigungspflichtig</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme1">Bschreibung der Maßnahme 1</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten1">Kosten der Maßnahme 1</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.begruendung">Kurze Begründung der geplanten Maßnahme</label>
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag">Kleinantrag</label>
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag.name">Name des Ansprechpartners</label>
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag.vorname">Vorname des Ansprechpartners</label>
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag.antragsnummer">Antragsnummer</label>
+			<label index="tx_blsvspstbauantrag_domain_model_bestandssicherung">Bestandssicherung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_bestandssicherung.antragsnummer">Antragsnummer</label>
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte">Hilfetexte</label>
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte.heading">Überschift</label>
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte.hilfekurz">Hilfekurz</label>
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte.hilfelang">ausführliche hilfe</label>
+			
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art1">Kleinantrag</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art2">regulärer Antrag</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall1">Bestandssicherung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall2">Bestandsentwicklung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall3">Katastrophenfall</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.neueAntragsunterlagen">Neue Antragunterlagen anfordern</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.neuHeading">Anforderung Antragsunterlagen</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.create">Daten speichern</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fuer">für</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorbmerkungenhead">Vorbemerkungen</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorbmerkungentext">Mit der Maßnahme darf erst begonnen werden, ...</label>
+			
+			
+		</languageKey>
+	</data>
+</T3locallang>

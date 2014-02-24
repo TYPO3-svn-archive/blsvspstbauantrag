@@ -1,0 +1,88 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This template displays a EDIT form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Edit.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+<f:debug title="Debug of MyArray">{antragsanforderung}</f:debug>
+<f:section name="main">
+
+<vh:zoombuttons />
+	<div class='zoomarea'>
+	
+	<f:render partial="FormErrors" />
+	 
+	
+	<f:form action="abgebenspeichern" name="regelantrag" object="{regelantrag}" >
+		<f:render partial="Regelantrag/FormFields" arguments="{regelantrag:regelantrag, hilfetexte:hilfetexte,abgeben:abgeben,kv:kv}" /><br /><br />
+		
+	</f:form>	
+	
+	
+		<f:flashMessages class="flashMessages" />
+		
+		<f:form action="entscheidenspeichern"  controller="antragsanforderung" name="antragsanforderung" object="{antragsanforderung}" >
+		<f:if condition="{antragsanforderung.status}>7">	<f:then>		
+			<table>		
+				<tr>		
+				<th class="linksoben rechtsoben" colspan="2"><h2><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsbewilligung' /></h2></th>		</tr>		
+				<tr>			
+					<td><f:form.radio class="entscheiden" property="status" value="9" /><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.antragablehnen' /></td>		
+					<td><f:form.textarea class="entscheiden" id="begruendungablehnung" property="begruendungablehnung" rows="10" cols="10"  /></td>
+				</tr>		
+				<tr>			 
+					<td><f:form.radio class="entscheiden" property="status" value="10" /><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.antragbewilligen' /></td>		
+					<td><f:form.textarea class="entscheiden" id="begruendungannahme" property="begruendungannahme"  rows="10" cols="10"  /></td>
+								
+				</tr>		
+				<tr>			
+					<td><f:form.submit id="submit" class="linkbutton" value="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.entscheiden' />" /></td>		
+					<td>&nbsp;&nbsp;<f:link.action action="list"  controller="Antragsanforderung" class="tx_blsvspstbauantrag_abgeben"><f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.zuruebersicht' /></f:link.action></td>
+				</tr>		
+			</table>	
+		</f:then></f:if>		
+		</f:form>	 		
+	 <br />
+</div>	
+	
+<script>
+		$(document).ready(function() {
+			
+			$("input").attr('disabled', 'disabled');
+			$("#submit").removeAttr('disabled');
+			$("#submit").click( function(){
+				$("input").removeAttr('disabled');
+				
+			});
+			$("input").each(function(){
+				if(!$(this).val()) {
+					$(this).addClass("warning");
+				}
+
+				if($(this).val()==0) {
+					$(this).addClass("warning");
+				}
+			});
+			$('textarea').each(function(){
+				$(this).attr( 'disabled', 'disabled' ); 
+			});
+			
+			$(".entscheiden").removeAttr('disabled');
+			
+			$("#begruendungablehnung").removeAttr('disabled');				$("#begruendungannahme").removeAttr('disabled');	
+			
+		});	
+		
+		
+		
+	</script>
+</f:section>
+
+

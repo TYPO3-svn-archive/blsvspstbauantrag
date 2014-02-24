@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'blsvspstbauantrag'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung">Antragsanforderung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.status">Status</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art">Art</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall">Fall</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vereinsnummer">Vereinsnummer</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.telefon">Telefon</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.baugenehmigungspflichtig">Baugenehmigungspflichtig</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahme1">Massnahme1</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmekosten1">Massnahmekosten1</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.begruendung">Begründung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.begruendungablehnung">Begründung der Ablehnung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn">vorzeitiger Baubeginn</label>
+
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag">Kleinantrag</label>
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag.name">Name</label>
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag.vorname">Vorname</label>
+			<label index="tx_blsvspstbauantrag_domain_model_kleinantrag.antragsnummer">Antragsnummer</label>
+
+			<label index="tx_blsvspstbauantrag_domain_model_bestandssicherung">Bestandssicherung</label>
+			<label index="tx_blsvspstbauantrag_domain_model_bestandssicherung.antragsnummer">Antragsnummer</label>
+
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte">Hilfetexte</label>
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte.heading">Heading</label>
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte.hilfekurz">Hilfekurz</label>
+			<label index="tx_blsvspstbauantrag_domain_model_hilfetexte.hilfelang">Hilfelang</label>
+			
+			<label index="tx_blsvspstbauantrag_domain_model_regelantrag">Regelantrag</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

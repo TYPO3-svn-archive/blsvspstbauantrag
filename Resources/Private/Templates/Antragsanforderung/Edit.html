@@ -1,0 +1,27 @@
+{namespace vh=Tx_Blsvspstbauantrag_ViewHelpers}
+<f:layout name="Default" />
+
+This template displays a EDIT form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Edit.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<vh:zoombuttons />
+<div class='zoomarea'>
+	<f:flashMessages />
+	
+	<f:render partial="FormErrors" />
+	
+	<f:form action="update" name="antragsanforderung" object="{antragsanforderung}" >
+		<f:render partial="Antragsanforderung/FormFields" arguments="{antragsanforderung:antragsanforderung, hilfetexte:hilfetexte}" />
+		<f:form.submit value="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.speichern' />" />
+	</f:form>
+</div>
+</f:section>

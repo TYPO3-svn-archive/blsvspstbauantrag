@@ -1,0 +1,173 @@
+
+<f:form  id="antragsfilter" action="list" name="search" object="{search}">
+
+<table>
+	<tr>
+		<th class="oben" colspan="7">Filter</th>
+	</tr>
+	<tr>	
+		<td><f:form.checkbox id="art1" name="art[1]" value="1" checked="{art.1}" /><label for="art1">Kleinantrag</label><br />
+		
+		 <f:form.checkbox id="art2" name="art[2]" value="2" checked="{art.1}" /> <label for="art2">Regelantrag</label></td> 
+		<td> <f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn' /><br />
+			<f:form.radio id="vorzeitigerbaubegin0" name="vorzeitigerbaubeginn" value="0" checked="{vorzeitigerbaubeginn} == 0" /><label for="vorzeitigerbaubeginn0">VBB ausblenden</label><br />
+			<f:form.radio id="vorzeitigerbaubegin2" name="vorzeitigerbaubeginn" value="2" checked="{vorzeitigerbaubeginn} == 2"  /><label for="vorzeitigerbaubeginn2">alle</label><br />
+			<f:form.radio id="vorzeitigerbaubegin0" name="vorzeitigerbaubeginn" value="1" checked="{vorzeitigerbaubeginn} == 1"  /><label for="vorzeitigerbaubeginn1">nur VBB</label>	
+		</td>
+		<td  colspan="5">
+			<f:form.select style="width:150px;" value="{fall}" name="fall" class="fall" multiple="true" options="{ 	1: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall1\")}', 
+   	        														2: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall2\")}', 
+   	        														3: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall3\")}', 
+   	        														4: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall4\")}', 
+   	        														5: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall5\")}', 
+   	        														6: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall6\")}', 
+   	        														7: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall7\")}', 
+   	        														8: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall8\")}', 
+   	        														9: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_regelantrag.fall9\")}'
+   	        								}" />
+   	        								
+   	        <f:form.select style="width:300px;" value="{status}" name="status" class="fall" multiple="true" options="{ 	1: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status1\")}', 
+   	        														2: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status2\")}', 
+   	        														3: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status3\")}', 
+   	        														4: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status4\")}', 
+   	        														5: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status5\")}', 
+   	        														6: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status6\")}', 
+   	        														7: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status7\")}', 
+   	        														8: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status8\")}', 
+   	        														9: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status9\")}',
+   	        														10: '{f:translate(key:\"tx_blsvspstbauantrag_domain_model_antragsanforderung.status10\")}'
+   	        								}" />
+			
+			
+		</td>   	        								
+	</tr>
+	<tr>
+		<td><f:form.checkbox  id="bezirk1" name="bezirk[1]" value="1" checked="{bezirk.1}"  /> <label for="bezirk1">Obb</label></td> 
+		<td><f:form.checkbox  id="bezirk2" name="bezirk[2]" value="2" checked="{bezirk.2}" /> <label for="bezirk2">Ndb</label></td>  
+		<td><f:form.checkbox  id="bezirk3" name="bezirk[3]" value="3" checked="{bezirk.3}" /> <label for="bezirk3">Opf</label></td>
+   		<td><f:form.checkbox  id="bezirk4" name="bezirk[4]" value="4" checked="{bezirk.4}" /> <label for="bezirk4">Ofr</label></td>
+		<td><f:form.checkbox  id="bezirk5" name="bezirk[5]" value="5" checked="{bezirk.5}" /> <label for="bezirk5">Mfr</label></td>
+		<td><f:form.checkbox  id="bezirk6" name="bezirk[6]" value="6" checked="{bezirk.6}" /> <label for="bezirk6">Ufr</label></td>
+		<td><f:form.checkbox  id="bezirk7" name="bezirk[7]" value="7" checked="{bezirk.7}" /> <label for="bezirk7">Sch</label></td>
+	</tr>
+	<tr>
+ 		<td><f:form.select name="kreis" value="{kreis}" multiple="true" options="{
+				101: 'München-Stadt', 
+				102: 'Starnberg', 
+				103: 'Garmisch-Partenkirchen', 
+				104: 'Miesbach', 
+				105: 'Rosenheim', 
+				106: 'Traunstein', 
+				107: 'Altötting', 
+				108: 'Erding', 
+				109: 'Freising', 
+				110: 'Ingolstadt', 
+				111: 'Dachau', 
+				112: 'Bad Tölz-Wolfratshausen', 
+				113: 'München-Land', 
+				114: 'Fürstenfeldbruck', 
+				115: 'Landsberg-Lech', 
+				116: 'Weilheim-Schongau', 
+				117: 'Ebersberg', 
+				118: 'Berchtesgadener-Land', 
+				119: 'Mühldorf', 
+				120: 'Eichstätt', 
+				121: 'Neuburg-Schrobenhausen', 
+				122: 'Pfaffenhofen' }" /> </td>
+				<td><f:form.select  value="{kreis}" name="kreis" multiple="true" options="{				
+				201: 'Landshut', 
+				202: 'Deggendorf', 
+				203: 'Straubing - Bogen', 
+				204: 'Passau', 
+				205: 'Rottal-Inn (Pfarrkirchen)', 
+				206: 'Kelheim', 
+				207: 'Dingolfing - Landau', 
+				208: 'Regen', 
+				209: 'Freyung-Grafenau' }" /> </td>
+				<td><f:form.select  value="{kreis}" name="kreis" multiple="true" options="{	
+				301: 'Regensburg', 
+				302: 'Weiden', 
+				303: 'Cham', 
+				304: 'Schwandorf', 
+				305: 'Amberg', 
+				306: 'Neumarkt', 
+				307: 'Tirschenreuth' }" /> </td>
+				<td><f:form.select  value="{kreis}" name="kreis" multiple="true" options="{	
+				401: 'Bayreuth', 
+				402: 'Kulmbach', 
+				403: 'Hof', 
+				404: 'Coburg', 
+				405: 'Kronach', 
+				406: 'Bamberg', 
+				407: 'Wunsiedel', 
+				408: 'Lichtenfels', 
+				409: 'Forchheim' }" /> </td>
+				<td><f:form.select  value="{kreis}" name="kreis" multiple="true" options="{	
+				501: 'Nürnberg', 
+				502: 'Fürth-Stadt-LK', 
+				503: 'Ansbach', 
+				504: 'Erlangen-Stadt-LK', 
+				505: 'Roth-Schwabach', 
+				506: 'Nürnberg-Land', 
+				507: 'Neustadt-Aisch', 
+				508: 'Weißenburg-Gunzenhausen' }" /> </td>
+				<td><f:form.select  value="{kreis}" name="kreis" multiple="true" options="{	
+				601: 'Aschaffenburg', 
+				602: 'Miltenberg', 
+				603: 'Main-Spessart', 
+				604: 'Würzburg-Stadt', 
+				605: 'Würzburg-Land', 
+				606: 'Kitzingen', 
+				607: 'Schweinfurt', 
+				608: 'Haßberge', 
+				609: 'Bad Kissingen', 
+				610: 'Rhön-Grabfeld' }" /> </td>
+				<td><f:form.select  value="{kreis}" name="kreis" multiple="true" options="{	
+				701: 'Oberallgäu', 
+				702: 'Ostallgäu', 
+				703: 'Unterallgäu', 
+				704: 'Augsburg-Land', 
+				705: 'Augsburg-Stadt', 
+				706: 'Günzburg', 
+				707: 'Dillingen', 
+				708: 'Neu-Ulm', 
+				709: 'Donau-Ries', 
+				710: 'Lindau', 
+				711: 'Aichach-Friedberg', 
+				711: 'Aichach-Friedberg'
+				}" />
+			</td>
+		</tr>
+		<tr>
+			<td class="linksunten" colspan="4"><f:form.textfield name="searchtext"  value="{searchtext}" placeholder="Suchtext" /></td>
+			<td class="rechtsunten" colspan="3"> <f:form.textfield id="reset" type="button" value="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.reset' />" /><f:form.submit value="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.filtern' />" /></td>
+		</tr>
+	</table>         
+   	        
+<br /><br />   	 
+<script>       
+   	 $('#antragsfilter').submit( function(  ) {
+   	  	var value = $( 'select, :checkbox' ).serialize() ;
+   		setCookie( 'filter', value , 100   );
+   	  } );
+   	     
+   	var setCookie = function (c_name,value,exdays)
+   	{
+	   	var exdate=new Date();
+	   	exdate.setDate(exdate.getDate() + exdays);
+	   	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	   	document.cookie = c_name + "=" + c_value;
+   	}
+   	 
+   	$('#reset').click( function()  {
+   		$("#antragsfilter  :checkbox").removeAttr("checked");
+   		$('#antragsfilter option').removeAttr('selected');
+   		$('#antragsfilter :text').val('');
+   		$('#antragsfilter :text').focus();
+   	});
+   		
+   	
+   	     
+</script>   	        
+   	        
+</f:form>
