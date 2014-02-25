@@ -1702,8 +1702,9 @@ $TCA['tx_blsvspstbauantrag_domain_model_regelantrag'] = array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:blsvspstbauantrag/Resources/Private/Language/locallang_db.xml:tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigungkv',
 			'config' => array(
-				'type' => 'check',
-				'default' => 0
+				'type' => 'input',
+						'size' => 1,
+						'eval' => 'int,required'
 			),
 		),
 		'absendedatum' => array(
@@ -3305,8 +3306,9 @@ $TCA['tx_blsvspstbauantrag_domain_model_regelantrag'] = array(
 			'exclude' => 0,
 			'label' => 'LLL:EXT:blsvspstbauantrag/Resources/Private/Language/locallang_db.xml:tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungja',
 			'config' => array(
-				'type' => 'check',
-				'default' => 0
+				'type' => 'input',
+						'size' => 1,
+						'eval' => 'int,required'
 			),
 		),
 		'bauberatungdatum' => array(

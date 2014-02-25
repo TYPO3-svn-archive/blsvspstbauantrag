@@ -1417,10 +1417,10 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	/**
 	 * Ortsbesichtung durch BLSV-Kreis / kl+re
 	 *
-	 * @var boolean
+	 * @var integer
 	 * @validate NotEmpty
 	 */
-	protected $ortsbesichtigungkv = FALSE;
+	protected $ortsbesichtigungkv = 0;
 
 	/**
 	 * Sonstige Verbindlichkeiten
@@ -2737,9 +2737,9 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 * Sportstättenbauberatung ja
 	 * kl+re
 	 *
-	 * @var boolean
+	 * @var integer
 	 */
-	protected $bauberatungja = FALSE;
+	protected $bauberatungja = 0;
 
 	/**
 	 * Datum der Berratung
@@ -8864,7 +8864,7 @@ protected $smfbbs = FALSE;
 	/**
 	 * Returns the ortsbesichtigungkv
 	 *
-	 * @return boolean $ortsbesichtigungkv
+	 * @return integer $ortsbesichtigungkv
 	 */
 	public function getOrtsbesichtigungkv() {
 		return $this->ortsbesichtigungkv;
@@ -8873,21 +8873,14 @@ protected $smfbbs = FALSE;
 	/**
 	 * Sets the ortsbesichtigungkv
 	 *
-	 * @param boolean $ortsbesichtigungkv
+	 * @param integer $ortsbesichtigungkv
 	 * @return void
 	 */
 	public function setOrtsbesichtigungkv($ortsbesichtigungkv) {
 		$this->ortsbesichtigungkv = $ortsbesichtigungkv;
 	}
 
-	/**
-	 * Returns the boolean state of ortsbesichtigungkv
-	 *
-	 * @return boolean
-	 */
-	public function isOrtsbesichtigungkv() {
-		return $this->getOrtsbesichtigungkv();
-	}
+	
 
 	/**
 	 * Returns the absendedatum
@@ -12257,7 +12250,7 @@ protected $smfbbs = FALSE;
 	/**
 	 * Returns the bauberatungja
 	 *
-	 * @return boolean $bauberatungja
+	 * @return integer $bauberatungja
 	 */
 	public function getBauberatungja() {
 		return $this->bauberatungja;
@@ -12266,7 +12259,7 @@ protected $smfbbs = FALSE;
 	/**
 	 * Sets the bauberatungja
 	 *
-	 * @param boolean $bauberatungja
+	 * @param integer $bauberatungja
 	 * @return void
 	 */
 	public function setBauberatungja($bauberatungja) {

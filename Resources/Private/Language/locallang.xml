@@ -354,7 +354,7 @@ Beachte: Mit dem postalischen Eingang des Klein-Antrags beim BLSV ist keine auto
             <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2_ra"> 2.	Mit der Maßnahme darf erst begonnen werden, wenn der Antragsteller die ausdrückliche, schriftliche Zustimmung zum vorzeitigen Baubeginn durch den Geschäftsbereich 3 - Sportstättenbau des BLSV erhalten hat. Als Maßnahmen-/Baubeginn ist bereits die Verpflichtung zur Auftragsvergabe eines der Ausführung zuzurechnender Lieferungs- oder Leistungsvertrag (z.B. Versand der Ausschreibungsunterlagen, Materialeinkauf, Auftragsvergabe) aber auch die eigene Arbeitsleistung zu werten. Bereits angefangene bzw. durchgeführte Maßnahmen werden nicht gefördert. 
 Beachte: Zusagen von anderen Stellen des BLSV haben keine Rechtsverbindlichkeit!
             </label>
-            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3_ra"> 3.	Anträge, die vor der Antragstellung keine Sportstättenbauberatung durch den Geschäftsbereich Finanzen Referat Sportstättenbau erfahren haben, können nicht in ein Verfahren aufgenommen werden.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3_ra"><![CDATA[ 3.	Anträge, die vor der Antragstellung keine Sportstättenbauberatung durch den Geschäftsbereich Finanzen Referat Sportstättenbau erfahren haben, können nicht in ein Verfahren aufgenommen werden.]]></label>
             <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext4"> <![CDATA[ 4.	Vergabe von Aufträgen: 
 Bei einer Gesamtförderung aus der öffentlichen Hand - Staatsmittel BLSV, Bundes-, weitere Landes-, Bezirks-, Landkreis- und kommunale Mittel - ab € 25.000,-- sind bei der Vergabe von Aufträgen und bei der Bauausführung insbesondere die Bestimmungen der Vergabe- und Vertragsordnung für Bauleistungen (VOB) und für andere Leistungen (VOL) einzuhalten. Für Architekten- und Ingenieurleistungen gilt die Vergabeordnung für freiberufliche Leistungen (VOF). Beachten Sie hierbei auch die Allgemeinen Nebenbestimmungen für Zuwendungen zur Projektförderung (ANBest-P) welche <a target="new" href="http://www.blsv.de/fileadmin/user_upload/pdf/sportstaettenbau/Allg._Nebenbestimmungen"> H&nbsp;I&nbsp;E&nbsp;R  </a> eingesehen werden können. ]]>
             </label>
@@ -876,9 +876,9 @@ Georg-Brauchle Ring 93<br />
 		  </label> 
 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_f">F) Sportstättenbauberatung</label> 
-		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungja">Die Sportstättenbauberatung war erforderlich und erfolgte am: ja</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungja">Die Sportstättenbauberatung war erforderlich und erfolgte am:</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungdatum">Datum der Berratung </label> 
-		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungnein">Die Sportstättenbauberatung war nicht erforderlich</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungnein">Die Sportstättenbauberatung war nicht erforderlich.</label> 
 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_g">G) Einbindung des BLSV-Kreises</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.datumgespraechkv">Wann wurde das geplante Bauvorhaben mit dem Vertreter des BLSV-Kreises besprochen?</label> 

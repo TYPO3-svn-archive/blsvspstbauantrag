@@ -3,15 +3,14 @@
 <div id="pdf_header">
 	<div class="links">
 		<br />
-		<div class="fett">BLSV-Regelantrag</div>
+		<div class="fett">BLSV-<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.art{regelantrag.art}" />  Nr. {regelantrag.antragsnummer1.uid} für Verein  {regelantrag.vereinsnummer} </div>
 	</div>
 	<div class="rechts"><img style="width: 75px; height: 26px;" src="/fileadmin/images/blsvlogo.png" /></div>
 </div>
 
 <div id="pdf_footer">
-	<div class="links">
 		<f:format.date format="d.n.Y">+0 seconds</f:format.date>
-		 - Regelantrag Nr. {regelantrag.antragsnummer1.uid} 
+		 - <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.art{regelantrag.art}" /> Nr. {regelantrag.antragsnummer1.uid} 
 		 - {regelantrag.vereinsname} ({regelantrag.vereinsnummer}) 
 		 - Kreis {regelantrag.blsvkreis}
 	</div>
@@ -26,9 +25,7 @@
 <!-- Allgemeine Daten -->	
 <!--                  -->
 <div id="allgemeine_daten">
-	<h2 ><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.allgemein" /></h2>
-				
-	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.art{regelantrag.art}" />  
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.art{regelantrag.art}" /> 
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fall{regelantrag.fall}" /></h3> 
 
 		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vereinsnummer"/>: {regelantrag.vereinsnummer}</p>

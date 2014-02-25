@@ -173,7 +173,7 @@
 				</th></f:then>
 				<f:else>
 				<th colspan="2" class="align-left" >
-					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3" />					
+					<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext3" htmlEscape="false" />					
 				</th></f:else></f:if>
 				<td colspan="2"class="align-left" >
 					<f:form.checkbox property="hinweistext3" value="1" />
@@ -1738,10 +1738,10 @@
 			</tr>
 			<tr>
 				<td>
-					<f:form.radio property="bauberatungja" value="bauberatungja" checked="checked" />
+					<f:form.radio property="bauberatungja" value="1" />
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungja" />
 					<f:form.textfield class="datum" property="bauberatungdatum" value="<f:format.date  format='d.m.Y'>@{regelantrag.bauberatungdatum}</f:format.date>"  /><br />
-					<f:form.radio property="bauberatungja" value="bauberatungnein" />
+					<f:form.radio property="bauberatungja" value="2" />
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bauberatungnein" />
 				</td>
 			</tr>
@@ -1770,9 +1770,9 @@
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_frage" />
 				</th>
 				<td>
-					<f:form.radio property="ortsbesichtigungkv" value="1" checked="checked" />
+					<f:form.radio property="ortsbesichtigungkv" value="1"  />
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_ja" />
-					<f:form.radio property="ortsbesichtigungkv" value="0" />
+					<f:form.radio property="ortsbesichtigungkv" value="2" />
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ortsbesichtigung_nein" />
 				</td>
 			</tr>
@@ -3209,7 +3209,13 @@ $(function () {
 		var code = null;
 		code = (e.keyCode ? e.keyCode : e.which);
 		return (code == 13) ? false : true;
-	});    
+	});   
+	
+		$('.datum').each(function(index, value) { 
+			if ( $(this).val() == '01.01.1970' )  $(this).val('');
+		});
+	
+	
 });
 
 
@@ -3240,6 +3246,8 @@ $(function () {
 	$('select').each(function(){
 		$(this).attr( 'disabled', 'disabled' ); 
 	});
+	
+	
 });
 ]]>
 </script>
