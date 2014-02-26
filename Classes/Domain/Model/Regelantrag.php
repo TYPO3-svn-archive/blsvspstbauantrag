@@ -4867,7 +4867,6 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 *
 	 * @var boolean
 	 */
-
 	protected $b2vbb4 = FALSE;
 	
 	/**
@@ -4876,7 +4875,6 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 *
 	 * @var boolean
 	 */
-
 	protected $b2vbb5 = FALSE;
 	
 		/**
@@ -4885,17 +4883,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 *
 	 * @var integer
 	 */
-
-protected $staatsmittelfoerderung1 = FALSE;
-
-	/**
-	 * 
-	 * re
-	 *
-	 * @var integer
-	 */
-
-protected $staatsmittelfoerderung2 = FALSE;
+	protected $staatsmittelfoerderung1 = FALSE;
 
 	/**
 	 * 
@@ -4903,8 +4891,7 @@ protected $staatsmittelfoerderung2 = FALSE;
 	 *
 	 * @var integer
 	 */
-
-protected $staatsmittelfoerderung3 = FALSE;
+	protected $staatsmittelfoerderung2 = FALSE;
 
 	/**
 	 * 
@@ -4912,8 +4899,23 @@ protected $staatsmittelfoerderung3 = FALSE;
 	 *
 	 * @var integer
 	 */
+	protected $staatsmittelfoerderung3 = FALSE;
 
-protected $staatsmittelfoerderung4 = FALSE;
+	/**
+	 * 
+	 * re
+	 *
+	 * @var integer
+	 */
+	protected $staatsmittelfoerderung4 = FALSE;
+
+	/**
+	 * 
+	 * re
+	 *
+	 * @var integer
+	 */
+	protected $smfgs = 0;
 
 	/**
 	 * 
@@ -4921,17 +4923,7 @@ protected $staatsmittelfoerderung4 = FALSE;
 	 *
 	 * @var boolean
 	 */
-
-protected $smfgs = FALSE;
-
-	/**
-	 * 
-	 * re
-	 *
-	 * @var boolean
-	 */
-
-protected $smfkbs = FALSE;
+	protected $smfkbs = FALSE;
 
 	/**
 	 * 
@@ -4939,8 +4931,7 @@ protected $smfkbs = FALSE;
 	 *
 	 * @var boolean
 	 */
-
-protected $smfbbs = FALSE;
+	protected $smfbbs = FALSE;
 
 	
 	
@@ -9861,7 +9852,7 @@ protected $smfbbs = FALSE;
 	 * @return integer $mitglieder0110ueber26
 	 */
 	public function getMitglieder0110ueber26() {
-		return $this->mitglieder0110ueber26;
+			return $this->mitglieder0110ueber26;
 	}
 
 	/**

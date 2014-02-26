@@ -505,7 +505,8 @@ Bei einer Gesamtförderung aus der öffentlichen Hand - Staatsmittel BLSV, Bunde
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungzuschuss">4) Staatsmittelförderung gesamt</label>
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung2">Davon beantragter Zuschuss</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3">Davon beantragtes Staatsmitteldarlehen</label>
-		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4">Die Sicherung der staatlichen Zuwendung richtet sich nach Nr. C 3.5 der Sportförderrichtlinien. Welche der nachstehend genannten Sicherungen (zutreffendes bitte ankreuzen) kann zu gegebener Zeit angeboten werden?</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4"></label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4gelöscht">Die Sicherung der staatlichen Zuwendung richtet sich nach Nr. C 3.5 der Sportförderrichtlinien. Welche der nachstehend genannten Sicherungen (zutreffendes bitte ankreuzen) kann zu gegebener Zeit angeboten werden?</label>
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.smfgs">Grundschuld</label>
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.smfkbs">Kommunalbürgschaft</label>
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.smfbbs">Bankbürgschaft</label>  
@@ -1265,7 +1266,9 @@ Georg-Brauchle Ring 93<br />
 <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinsmfoerderung">Die Staatsmittelförderung gesamt darf nicht mehr als 30% der veranschlagten Gesamtkosten betragen. </label>
 
 
-<!-- B2 Vorzeitiger Baubeginn labels -->
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvbeginn">Bitte geben Sie unter C) Ertragslage ein Stardatum für das Geachäftsjahr ein.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvende">Bitte geben Sie unter C) Ertragslage ein Enddatum für das Geachäftsjahr ein.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valvmlstichtag">Bitte geben Sie unter C) Vermögenslage einen Stichtag an.</label>
 
 
 <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2_punkt1">1. Zwischenfinanzierung</label>
@@ -1311,14 +1314,14 @@ Georg-Brauchle Ring 93<br />
 
 <!--  <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfoerderung" />-->
  
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen1">Rasenspielfeld Spielfeld</label>
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen2">Rasenspielfeld Spielfeld TYP A (Kombination)</label>
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen3">Rasenspielfeld Spielfeld TYP B (Kombination)</label>
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen4">Rasenspielfeld Spielfeld TYP C (Kombination)</label>
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen5">Rasenspielfeld Kleinspielfeld</label>
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen6">Rasenspielfeld Kleinspielfeld TYP A (Kombination)</label>
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen7">Rasenspielfeld Kleinspielfeld TYP B (Kombination)</label>
-		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen8">Rasenspielfeld Kleinspielfeld TYP C (Kombination)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen1">Rasenspielfeld Spielfeld (Maße: mind. 60/90)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen2">Rasenspielfeld Spielfeld TYP A (Kombination) (Maße: mind. 60/90, Beregnungsanlage,Ballfangzaun)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen3">Rasenspielfeld Spielfeld TYP B (Kombination) (Maße: mind. 60/90, Beregnungsanlage)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen4">Rasenspielfeld Spielfeld TYP C (Kombination) (Maße: mind. 60/90, Ballfangzaun)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen5">Rasenspielfeld Kleinspielfeld (Maße: mind. 20/40)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen6">Rasenspielfeld Kleinspielfeld TYP A (Kombination) (Maße: mind. 20/40, Beregnungsanlage,Ballfangzaun)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen7">Rasenspielfeld Kleinspielfeld TYP B (Kombination) Maße: mind. 20/40, Beregnungsanlage)</label>
+		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen8">Rasenspielfeld Kleinspielfeld TYP C (Kombination) Maße: mind. 20/40, Ballfangzaun)</label>
 		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen9">Rasenspielfeld Beregnungsanlage</label>
 		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen10">Rasenspielfeld Ballfangzaun</label>
 		   <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.massnahmen11">Rasenspielfeld Baseball</label>

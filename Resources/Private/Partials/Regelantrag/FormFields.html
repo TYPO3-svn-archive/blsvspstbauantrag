@@ -686,9 +686,9 @@
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_bis" />
 					<f:form.textfield id="guvende" class="datum" property="guvende" value="<f:format.date  format='d.m.Y'>@{regelantrag.guvende}</f:format.date>" />
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.geschaeftsjahr_ende" /><br />
-					<f:form.radio property="guvbilanz" value="guvbilanz"/>
+					<f:form.radio property="guvbilanz" value="1"/>
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guvbilanz" />
-					<f:form.radio property="guvbilanz" value="guveuerechnung" checked="checked" />
+					<f:form.radio property="guvbilanz" value="2" />
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guveuerechnung" />
 				</td>
 			</tr>
@@ -1010,7 +1010,7 @@
 									<f:form.textfield class="mitgliederzahlen" property="mitglieder0110bis26" />
 								</td>
 								<td>
-									<f:form.textfield class="mitgliederzahlen" property="mitglieder0110ueber26" />
+									<f:form.textfield class="mitgliederzahlen" property="mitglieder0110ueber26" value="{regelantrag.mitglieder0110ueber26}" />
 								</td>
 								<td>
 									<f:form.textfield class="mitgliederzahlen" property="mitglieder0111bis26" />
@@ -1685,7 +1685,7 @@
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvflurnummer" />
 				</th>
 				<td colspan="2">
-					<f:form.textfield property="egtvflurnummer" />
+					<f:form.textfield property="flurnummer" />
 				</td>
 			</tr>
 			<tr>
@@ -3214,8 +3214,16 @@ $(function () {
 		$('.datum').each(function(index, value) { 
 			if ( $(this).val() == '01.01.1970' )  $(this).val('');
 		});
+		
+		
+		$('.mitgliederzahlen').each(function(index, value) { 
+			if ( $(this).val() == '' )  $(this).val('0');
+		});
 	
-	
+		$('.datumohnepicker').each(function(index, value) { 
+			if ( $(this).val() == '01.01.1970' )  $(this).val('');
+		});
+		
 });
 
 

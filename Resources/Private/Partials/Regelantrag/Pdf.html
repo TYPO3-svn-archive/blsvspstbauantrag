@@ -806,7 +806,7 @@
 	<br />	
 	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtveigentuemer" />: {regelantrag.egtveigentuemer}<br />
 	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgrundstuecksgroesse" />: {regelantrag.egtvgrundstuecksgroesse}<br />
-	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvflurnummer" />: {regelantrag.egtvflurnummer}<br />
+	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvflurnummer" />: {regelantrag.flurnummer}<br />
 	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvgemarkung" />: {regelantrag.egtvgemarkung}<br />
 	<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.egtvlaufzeit" /> {regelantrag.egtvlaufzeit}<br />
 	<f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.text_e1" /><br />
@@ -902,11 +902,14 @@
 
 
 <!-- I) Stellungnahme des BLSV-Kreises -->
-<pagebreak class="page-break" />
+
 
 <div>
-	<f:if condition="{kv; admin}">
+	<f:if condition="{0:admin,1:kv} == {0:0, 1:0}">
 		<f:then>
+		</f:then>
+		<f:else>
+		<pagebreak class="page-break" />
 			<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i" /></h2>
 			<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i1" /></h3>
 
@@ -1386,7 +1389,7 @@
 				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges22" /><br />
 			</f:if>
 			</b><br />
-		</f:then>
+		</f:else>
 	</f:if>
 </div>
 

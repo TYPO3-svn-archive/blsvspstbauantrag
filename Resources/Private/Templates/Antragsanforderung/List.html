@@ -110,9 +110,11 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	               	</f:then>
 					<f:else>  
 						<f:if condition="{verein}"> <f:then>
-	                   		<h2> <f:link.action action="new"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.neueAntragsunterlagen" /></f:link.action><br /><f:render partial="Antragsanforderung/Legende"  /></h2>
+	                   		<h2> <f:link.action action="new"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.neueAntragsunterlagen" /></f:link.action><br /></h2>
 	                   	</f:then></f:if>
 	                </f:else>
 	                </f:if>
+	   <f:render partial="Antragsanforderung/Legende"  />             
+	                
 </div>
 </f:section>

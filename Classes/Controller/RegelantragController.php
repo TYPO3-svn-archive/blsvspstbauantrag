@@ -153,6 +153,13 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 		if(	$this->kv) {
 			$kv=1;
 		}
+		
+		$admin = 0;
+		if ( $this->ssbadmin){
+			$admin = 1;
+		}
+		
+		$this->view->assign('admin', $admin);
 		$this->view->assign('kv', $kv);		
 		$this->view->assign('vereinsinfos', $sparten);
 		$this->view->assign('regelantrag', $regelantrag);		
@@ -218,7 +225,6 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 
 		$vereinsinfos = $this->vereinsinfoRepository->findByVereinsid($antragsanforderung->getVereinsnummer());
 		$regelantrag = $this->regelantragRepository->findOneByAntragsnummer1( $antragsanforderung );
-		
 		$sparten[0]='Bitte wählen . . .';
 		foreach ($vereinsinfos as $vereinsinfo) {
 			if ($vereinsinfo->getSpartenid() > 0 ) {
@@ -415,7 +421,18 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 	 */
 	public function validiereRegelantrag(Tx_Blsvspstbauantrag_Domain_Model_Regelantrag $regelantrag) {
 		$erg = Null;
-	
+		
+		
+		
+		
+		// Vermögenslage
+		if ( !$regelantrag->getGuvbeginn() ){
+			$erg[] =   tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvbeginn', 'blsvspstbauantrag' );
+		}
+		if ( !$regelantrag->getGuvende() ){
+			$erg[] =   tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvende', 'blsvspstbauantrag' );
+		}
+		
 		// Wenn kein Fall angekreuzt
 		
 		if ( !$regelantrag->getAnsprechpartnername() ){
