@@ -37,8 +37,14 @@ Otherwise your changes will be overwritten the next time you save the extension 
 			<tr>
 				<td>
 					<div class="status{antragsanforderung.status}" title="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.status{antragsanforderung.status}' />">&nbsp;</div>
-					<f:if condition="{antragsanforderung.vorzeitigerbaubeginn}">
-						<div class="vorzeitigerbaubeginn1" title="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn1' />">&nbsp;</div>
+					<f:if condition="{0:admin,1:kv} == {0:0, 1:0}"> 
+					<f:then>
+					</f:then>
+					<f:else>
+						<f:if condition="{antragsanforderung.vorzeitigerbaubeginn}">
+							<div class="vorzeitigerbaubeginn1" title="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn1' />">&nbsp;</div>
+						</f:if>
+					</f:else>	
 					</f:if>
 				</td>
 				<td><f:format.date format="d.m.Y - H:i:s">{antragsanforderung.tstamp}</f:format.date></td>

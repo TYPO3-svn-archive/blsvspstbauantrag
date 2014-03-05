@@ -321,7 +321,7 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 	 */
 	public function updateAction(Tx_Blsvspstbauantrag_Domain_Model_Regelantrag $regelantrag) {
 		//print_r( $_FILES );die();
-		
+	
 		
 		
 // upload der dateien im kleinantrag
@@ -359,14 +359,18 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 		$regelantrag->setStellungnahme41( 12 * 3600 + strtotime( substr( $regelantrag->getStellungnahme41() , -4, 4).'-'. substr( $regelantrag->getStellungnahme41() , 3, 2 ) .'-'.   substr( $regelantrag->getStellungnahme41() , 0, 2 ) ) );
 		$regelantrag->setSonstiges11( 12 * 3600 + strtotime( substr( $regelantrag->getSonstiges11() , -4, 4).'-'. substr( $regelantrag->getSonstiges11() , 3, 2 ) .'-'.   substr( $regelantrag->getSonstiges11() , 0, 2 ) ) );
 		
+		$regelantrag->setFinanzierungzuschuss ( $regelantrag->getStaatsmittelfoerderung2() + $regelantrag->getStaatsmittelfoerderung3() );
 		
 		$this->regelantragRepository->update( $regelantrag );
+		
+		
 		
 		if ( $this->kv ){		
 			$valErrors = $this->validiereRegelantragKV( $regelantrag );
 		}
 		else{		
 			$valErrors = $this->validiereRegelantrag( $regelantrag );
+			
 		}
 		
 		
@@ -423,13 +427,13 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 		$erg = Null;
 		
 		
-		
-		
 		// Vermögenslage
-		if ( !$regelantrag->getGuvbeginn() ){
+		
+		if ( $regelantrag->getGuvbeginn()<50000 ){
+			
 			$erg[] =   tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvbeginn', 'blsvspstbauantrag' );
 		}
-		if ( !$regelantrag->getGuvende() ){
+		if ( $regelantrag->getGuvende()<50000 ){
 			$erg[] =   tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvende', 'blsvspstbauantrag' );
 		}
 		

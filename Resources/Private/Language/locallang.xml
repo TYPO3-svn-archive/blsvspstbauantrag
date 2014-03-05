@@ -80,6 +80,7 @@ aus folgenden Gründen kann der Kleinantrag nicht zur weiteren Bearbeitung freig
 %1$s
 
 <br /><br />
+Unter Berücksichtigung der oben genannten Hinweise können Sie jederzeit die Antragsunterlagen neu anfordern.<br />   
 Bei Fragen steht Ihnen gerne Ihr Sportstättenbau-Team (Tel.: 089/15702-462, E-Mail sportstaettenbau@blsv.de) zur Verfügung.<br /><br /> 
 
 Mit freundlichen Grüßen<br />
@@ -95,12 +96,13 @@ Sehr geehrte Damen und Herren,<br /><br />
 gemäß Ihrer Anforderung der Antragsunterlagen wurde Ihnen zur weiteren Bearbeitung in myBLSV der Kleinantrag freigeschaltet.<br /><br />  
 
 %1$s
+<br ><br>
+Bitte laden Sie sich folgendes  <a href='http://www.blsv.de/fileadmin/user_upload/pdf/sportstaettenbau/ErklaerungUnterschriftenKleinantrag.pdf'>FORMULAR</a>  herunter und schicken es ausgefüllt und unterschrieben an uns zurück. 
+<br /><br />
+<b>Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Mitteilung nicht erteilt.</b>
 
 <br /><br />
-Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Mitteilung nicht erteilt.
 
-<br /><br />
-Unter Berücksichtigung der oben genannten Hinweise können Sie jederzeit die Antragsunterlagen neu anfordern.<br />   
 Bei Fragen steht Ihnen gerne Ihr Sportstättenbau-Team (Tel.: 089/15702-462, E-Mail sportstaettenbau@blsv.de) zur Verfügung.<br /><br /> 
 
 Mit freundlichen Grüßen<br />
@@ -185,7 +187,7 @@ Mit der Zusendung der Antragsunterlagen kann kein Rechtsanspruch auf eine staatl
 <b>Bitte beachten:</b>  <br />
 Bei Kleinanträgen beträgt die Förderung 20% Zuschuss bis maximal € 30.000,-- aus den zuwendungsfähig anerkannten Kosten. Die zuwendungsfähigen Kosten können von den veranschlagten Kosten abweichen.
  <br /><br />
-Baugenehmigungspflichtige Maßnahmen sowie Maßnahmen mit einer beantragten Zuwendung über € 30.000,-- können <b>nur dann</b> in ein Antragsverfahren aufgenommen werden, wenn vor der Antragstellung eine Sportstättenbauberatung durch den BLSV erfolgt ist. Zu gegebener Zeit ist ein Termin für ein Beratungsgespräch bei der zuständigen BLSV-Bezirksgeschäftsstelle zu vereinbaren. Die für eine Beratung vorgesehenen Termine sind auf der Homepage des BLSV in myblsv -> Dateien -> Sportstättenbau Info -> Kalender eingestellt. 
+Baugenehmigungspflichtige Maßnahmen sowie Maßnahmen mit einer beantragten Zuwendung über € 30.000,-- können <b>nur dann</b> in ein Antragsverfahren aufgenommen werden, wenn vor der Antragstellung eine Sportstättenbauberatung durch den BLSV erfolgt ist. Zu gegebener Zeit ist ein Termin für ein Beratungsgespräch bei der zuständigen BLSV-Bezirksgeschäftsstelle zu vereinbaren.  
             
             
             
@@ -200,6 +202,8 @@ Baugenehmigungspflichtige Maßnahmen sowie Maßnahmen mit einer beantragten Zuwe
 		Nach Prüfung der angegebenen Daten erhalten Sie in den folgenden Tagen weitere Informationen auf die uns genannte E-Mailadresse. 
 		Die gesendeten Daten sowie den Status des Antrages können Sie jederzeit in myBLSV einsehen. 
 		
+		Eine Genehmigung zum vorzeitigen Baubeginn wird mit diesem Schreiben nicht erteilt. 
+		
 		Mit freundlichen Grüßen
 		Bayerischer Landes-Sportverband e.V.
 		GB 3 Referat Sportstättenbau
@@ -211,7 +215,7 @@ Baugenehmigungspflichtige Maßnahmen sowie Maßnahmen mit einer beantragten Zuwe
 		<p>Ihre Anforderung der Antragsunterlagen wurde erfolgreich übermittelt.</p>
 		<p>Nach Prüfung der angegebenen Daten erhalten Sie in den folgenden Tagen weitere Informationen auf die uns genannte E-Mailadresse.</p> 
 		<p>Die gesendeten Daten sowie den Status des Antrages können Sie jederzeit in myBLSV einsehen. </p>
-		
+		<p><b>Eine Genehmigung zum vorzeitigen Baubeginn wird mit diesem Schreiben nicht erteilt. </b></p>
 		<p><br />Mit freundlichen Grüßen<br /><br />
 		<b>Bayerischer Landes-Sportverband e.V.</b><br />
 		GB 3 Referat Sportstättenbau<br />
@@ -344,7 +348,7 @@ Georg-Brauchle Ring 93<br />
        	 	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.FehlerUpload">Fehler beim Hochladen folgender Datei: </label>
        	  	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.reset">zurücksetzen</label>
             <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweis">Allgemeine Hinweise</label>
-            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1">1.	Eine Umstellung des Klein-Antrags auf eine Regelfallförderung ist, auch im Falle von Kostenmehrungen, nicht vorgesehen.</label>
+            <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext1">1.	Eine Umstellung des Klein-Antrags auf eine Regelfallförderung ist, auch im Falle von Kostenmehrungen, nicht möglich.</label>
             <label index="tx_blsvspstbauantrag_domain_model_regelantrag.hinweistext2">2.	Der vollständig ausgefüllte Antrag ist mit den erforderlichen Unterlagen in digitaler Form über myblsv einzureichen. Ab diesem Zeitpunkt ist die Einsichtnahme der Antragsdaten durch den BLSV-Kreis zur Bewertung des Bedarfs gegeben. Erst nach dem Vorliegen der Stellungnahme des BLSV-Kreises im Referat Sportstättenbau kann die Bearbeitung des Antrags aufgenommen werden. 
 Beachte: Mit dem postalischen Eingang des Klein-Antrags beim BLSV ist keine automatische Baufreigabe verbunden. Mit der Maßnahme kann erst dann begonnen werden, wenn die schriftliche Zustimmung durch das Referat Sportstättenbau des BLSV erteilt wurde.
             </label>
@@ -376,7 +380,7 @@ Bei einer Gesamtförderung aus der öffentlichen Hand - Staatsmittel BLSV, Bunde
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnermobil">Telefon mobil:</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartneremail">Email:</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a">A) Maßnahme(n) / Verwendungszweck</label>
-		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a2">(vBB = vorzeitiger Baubeginn; bitte die Maßnahmen ankreuzen, für die eine Zustimmung zum vorzeitigen Baubeginn erteilt werden soll.)</label>
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a2_alt">(vBB = vorzeitiger Baubeginn; bitte die Maßnahmen ankreuzen, für die eine Zustimmung zum vorzeitigen Baubeginn erteilt werden soll.)</label>
 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck">Maßnahme(n)</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl">Anzahl</label> 
@@ -591,9 +595,7 @@ Sobald die Stellungnahme des BLSV-Kreis in der BLSV-Zentrale vorliegt erhalten S
 
 <b>Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Nachricht nicht erteilt.</b><br /><br />
 
-Bitte laden Sie sich folgendes Formular herunter und schicken es ausgefüllt und unterschrieben an uns zurück:<br /><br />
 
-<a href="http://www.blsv.de/fileadmin/user_upload/pdf/sportstaettenbau/ErklaerungUnterschriftenKleinantrag.pdf">Download Formular</a><br /><br />
 
 Mit freundlichen Grüßen<br />
 Bayerischer Landes-Sportverband e.V.<br />
@@ -605,14 +607,14 @@ Georg-Brauchle Ring 93<br />
  
  ]]></label> 
  
- <label index="tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungheaderKV">Stellungahme des BLSV-Kreises zu Ihrem Antrag </label> 
+ <label index="tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungheaderKV">Weiterleitung an BLSV-Kreisvorsitzenden</label> 
  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungKV"><![CDATA[
  
- Sehr geehrte Damen und Herren, <br /><br />
+Sehr geehrte Damen und Herren, <br /><br />
 Die Stellungnahme des BLSV-Kreises wurde erfolgreich übermittelt.<br /><br />
 Nach Prüfung und Auswertung der angegebenen Daten erhalten Sie in den folgenden Tagen weitere Informationen auf die uns genannte E-Mailadresse.<br /><br />
 Die gesendeten Daten sowie den Status des Antrages können Sie jederzeit in myBLSV einsehen. <br /><br />
-Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Nachricht nicht erteilt.<br /><br />
+<b>Eine Genehmigung zum vorzeitigen Baubeginn ist mit dieser Nachricht nicht erteilt.</b><br /><br />
 
 Mit freundlichen Grüßen<br />
 Bayerischer Landes-Sportverband e.V.<br />
@@ -1267,7 +1269,7 @@ Georg-Brauchle Ring 93<br />
 <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinsmfoerderung">Die Staatsmittelförderung gesamt darf nicht mehr als 30% der veranschlagten Gesamtkosten betragen. </label>
 
 
-<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvbeginn">Bitte geben Sie unter C) Ertragslage ein Stardatum für das Geachäftsjahr ein.</label>
+<label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvbeginn">Bitte geben Sie unter C) Ertragslage ein Startdatum für das Geachäftsjahr ein.</label>
 <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ValGuvende">Bitte geben Sie unter C) Ertragslage ein Enddatum für das Geachäftsjahr ein.</label>
 <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Valvmlstichtag">Bitte geben Sie unter C) Vermögenslage einen Stichtag an.</label>
 

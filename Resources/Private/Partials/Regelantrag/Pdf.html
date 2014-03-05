@@ -258,23 +258,13 @@
 			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung2" /></h4></td>
 			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.staatsmittelfoerderung2}</f:format.number></p></td>
 		</tr>
-		<tr>
-			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3" /></h4></td>
-			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.staatsmittelfoerderung3}</f:format.number></p></td>
-		</tr>
+		<f:if condition="{regelantrag.art}==2"><f:then>
+			<tr>
+				<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3" /></h4></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.staatsmittelfoerderung3}</f:format.number></p></td>
+			</tr>
+		</f:then></f:if>
 	</table>
-
-	<br />
-	<div>
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4" /><br />
-	
-		<f:if condition="{regelantrag.smfgs} == 1">
-			<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfgs" /></b><br /></f:if>
-		<f:if condition="{regelantrag.smfgs} == 2">
-			<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfkbs" /></b><br /></f:if>
-		<f:if condition="{regelantrag.smfgs} == 3">
-			<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfbbs" /></b><br /></f:if>
-	</div>
 </div>
 
 	

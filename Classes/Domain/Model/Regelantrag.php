@@ -4883,7 +4883,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 *
 	 * @var integer
 	 */
-	protected $staatsmittelfoerderung1 = FALSE;
+	protected $staatsmittelfoerderung1 = 0;
 
 	/**
 	 * 
@@ -4891,7 +4891,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 *
 	 * @var integer
 	 */
-	protected $staatsmittelfoerderung2 = FALSE;
+	protected $staatsmittelfoerderung2 = 0;
 
 	/**
 	 * 
@@ -4899,7 +4899,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 *
 	 * @var integer
 	 */
-	protected $staatsmittelfoerderung3 = FALSE;
+	protected $staatsmittelfoerderung3 = 0;
 
 	/**
 	 * 
@@ -4907,7 +4907,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 *
 	 * @var integer
 	 */
-	protected $staatsmittelfoerderung4 = FALSE;
+	protected $staatsmittelfoerderung4 = 0;
 
 	/**
 	 * 

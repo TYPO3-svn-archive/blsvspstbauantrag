@@ -121,7 +121,7 @@ class Tx_Blsvspstbauantrag_Domain_Repository_AntragsanforderungRepository extend
 	         	) );
 			}	
 		}
-
+    
 		if ($vorzeitigerbaubeginn==1) {
 			$where[] = $query->equals('vorzeitigerbaubeginn', 1);
 		}
@@ -133,8 +133,8 @@ class Tx_Blsvspstbauantrag_Domain_Repository_AntragsanforderungRepository extend
 		if ($where){
 			$query->matching( $query->logicalAnd( $where ) );
 		}
+		
 		$erg = $query->execute();
-	
 	
 		return $erg;
 	}

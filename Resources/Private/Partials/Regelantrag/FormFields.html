@@ -6,13 +6,11 @@
 
 <!-- <f:debug title="Debug of MyArray">{regelantrag.art}</f:debug><f:if condition="{regelantrag.art}==2"> <f:then><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art2" /> hallo 1<br /></f:then><f:else>hallo 2</f:else></f:if> -->
  
-<div id="raaccordion">
-
-	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.allgemein" /></h3>
+<br><br>
 	<div>
 		<table>
 			<tr>
-				<th colspan="4">
+				<th colspan="4" class="oben">
 					<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.allgemein" /></h2>
 				</th>
 			</tr>
@@ -59,6 +57,11 @@
 			</tr>
 		</table>
 	</div>
+ <br><br>
+ 
+<div id="raaccordion">
+
+	
 
 	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartner" /></h3>
 	<div>
@@ -452,7 +455,7 @@
 					<f:image class="helpicon" id="hilfsicon24" src="EXT:blsvspstbauantrag/Resources/Public/Icons/hilfe_fragezeichen.png" alt="?" /></h3>
 				</th>
 				<td align="center">
-					<f:form.textfield class="euro finanzierungzuschuss" property="finanzierungzuschuss" />
+					<f:form.textfield id="finanzierungzuschuss" class="euro finanzierungzuschuss" property="finanzierungzuschuss"  disabled="disabled" />
 				 </td>
 			</tr>
 				
@@ -461,27 +464,25 @@
 					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung2" /></h4>
 				</th>
 				<td align="center">
-					<f:form.textfield class="euro" property="staatsmittelfoerderung2" />
+					<f:form.textfield id="staatsmittelfoerderung2" class="euro" property="staatsmittelfoerderung2" />
 				 </td>
 			</tr>
+			<f:if condition="{regelantrag.art}==2"> <f:then>
 			<tr>
 				<th>
-					<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3" /></h4>
+					<h4><f:translate  key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3" /></h4>
 				</th>
 				<td align="center">
-					<f:form.textfield class="euro" property="staatsmittelfoerderung3" />
+					<f:form.textfield id="staatsmittelfoerderung3" class="euro" property="staatsmittelfoerderung3" />
 				 </td>
 			</tr>
+			</f:then></f:if>
 			<tr>
 			<th colspan="2">
 					<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung4" />
 			</th>
 			</tr>
-			<tr>
-				<td align="center"><f:form.radio  property="smfgs" value="1" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfgs" />
-				<f:form.radio  property="smfgs" value="2" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfkbs" />
-				<f:form.radio  property="smfgs" value="3" /><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfbbs" /></td>
-			</tr>
+			
 		</table>
 	</div>
 	
@@ -3101,6 +3102,20 @@ summefinanzierung = function(){
 	return summe;
 };
 
+staatsmittelfoerderung3Val = function(){
+	var val= $('#staatsmittelfoerderung3').val();
+	if( !val) val=0 ;	
+	if ( isNaN( val   ) ) val = 0;
+	return val;
+}	
+
+summefinanzierungzuschuss = function(){
+	$('#finanzierungzuschuss').val( ( 1 * $('#staatsmittelfoerderung2').val() )  + ( 1 * staatsmittelfoerderung3Val() ) );
+}	
+$('#staatsmittelfoerderung2').change( function(){		
+	if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+	summefinanzierungzuschuss();
+});
 $( ".finanzierungvorsteuer" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
 	$(this).val( parseInt( $(this).val() ) );
 	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );
@@ -3132,7 +3147,9 @@ $( ".datum1" ).change( function(){
 	$( ".datum2" ).val( $( ".datum1" ).val() );
 });
 
-$( ".massnahmefinazierung" ).change( function(){		if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+$( ".massnahmefinazierung" ).change( function(){		
+	if( !$(this).val() ) $(this).val( 0 ) ;	if ( isNaN( $(this).val() )  ) $(this).val( 0 );
+    summefinanzierungzuschuss();
 	$(this).val( parseInt( $(this).val() ) );
 	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - summefinanzierung() );      
 	$( "#beantragtefoerderung" ).val( $( "#gesamtkosten_brutto1" ).val() - $( "#summeeigenmittel" ).val() - $( "#summedritter" ).val() - $( ".finanzierungvorsteuer" ).val() - $( ".finanzierungzuschuss" ).val() );    

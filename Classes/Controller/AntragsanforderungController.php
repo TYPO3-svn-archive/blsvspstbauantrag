@@ -186,6 +186,8 @@ class Tx_Blsvspstbauantrag_Controller_AntragsanforderungController extends Tx_Ex
 			$status         = $filter['tx_blsvspstbauantrag_spstbauantrag'][ 'status' ];
 			$searchtext 	= $filter['tx_blsvspstbauantrag_spstbauantrag'][ 'searchtext' ];
 			$vorzeitigerbaubeginn	= $filter['tx_blsvspstbauantrag_spstbauantrag'][ 'vorzeitigerbaubeginn' ];
+			if ( $vorzeitigerbaubeginn=='')	 $vorzeitigerbaubeginn=2;
+			
 			
 		}
 		
@@ -231,6 +233,9 @@ class Tx_Blsvspstbauantrag_Controller_AntragsanforderungController extends Tx_Ex
 	 * @return void
 	 */
 	public function showAction(Tx_Blsvspstbauantrag_Domain_Model_Antragsanforderung $antragsanforderung) {
+		
+		
+		
 		$this->view->assign('antragsanforderung', $antragsanforderung);
 	}
 	
@@ -710,6 +715,9 @@ class Tx_Blsvspstbauantrag_Controller_AntragsanforderungController extends Tx_Ex
 		if ( !$antragsanforderung->getErklaerung1() or !$antragsanforderung->getErklaerung2()  ){
 			$erg[] =   tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_antragsanforderung.ValKeineErklaerung', 'blsvspstbauantrag' );
 		}
+		
+		
+		
 		
 		
 		//Kleinantrag
