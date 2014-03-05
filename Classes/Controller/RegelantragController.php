@@ -167,6 +167,44 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 		ini_set('pcre.backtrack_limit', '2M');
 		// ini_set( 'memory_limit', '20M' );
 	}
+	
+	
+	/**
+	 * action showPDF
+	 *
+	 * @param Tx_Blsvspstbauantrag_Domain_Model_Antragsanforderung $antragsanforderung
+	 *
+	 * @dontvalidate $antragsanforderung
+	 * @return void
+	 */
+	public function showPdfAction( Tx_Blsvspstbauantrag_Domain_Model_Antragsanforderung $antragsanforderung ) {
+				
+		$vereinsinfos = $this->vereinsinfoRepository->findByVereinsid($antragsanforderung->getVereinsnummer());
+		$regelantrag = $this->regelantragRepository->findOneByAntragsnummer1( $antragsanforderung );
+		$sparten[0]='Bitte wählen . . .';
+		foreach ($vereinsinfos as $vereinsinfo) {
+			if ($vereinsinfo->getSpartenid() > 0 ) {
+				$sparten[$vereinsinfo->getSpartenid()]=$vereinsinfo->getSpartenname();
+			}
+		}
+		$kv=0;
+		if(	$this->kv) {
+			$kv=1;
+		}
+	
+		$admin = 0;
+		if ( $this->ssbadmin){
+			$admin = 1;
+		}
+	
+		$this->view->assign('admin', $admin);
+		$this->view->assign('kv', $kv);
+		$this->view->assign('vereinsinfos', $sparten);
+		$this->view->assign('regelantrag', $regelantrag);
+	
+		ini_set('pcre.backtrack_limit', '2M');
+		// ini_set( 'memory_limit', '20M' );
+	}
 
 	/**
 	 * action new

@@ -21,7 +21,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<f:if condition="{admin}"> 
 		<f:render partial="Antragsanforderung/Search" arguments="{searchtext:searchtext,art:art,fall:fall,kreis:kreis,bezirk:bezirk,status:status,vorzeitigerbaubeginn:vorzeitigerbaubeginn}" />
 	</f:if>
-	<table  class="tx_blsvspstbauantrag" >
+	<table  class="list" >
 		<tr>
 			<th class="linksoben"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.status" /></th>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.tstamp" /></th>
@@ -76,7 +76,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 							</f:then>						
 							<f:else>
 								<f:if condition="{antragsanforderung.status} < 6"><f:then>						   			
-										<f:link.action action="show" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}" additionalParams="{type:123,attachment:1,filename:'BLSVSportstaettenantragAntrag{antragsanforderung.uid}.pdf'}"><div class="viewicon">&nbsp;</div></f:link.action>
+										<f:link.action action="showPdf" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}" additionalParams="{type:123,attachment:1,filename:'BLSVSportstaettenantragAntrag{antragsanforderung.uid}.pdf'}"><div class="pdficon">&nbsp;</div></f:link.action>
+										<f:link.action action="show" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="viewicon">&nbsp;</div></f:link.action>
+										
 										<f:if condition="{verein}"> <f:then><f:link.action action="edit" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="editicon">&nbsp;</div></f:link.action>
 													<f:link.action action="abgeben" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="sendicon">&nbsp;</div></f:link.action>
 														
@@ -86,7 +88,9 @@ Otherwise your changes will be overwritten the next time you save the extension 
 										<f:if condition="{kv}"> <f:then><div class="entscheidenicon nichtklickbar">&nbsp;</div><div class="sendicon nichtklickbar">&nbsp;</div></f:then></f:if>											
 								</f:then>							
 								<f:else>  	
-									<f:link.action action="show" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}" additionalParams="{type:123,attachment:1,filename:'BLSVSportstaettenantragAntrag{antragsanforderung.uid}.pdf'}" ><div class="viewicon">&nbsp;</div></f:link.action>
+									<f:link.action action="showPdf" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}" additionalParams="{type:123,attachment:1,filename:'BLSVSportstaettenantragAntrag{antragsanforderung.uid}.pdf'}"><div class="pdficon">&nbsp;</div></f:link.action>
+									<f:link.action action="show" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="viewicon">&nbsp;</div></f:link.action>
+										
 									<f:if condition="{verein}"><f:then> <div class="editicon nichtklickbar">&nbsp;</div><div class="sendicon nichtklickbar">&nbsp;</div></f:then></f:if>
 									<f:if condition="{antragsanforderung.status} < 8">
 										<f:then>	

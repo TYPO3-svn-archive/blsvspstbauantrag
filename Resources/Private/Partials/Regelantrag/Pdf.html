@@ -376,8 +376,7 @@
 				<td align="left"><div><f:form.checkbox property="smfoerderungprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
 				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungbetragprivat}</f:format.number></p></td>
 				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungjbelastungprivat}</f:format.number></p></td>
-			</tr>
-			
+			</tr>			
 			<tr>
 				<td> <b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1gesamt" /></b></td>
 				<td> </td>
@@ -863,7 +862,7 @@
 <f:if condition="{admin}">
 	<f:then> 
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.absendedatum" /><br />
-		<f:form.textfield class="datum" property="absendedatum"  value="<f:format.date format='d.m.Y'>{regelantrag.absendedatum}</f:format.date>"  /><br />
+		<f:format.date format='d.m.Y'>{regelantrag.absendedatum}</f:format.date>"<br />
 	</f:then>
 </f:if>
 </div>	

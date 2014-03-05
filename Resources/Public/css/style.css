@@ -241,8 +241,13 @@ input[disabled="disabled"]{
   width: 800px;
 }
 
+.tx-blsvspstbauantrag .show{
+	width: 800px;
+}
 
-
+.tx-blsvspstbauantrag table.list{
+	width: 90%;
+}
 
 .tx-blsvspstbauantrag  textarea{
   
@@ -419,6 +424,38 @@ box-shadow: 5px 5px 5px 5px #aaa;
   height: 20px;
   display: inline-block;
   background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-140px 0px   no-repeat;
+}
+
+.tx-blsvspstbauantrag .entscheidenicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-140px 0px   no-repeat;
+}
+.tx-blsvspstbauantrag  .baubeginnicon,
+.tx-blsvspstbauantrag  .baugbeginnicon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png)-240px 0px   no-repeat;
+  
+}
+
+.tx-blsvspstbauantrag  .pdficon{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png") no-repeat scroll -260px 0 transparent;
+	
+}
+
+
+
+.tx-blsvspstbauantrag .vorzeitigerbaubeginn1 {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("/typo3conf/ext/blsvspstbauantrag/Resources/Public/Icons/listicons.png") no-repeat scroll -240px 0 transparent;
 }
 
 

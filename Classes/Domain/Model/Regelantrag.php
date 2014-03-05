@@ -17295,7 +17295,5 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 		$summe = $this->kostenanteil1 + $this->kostenanteil2 + $this->kostenanteil3 + $this->kostenanteil4 + $this->kostenenteil5;
 		return $summe;
 	}
-	
-	
 }
 ?>
