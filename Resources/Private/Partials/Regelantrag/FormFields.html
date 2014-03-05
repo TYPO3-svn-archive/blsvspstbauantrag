@@ -3001,6 +3001,9 @@
 <script>
 
 $(document).ready(function() {
+	
+	$( "#top_fixed" ).append('<span class="clschwarz schatten border_red">VKZ: {regelantrag.vereinsnummer} Vorgang: {regelantrag.antragsnummer1.uid}</span>'); 
+	
 	$(".langhilfe").hide();
 	});
 <f:for each="{hilfetexte}" as="hilfetext">

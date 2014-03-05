@@ -456,7 +456,6 @@ class Tx_Blsvspstbauantrag_Controller_AntragsanforderungController extends Tx_Ex
 		  	$subject =   $artShort . ' - '  . $antragsanforderung->getVereinsname()  . ', '  . $antragsanforderung->getVereinsnummer() .  ', ' . tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungheaderKV', 'blsvspstbauantrag' );
 			$emailBody = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungKV', 'blsvspstbauantrag' );
 			$antragsanforderung->setStatus( 8 );;
-			die( $subject . '<br>' . $emailBody);
 		} else	
 		
 		
@@ -600,7 +599,7 @@ class Tx_Blsvspstbauantrag_Controller_AntragsanforderungController extends Tx_Ex
 				$subject = "Entscheidung  über die Annahme des  Antrages vom ".date("d.m.Y",$antragsanforderung->getTstamp())." aus myBLSV für Verein " . $antragsanforderung->getVereinsnummer();
 				$begr[0] = nl2br( $antragsanforderung->getBegruendungablehnung() );
 				$emailBody = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_antragsanforderung.emailbestaettigungablehnungantrag', 'blsvspstbauantrag', $begr );
-				die( $subject . '<br>' . $emailBody);
+				
 			}
 			
 			

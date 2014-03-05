@@ -25,9 +25,9 @@
 
 			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn">vorzeitiger Baubeginn</label>
 			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn0">kein vorzeitiger Baubeginn</label>
-			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn1">vorzeitiger Baubeginn</label>
+			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn1">Genehmigung zum vorzeitigen Baubeginn</label>
 			<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn_heading">Vorzeitiger Baubeginn für Antrag</label>
-                        
+             <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.tstamp">letzte Änderung am</label>
             <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.antragsnummer1">Antragsnummer</label>
             <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.art">Art des Antrags</label>
             <label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.fall">Fall</label>
@@ -308,7 +308,8 @@ Georg-Brauchle Ring 93<br />
            	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.haken1"><![CDATA[ja]]></label>
            	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.farbehaken">red</label>
            	<label index="tx_blsvspstbauantrag_domain_model_regelantrag.farbehaken1">green</label>
-           	
+           	 <label index="tx_blsvspstbauantrag_domain_model_regelantrag.begruendungablehnungHead">Begründung der Ablehnung</label>
+           	 <label index="tx_blsvspstbauantrag_domain_model_regelantrag.begruendung">Begründung</label>
            	
          	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.Vorantraggespeichert">Ihre Änderungen wurden gespeichert.</label>
            	<label index="tx_blsvspstbauantrag_domain_model_antragsanforderung.Validierungsfehler">Ihre Antragsanforderung enthält noch Fehler. Bitte beheben Sie diese. Sobald alle Fehler behoben sind, können Sie die Antragsanforderung abschicken. </label>

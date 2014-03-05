@@ -24,6 +24,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<table  class="tx_blsvspstbauantrag" >
 		<tr>
 			<th class="linksoben"><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.status" /></th>
+			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.tstamp" /></th>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.verein" /></th>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.uid" /></th>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art" /></th>
@@ -40,6 +41,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 						<div class="vorzeitigerbaubeginn1" title="<f:translate key='tx_blsvspstbauantrag_domain_model_antragsanforderung.vorzeitigerbaubeginn1' />">&nbsp;</div>
 					</f:if>
 				</td>
+				<td><f:format.date format="d.m.Y - H:i:s">{antragsanforderung.tstamp}</f:format.date></td>
 				<td>{antragsanforderung.vereinsnummer} - {antragsanforderung.vereinsname}</td>
 				<td>{antragsanforderung.uid}</td>
 				<td>				<f:translate key="tx_blsvspstbauantrag_domain_model_antragsanforderung.art{antragsanforderung.art}" />				 <f:if condition="{antragsanforderung.status} < 4">			   		<f:then>						- Anforderung					</f:then>				</f:if>				</td>
@@ -70,7 +72,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 								<f:if condition="{antragsanforderung.status} < 6"><f:then>						   			
 										<f:link.action action="show" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}" additionalParams="{type:123,attachment:1,filename:'BLSVSportstaettenantragAntrag{antragsanforderung.uid}.pdf'}"><div class="viewicon">&nbsp;</div></f:link.action>
 										<f:if condition="{verein}"> <f:then><f:link.action action="edit" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="editicon">&nbsp;</div></f:link.action>
-													<!--  	<f:link.action action="abgeben" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="sendicon">&nbsp;</div></f:link.action> -->
+													<f:link.action action="abgeben" controller="Regelantrag" arguments="{antragsanforderung:antragsanforderung}"><div class="sendicon">&nbsp;</div></f:link.action>
 														
 											</f:then></f:if>
 										

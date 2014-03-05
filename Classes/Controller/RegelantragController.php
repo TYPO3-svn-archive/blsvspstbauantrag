@@ -206,7 +206,7 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 	 * @return void
 	 */
 	public function createAction( Tx_Blsvspstbauantrag_Domain_Model_Regelantrag $newRegelantrag) {
-		print_r($newRegelantrag);die();
+		//print_r($newRegelantrag);die();
 		$this->regelantragRepository->add($newRegelantrag);
 		$this->validiereRegelantrag($regelantrag);
 		$this->flashMessageContainer->add( tx_Extbase_Utility_Localization::translate( tx_blsvspstbauantrag_domain_model_antragsanforderung.Vorantraggespeichert, 'blsvspstbauantrag' ) );

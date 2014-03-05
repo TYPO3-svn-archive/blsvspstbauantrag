@@ -40,7 +40,17 @@
 		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnermobil" /> {regelantrag.ansprechpartnermobil}</p>
 		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartnerfax" /> {regelantrag.ansprechpartnerfax}:</p>
 		<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ansprechpartneremail" /> {regelantrag.ansprechpartneremail}</p>
-</div>			
+</div>	
+<!--                      -->
+<!-- Begründung Ablehnung -->	
+<!-                       -->
+
+<f:if condition="{regelantrag.antragsnummer1.begruendungablehnung}" >
+	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.begruendungablehnungHead" /></h3>
+		<f:format.nl2br>{regelantrag.antragsnummer1.begruendungablehnung}</f:format.nl2br>
+
+
+</f:if>		
 
 <!--                     -->
 <!-- Allgemeine Hinweise -->	
@@ -91,9 +101,17 @@
 <pagebreak class="page-break" />
 <div id="a_massnahmen">
 	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a" /></h2> 
+	<table style="border:1px solid black; width:100%">
+		<tr><th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.begruendung" /></th></tr>
+		<tr><td><f:format.nl2br>{regelantrag.antragsnummer1.begruendung}</f:format.nl2br></td></tr>
+	
+	</table>
+	
+	
 	<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_a2" /></p>
-
-	<table border="1">
+	
+	
+	<table style="border:1px solid black; width:100%">
 		<tr>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verwendungszweck" /></th>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anzahl" /></th>
@@ -110,7 +128,7 @@
 			<f:if condition="{regelantrag.art}!=1"><f:then>
 				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb1}" /> </p></td>
 			</f:then></f:if>
-			<td align="right"><p>{regelantrag.kostenanteil1}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kostenanteil1}</f:format.number></p></td>
 		</tr>
 		</f:then></f:if>
 
@@ -121,7 +139,7 @@
 			<f:if condition="{regelantrag.art}!=1"><f:then>
 				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb2}" /> </p></td>
 			</f:then></f:if>
-			<td align="right"><p>{regelantrag.kostenanteil2}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kostenanteil2}</f:format.number></p></td>
 		</tr>
 		</f:then></f:if>
 
@@ -132,7 +150,7 @@
 			<f:if condition="{regelantrag.art}!=1"><f:then>
 				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb3}" /> </p></td>
 			</f:then></f:if>
-			<td align="right"><p>{regelantrag.kostenanteil3}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kostenanteil3}</f:format.number></p></td>
 		</tr>
 		</f:then></f:if>
 
@@ -143,7 +161,7 @@
 			<f:if condition="{regelantrag.art}!=1"><f:then>
 				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb4}" /> </p></td>
 			</f:then></f:if>
-			<td align="right"><p>{regelantrag.kostenanteil4}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kostenanteil4}</f:format.number></p></td>
 		</tr>
 		</f:then></f:if>
 
@@ -154,13 +172,13 @@
 			<f:if condition="{regelantrag.art}!=1"><f:then>
 				<td align="center"><p><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.b2vbb5}" /> </p></td>
 			</f:then></f:if>
-			<td align="right"><p>{regelantrag.kostenanteil5}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kostenanteil5}</f:format.number></p></td>
 		</tr>
 		</f:then></f:if>
 		
 		<tr>
 		<th align="left" colspan="2" class="align-right" ><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtkosten_brutto" /></h4></th>
-		<th align="right">{regelantrag.summegesamtkosten}</th>
+		<th align="right">€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.summegesamtkosten}</f:format.number></th>
 		</tr>
 	</table>
 </div>	
@@ -176,73 +194,73 @@
 
 	<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b" /></h2>
 
-	<table border="1">
+	<table style="border:1px solid black; width:100%">
 		<tr>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.gesamtkosten_brutto" /></th>
-			<th align="right"><p>{regelantrag.summegesamtkosten}</p></th>
+			<th align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.summegesamtkosten}</f:format.number></p></th>
 		</tr>
 		<tr><th colspan=2"><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenmittel" /></h3></th></tr>
 	
 		<tr><td colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bar" /></h4></td></tr>
 		<tr>
 			<td ><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungbarmittel" /></td>
-			<td align="right"><p>{regelantrag.finanzierungbarmittel}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierungbarmittel}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunggeldspenden" /></td>
-			<td align="right"><p>{regelantrag.finanzierunggeldspenden}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierunggeldspenden}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkredit" /></td>
-			<td align="right"><p>{regelantrag.fianzierungkredit}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.fianzierungkredit}</f:format.number></p></td>
 		</tr>
 	
 		<tr><td colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.unbar" /></h4></td></tr>
 		<tr>
 			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungaleistung" /></td>
-			<td align="right"><p>{regelantrag.finanzierungaleistung}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierungaleistung}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsachleistung" /></td>
-			<td align="right"><p>{regelantrag.finanzierungsachleistung}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierungsachleistung}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenbeteiligung_gesamt" /></h4></td>
-			<td align="right"><p>{regelantrag.eigenbeteiligung_gesamt}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.eigenbeteiligung_gesamt}</f:format.number></p></td>
 		</tr>
 	
 		<tr><th colspan="2"><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter" /></h3></th></tr>
 		<tr>
 			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fianzierungkommune" /></td>
-			<td align="right"><p>{regelantrag.fianzierungkommune}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.fianzierungkommune}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierunglkr" /></td>
-			<td align="right"><p>{regelantrag.finanzierunglkr}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierunglkr}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungsonstige" /></td>
-			<td align="right"><p>{regelantrag.finanzierungsonstige}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierungsonstige}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.leistungen_dritter_gesamt" /></h4></td>
-			<td align="right"><p>{regelantrag.leistungen_dritter_gesamt}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.leistungen_dritter_gesamt}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<th><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungvorsteuer" /></h3></th>
-			<th align="right"><p>{regelantrag.finanzierungvorsteuer}</p></th>
+			<th align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierungvorsteuer}</f:format.number></p></th>
 		</tr>
 		<tr>
 			<th><h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzierungzuschuss" /></h3></th>
-			<th align="right"><p>{regelantrag.finanzierungzuschuss}</p></th>
+			<th align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzierungzuschuss}</f:format.number></p></th>
 		</tr>
 		<tr>
 			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung2" /></h4></td>
-			<td align="right"><p>{regelantrag.staatsmittelfoerderung2}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.staatsmittelfoerderung2}</f:format.number></p></td>
 		</tr>
 		<tr>
 			<td><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.staatsmittelfoerderung3" /></h4></td>
-			<td align="right"><p>{regelantrag.staatsmittelfoerderung3}</p></td>
+			<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.staatsmittelfoerderung3}</f:format.number></p></td>
 		</tr>
 	</table>
 
@@ -273,7 +291,7 @@
 
 <h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2" /></h2>
 <h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_b2_punkt1" /></h3>
-	<table border="1">	
+	<table style="border:1px solid black; width:100%">	
 			<tr>
 				<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.fposition" /></th>
 				<th> <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.durch" /></th>
@@ -285,13 +303,13 @@
 					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></b>
 				</td>
 				<td align="left"><div><f:form.checkbox property="kommunebank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
-				<td align="right"><p>{regelantrag.kommunebetragbank}</p></td>
-				<td align="right"><p>{regelantrag.kommunejbelastungbank}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kommunebetragbank}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kommunejbelastungbank}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="kommuneprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
-				<td align="right"><p>{regelantrag.kommunebetragprivat}</p></td>
-				<td align="right"><p>{regelantrag.kommunejbelastungprivat}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kommunebetragprivat}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kommunejbelastungprivat}</f:format.number></p></td>
 			</tr>
 			
 			<tr>
@@ -299,18 +317,18 @@
 					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1landkreis" /></b>
 				</td>
 				<td align="left"><div><f:form.checkbox property="landkreisbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
-				<td align="right"><p>{regelantrag.landkreisbetragbank}</p></td>
-				<td align="right"><p>{regelantrag.landkreisjbelastungbank}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.landkreisbetragbank}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.landkreisjbelastungbank}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="landkreiskommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
-				<td align="right"><p>{regelantrag.landkreisbetragkommune}</p></td>
-				<td align="right"><p>{regelantrag.landkreisjbelastungkommune}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.landkreisbetragkommune}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.landkreisjbelastungkommune}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="landkreisprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
-				<td align="right"><p>{regelantrag.landkreisbetragprivat}</p></td>
-				<td align="right"><p>{regelantrag.landkreisjbelastungprivat}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.landkreisbetragprivat}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.landkreisjbelastungprivat}</f:format.number></p></td>
 			</tr>
 			
 			<tr>
@@ -318,18 +336,18 @@
 					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1sonstige" /></b>
 				</td>
 				<td align="left"><div><f:form.checkbox property="sonstigebank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
-				<td align="right"><p>{regelantrag.sonstigebetragbank}</p></td>
-				<td align="right"><p>{regelantrag.sonstigejbelastungbank}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sonstigebetragbank}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sonstigejbelastungbank}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="sonstigekommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
-				<td align="right"><p>{regelantrag.sonstigebetragkommune}</p></td>
-				<td align="right"><p>{regelantrag.sonstigejbelastungkommune}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sonstigebetragkommune}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sonstigejbelastungkommune}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="sonstigeprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
-				<td align="right"><p>{regelantrag.sonstigebetragprivat}</p></td>
-				<td align="right"><p>{regelantrag.sonstigejbelastungprivat}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sonstigebetragprivat}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sonstigejbelastungprivat}</f:format.number></p></td>
 			</tr>
 			
 			<tr>
@@ -337,18 +355,18 @@
 					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1vorsteuererst" /></b>
 				</td>
 				<td align="left"><div><f:form.checkbox property="vorsteuererstbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
-				<td align="right"><p>{regelantrag.vorsteuererstbetragbank}</p></td>
-				<td align="right"><p>{regelantrag.vorsteuererstjbelastungbank}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.vorsteuererstbetragbank}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.vorsteuererstjbelastungbank}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="vorsteuererstkommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
-				<td align="right"><p>{regelantrag.vorsteuererstbetragkommune}</p></td>
-				<td align="right"><p>{regelantrag.vorsteuererstjbelastungkommune}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.vorsteuererstbetragkommune}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.vorsteuererstjbelastungkommune}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="vorsteuererstprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
-				<td align="right"><p>{regelantrag.vorsteuererstbetragprivat}</p></td>
-				<td align="right"><p>{regelantrag.vorsteuererstjbelastungprivat}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.vorsteuererstbetragprivat}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.vorsteuererstjbelastungprivat}</f:format.number></p></td>
 			</tr>
 			
 			<tr>
@@ -356,25 +374,25 @@
 					<b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.smfoerderung" /></b>
 				</td>
 				<td align="left"><div><f:form.checkbox property="smfoerderungbank" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bank" /></label></div></td>
-				<td align="right"><p>{regelantrag.smfoerderungbetragbank}</p></td>
-				<td align="right"><p>{regelantrag.smfoerderungjbelastungbank}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungbetragbank}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungjbelastungbank}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="smfoerderungkommune" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kommune" /></label></div></td>
-				<td align="right"><p>{regelantrag.smfoerderungbetragkommune}</p></td>
-				<td align="right"><p>{regelantrag.smfoerderungjbelastungkommune}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungbetragkommune}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungjbelastungkommune}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td align="left"><div><f:form.checkbox property="smfoerderungprivat" value="1" /><label class="zfcheckbox"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.privat" /></label></div></td>
-				<td align="right"><p>{regelantrag.smfoerderungbetragprivat}</p></td>
-				<td align="right"><p>{regelantrag.smfoerderungjbelastungprivat}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungbetragprivat}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.smfoerderungjbelastungprivat}</f:format.number></p></td>
 			</tr>
 			
 			<tr>
 				<td> <b><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.1gesamt" /></b></td>
 				<td> </td>
-				<td align="right"><p>{regelantrag.betragsumme}</p></td>
-				<td align="right"><p>{regelantrag.jbelastungsumme}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.betragsumme}</f:format.number></p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.jbelastungsumme}</f:format.number></p></td>
 			</tr>
 		</table>
 		<br/>
@@ -386,7 +404,7 @@
 		<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear1" /><f:format.printf arguments="{0:regelantrag.EARvon}">%02d</f:format.printf>
 			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear2" /><f:format.printf arguments="{0:regelantrag.EARbis}">%02d</f:format.printf></h3>
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear3" /><br />
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear4" />: <b>{regelantrag.durchschnittsergebnis}</b><br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear4" />: <b>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.durchschnittsergebnis}</f:format.number></b><br />
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ear5" /><br />
 		<br />
 		
@@ -431,46 +449,46 @@
 	</div>
 	<br />
 	
-	<table border="1">	
+	<table style="border:1px solid black; width:100%">	
 	<tr>
 		<th><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guveinnahmengesamt" /> </h4></th>
-		<th align="right"><p><b>{regelantrag.guveinnahmengesamt}</b></p></th>
+		<th align="right"><p><b>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.guveinnahmengesamt}</f:format.number></b></p></th>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenbeitraege" /></td>
-		<td align="right"><p>{regelantrag.einnahmenbeitraege}</p></td>
+		<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.einnahmenbeitraege}</f:format.number></p></td>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenspenden" /></td>
-		<td align="right"><p>{regelantrag.einnahmenspenden}</p></td>
+		<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.einnahmenspenden}</f:format.number></p></td>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.einnahmenzuschuesse" /></td>
-		<td align="right"><p>{regelantrag.einnahmenzuschuesse}</p></td>
+		<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.einnahmenzuschuesse}</f:format.number></p></td>
 	</tr>
 	<tr>
 		<th><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.guvausgabengesamt" /> </h4></th>
-		<th align="right"><p><b>{regelantrag.guvausgabengesamt}</b></p></th>
+		<th align="right"><p><b>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.guvausgabengesamt}</f:format.number></b></p></th>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabeninstandhaltung" /></td>
-		<td align="right"><p>{regelantrag.ausgabeninstandhaltung}</p></td>
+		<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ausgabeninstandhaltung}</f:format.number></p></td>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabensportbetrieb" /></td>
-		<td align="right"><p>{regelantrag.ausgabensportbetrieb}</p></td>
+		<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ausgabensportbetrieb}</f:format.number></p></td>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenverwaltung" /></td>
-		<td align="right"><p>{regelantrag.ausgabenverwaltung}</p></td>
+		<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ausgabenverwaltung}</f:format.number></p></td>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ausgabenabschreibung" /></td>
-		<td align="right"><p>{regelantrag.ausgabenabschreibung}</p></td>
+		<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ausgabenabschreibung}</f:format.number></p></td>
 	</tr>
 	<tr>
 		<th><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschussfehlbetrag" /></h4></th>
-		<th align="right"><p><b>{regelantrag.ueberschussfehlbetrag}</b></p></th>
+		<th align="right"><p><b>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ueberschussfehlbetrag}</f:format.number></b></p></th>
 	</tr>
 	</table>
 	</div>
@@ -484,28 +502,28 @@
 			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.anlagevermoegen" /></h4></th></tr>
 			<tr>
 				<td width="85%"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegensgegenstaende" /></td>
-				<td align="right"><p>{regelantrag.vermoegensgegenstaende}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.vermoegensgegenstaende}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sachanlagen" /></td>
-				<td align="right"><p>{regelantrag.sachanlagen}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sachanlagen}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.finanzanlagen" /></td>
-				<td align="right"><p>{regelantrag.finanzanlagen}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.finanzanlagen}</f:format.number></p></td>
 			</tr>
 			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.umlaufvermoegen" /></h4></th></tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.kassenbestand" /></td>
-				<td align="right"><p>{regelantrag.kassenbestand}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.kassenbestand}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bankguthaben" /></td>
-				<td align="right"><p>{regelantrag.bankguthaben}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.bankguthaben}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sonstiges_vermoegen" /></td>
-				<td align="right"><p>{regelantrag.sonstiges_vermoegen}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.sonstiges_vermoegen}</f:format.number></p></td>
 			</tr>
 	</table>
 	<br />
@@ -515,32 +533,32 @@
 			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.eigenkapital" /></h4></th></tr>
 			<tr>
 				<td width="85%"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenfrei" /></td>
-				<td align="right"><p>{regelantrag.ruecklagenfrei}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ruecklagenfrei}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenzweck" /></td>
-				<td align="right"><p>{regelantrag.ruecklagenzweck}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ruecklagenzweck}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ruecklagenbetrieb" /></td>
-				<td align="right"><p>{regelantrag.ruecklagenbetrieb}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ruecklagenbetrieb}</f:format.number></p></td>
 			</tr>
 			<tr><th colspan="2"><h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeiten" /></h4></th></tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitbank" /></td>
-				<td align="right"><p>{regelantrag.verbindlichkeitbank}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.verbindlichkeitbank}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitblssmd" /></td>
-				<td align="right"><p>{regelantrag.verbindlichkeitblssmd}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.verbindlichkeitblssmd}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.verbindlichkeitsonstige" /></td>
-				<td align="right"><p>{regelantrag.verbindlichkeitsonstige}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.verbindlichkeitsonstige}</f:format.number></p></td>
 			</tr>
 			<tr>
 				<td><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahreskapitaldienst" /></td>
-				<td align="right"><p>{regelantrag.jahreskapitaldienst}</p></td>
+				<td align="right"><p>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.jahreskapitaldienst}</f:format.number></p></td>
 			</tr>
 		</table>
 </div>
@@ -555,7 +573,7 @@
 	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d1" /></h3>
 	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d11" />:</h3>
 				
-	<table border="1">
+	<table style="border:1px solid black; width:100%">
 		<tr>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand111" /></th>
 			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr111" /></th>
@@ -638,7 +656,7 @@
 	<br/>
 	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d12" /></h3>
 				
-	<table border="1">
+	<table style="border:1px solid black; width:100%">
 		<tr>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand121" /></th>
 			<th colspan="2"><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr121" /></th>
@@ -720,7 +738,7 @@
 	<br/>			
 	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_d13" /></h3>
 				
-	<table border="1">
+	<table style="border:1px solid black; width:100%">
 		<tr>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stand131" /></th>
 			<th><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.jahr131" /></th>
@@ -1391,6 +1409,9 @@
 			</b><br />
 		</f:else>
 	</f:if>
+	
+	
+	
 </div>
 
 
