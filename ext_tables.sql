@@ -45,6 +45,10 @@ CREATE TABLE tx_blsvspstbauantrag_domain_model_antragsanforderung (
 	fremdgelder int(11) DEFAULT '0' NOT NULL,
 	beantragtefoerderung int(11) DEFAULT '0' NOT NULL,
 	begruendung text NOT NULL,
+	bestehendesportstaetten33  text NOT NULL,
+	stellungnahmetext  text NOT NULL,
+	bestehendesportstaettentext  text NOT NULL,	
+	
 	erklaerung1 tinyint(1) unsigned DEFAULT '0' NOT NULL,
 	erklaerung2 tinyint(1) unsigned DEFAULT '0' NOT NULL,
 	begruendungablehnung text NOT NULL,

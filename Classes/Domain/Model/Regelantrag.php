@@ -1353,6 +1353,32 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 * @var string
 	 */
 	protected $begruendungsonstige;
+	
+	/**
+	 * Sonstige Begründung
+	 * re
+	 *
+	 * @var string
+	 */
+	protected $bestehendesportstaetten33;
+	
+	/**
+	 * Sonstige Begründung
+	 * re
+	 *
+	 * @var string
+	 */
+	protected $stellungnahmetext;
+	
+	/**
+	 * Sonstige Begründung
+	 * re
+	 *
+	 * @var string
+	 */
+	protected $bestehendesportstaettentext;
+	
+		
 
 	/**
 	 * Erklärung 1
@@ -8681,7 +8707,8 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	public function isVbbgruende5() {
 		return $this->getVbbgruende5();
 	}
-
+	
+	
 	/**
 	 * Returns the begruendungsonstige
 	 *
@@ -8691,6 +8718,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 		return $this->begruendungsonstige;
 	}
 
+		
 	/**
 	 * Sets the begruendungsonstige
 	 *
@@ -8700,6 +8728,73 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	public function setBegruendungsonstige($begruendungsonstige) {
 		$this->begruendungsonstige = $begruendungsonstige;
 	}
+	
+	
+	/**
+	 * Returns the bestehendesportstaettentext
+	 *
+	 * @return string $bestehendesportstaettentext
+	 */
+	public function getBestehendesportstaettentext() {
+		return $this->bestehendesportstaettentext;
+	}
+	
+	
+	/**
+	 * Sets the bestehendesportstaettentext
+	 *
+	 * @param string $bestehendesportstaettentext
+	 * @return void
+	 */
+	public function setBestehendesportstaettentext($bestehendesportstaettentext) {
+		$this->bestehendesportstaettentext = $bestehendesportstaettentext;
+	}
+	
+
+	/**
+	 * Returns the bestehendesportstaetten33
+	 *
+	 * @return string $bestehendesportstaetten33
+	 */
+	public function getBestehendesportstaetten33() {
+		return $this->bestehendesportstaetten33;
+	}
+	
+	
+	/**
+	 * Sets the bestehendesportstaetten33
+	 *
+	 * @param string $bestehendesportstaetten33
+	 * @return void
+	 */
+	public function setBestehendesportstaetten33($bestehendesportstaetten33) {
+		$this->bestehendesportstaetten33 = $bestehendesportstaetten33;
+	}
+	
+	
+	
+	
+	
+	
+	/**
+	 * Sets the stellungnahmetext
+	 *
+	 * @param string $stellungnahmetext
+	 * @return void
+	 */
+	public function setStellungnahmetext($stellungnahmetext) {
+		$this->stellungnahmetext = $stellungnahmetext;
+	}
+	
+	/**
+	 * Returns the stellungnahmetext
+	 *
+	 * @return string $stellungnahmetext
+	 */
+	public function getStellungnahmetext() {
+		return $this->stellungnahmetext;
+	}
+	
 
 	/**
 	 * Returns the vbberklaerung1

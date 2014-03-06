@@ -461,10 +461,9 @@
 		<th class="rechtsunten" align="right"><p><b>€ <f:format.number decimals="2" decimalSeparator="," thousandsSeparator=".">{regelantrag.ueberschussfehlbetrag}</f:format.number></b></p></th>
 	</tr>
 	</table>
-	</div>
+	
 
-<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegenslage" /></h3>	
-	<div>
+<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vermoegenslage" /></h2>	
 	
 	<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.vmlstichtag" />: <f:format.date  format='d.m.Y'>@{regelantrag.vmlstichtag}</f:format.date></p>
 
@@ -956,116 +955,13 @@
 			<f:if condition="{regelantrag.sportlicheentwicklung11} == 2">
 				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung12" /><br />
 			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung11} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung13" /><br />
-			</f:if>
+		
 
-			<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2" /></h4>
-			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung21" /></h5>
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung211" /></h6>
-			<f:if condition="{regelantrag.sportlicheentwicklung211} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2111" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung211} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2112" /><br />
-			</f:if>								
-			<f:if condition="{regelantrag.sportlicheentwicklung211} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2113" /><br />
-			</f:if>							
-			</td>
+		
 
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung212" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung212} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2121" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung212} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2122" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung212} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2123" /><br />
-			</f:if>
-
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung213" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung213} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2131" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung213} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2132" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung213} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2133" /><br />
-			</f:if>
-
-			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung22" /></h5>
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung221" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung221} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2211" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung221} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2212" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung221} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2213" /><br />
-			</f:if>
-
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung222" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung222} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2221" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung222} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2222" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung222} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2223" /><br />
-			</f:if>
-
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung223" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung223} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2231" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung223} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2232" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung223} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2233" /><br />
-			</f:if>
-
-			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung23" /></h5>
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung231" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung231} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2311" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung231} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2312" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung231} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2313" /><br />
-			</f:if>
-
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung232" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung232} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2321" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung232} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2322" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung232} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2323" /><br />
-			</f:if>
-
-			<h6><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung233" /></h6>
-		 	<f:if condition="{regelantrag.sportlicheentwicklung233} == 1">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2331" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung233} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2332" /><br />
-			</f:if>
-			<f:if condition="{regelantrag.sportlicheentwicklung233} == 3">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2333" /><br />
-			</f:if>
-
-			<!-- 3. -->					
+			<!-- 2. -->					
 			<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung3" /></h4>
+			
 			 	<f:if condition="{regelantrag.sportlicheentwicklung311} == 1">
 			 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung311" /><br />
 			 	</f:if>
@@ -1087,9 +983,11 @@
 					kommunale Anlagen: <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung332" /><br />
 				</f:if>
 
-			<!-- 4. -->					
+			<!-- 3. -->					
 			<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung4" /></h4>
+			<p><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklungNoten" /></p>
 			<h5><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung41" /></h5>
+			
 			 <f:if condition="{regelantrag.sportlicheentwicklung411} == 1">
 				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung411" /><br />
 			</f:if>										
@@ -1177,6 +1075,8 @@
 			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten31" /><br /></f:if>
 		<f:if condition="{regelantrag.bestehendesportstaetten31} == 2">
 			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten32" /><br /></f:if>
+			
+		<f:format.nl2br>{regelantrag.bestehendesportstaetten33}	</f:format.nl2br><br>	
 								
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten4" /></h4>
 	 	<f:if condition="{regelantrag.bestehendesportstaetten41} == 1">
@@ -1287,13 +1187,7 @@
 								
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52_0" /><br />
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme521" /><br />
-		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme521}"/></b><br />
-		<br />
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme522" /><br />
-		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme522}"/></b><br />
-		<br />
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme523" /><br />
-		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme523}"/></b><br />
+		<f:format.nl2br>{regelantragstellungnahmetext}</f:format.nl2br>
 
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme6" /></h4>
 		<f:if condition="{regelantrag.stellungnahme61} == 1">
@@ -1320,92 +1214,8 @@
 <!-- d) Finanzierung -->
 <!--                 -->
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i4" /></h4>
+			{regelantrag.bestehendesportstaettentext}
 		
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung11" /><br />
-		<f:if condition="{regelantrag.Finanzierung111} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung111" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung111} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung112" /><br />
-		</f:if>
-
-		<br />
-		<f:if condition="{regelantrag.Finanzierung121} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung121" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung121} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung122" /><br />
-		</f:if>
-		
-		<f:if condition="{regelantrag.Finanzierung131} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung131" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung131} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung132" /><br />
-		</f:if>
-		
-		<f:if condition="{regelantrag.Finanzierung141} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung141" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung141} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung142" /><br />
-		</f:if>
-		
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung21" /><br />
-		<f:if condition="{regelantrag.Finanzierun211} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung211" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung211} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung212" /><br />
-		</f:if>
-		
-		<f:if condition="{regelantrag.Finanzierung221} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung221" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung221} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung222" /><br />
-		</f:if>
-		
-		<f:if condition="{regelantrag.Finanzierung231} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung231" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung231} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung232" /><br />
-		</f:if>
-			
-		<f:if condition="{regelantrag.Finanzierung241} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung241" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung241} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung242" /><br />
-		</f:if>
-		
-		<br />
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung3" /><br />
-		<f:if condition="{regelantrag.Finanzierung31} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung31" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung31} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung32" /><br />
-		</f:if>
-		<br />
-			
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung4" /><br />
-		<f:if condition="{regelantrag.Finanzierung41} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung41" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung41} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung42" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung41} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung43" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung41} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung44" /><br />
-		</f:if>
-		<f:if condition="{regelantrag.Finanzierung41} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung45" /><br />
-		</f:if>
 		<br />
 
 <!--              -->
@@ -1422,7 +1232,7 @@
 				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges21" /><br />
 			</f:if>
 			<f:if condition="{regelantrag.sonstiges21} == 2">
-				<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges22" /><br />
+				<f:format.nl2br><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges22" /></f:format.nl2br><br />
 			</f:if>
 			</b><br />
 		</div>	
@@ -1711,6 +1521,11 @@ $(function () {
 	$('textarea').each(function(){
 		$(this).attr( 'disabled', 'disabled' );
 		});
+	
+	$('textarea.kv').each(function(){
+		$(this).removeAttr( 'disabled' );
+		});
+	
 	$('select').each(function(){
 		$(this).attr( 'disabled', 'disabled' ); 
 	});

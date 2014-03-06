@@ -909,7 +909,7 @@ Georg-Brauchle Ring 93<br />
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i1">a) Sportliche Entwicklung im BLSV-Kreis</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i2">b) Bestehende Sportstätten</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i3">c) Stellungnahme zum Bedarfsnachweis des Vereins</label> 
-		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i4">d) Finanzierung</label> 
+		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i4">d) Zusätzliche Bemerkungen</label> 
 		  <label index="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i5">e) Sonstiges</label> 
 
 
@@ -930,6 +930,7 @@ Georg-Brauchle Ring 93<br />
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten3">3. Sind sämtliche vom Verein genutzte Sportstätten dem BLSV-Kreis bekannt?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten31">ja</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten32">nein</label>
+     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten33">Wenn ja, welche? </label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten4">4. Wurden die vom Verein genutzten Sportstätten seitens des BLSV-Kreises vor Ort in der Vergangenheit eingesehen?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten41">ja</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten42">nein</label>
@@ -967,14 +968,14 @@ Georg-Brauchle Ring 93<br />
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung43">mittelmäßig</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung44">gering</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Finanzierung45">keine</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges1">Die Einsichtnahme der vom Verein ausgefüllten Antragsunterlagen erfolgte am</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges1">1. Die Einsichtnahme der vom Verein ausgefüllten Antragsunterlagen erfolgte am</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges11">Datum:</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges2">Auf der Grundlage des Bedarfsnachweises des Vereins wird hiermit der Bedarf der geplanten Maßnahme</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges2">2. Auf der Grundlage des Bedarfsnachweises des Vereins wird hiermit der Bedarf der geplanten Maßnahme</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges21">befürwortet</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Sonstiges22">abgelehnt</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung1"> 1. Welche Tendenz ist bei der Mitgliederentwicklung in den letzten Jahren zu verzeichnen?</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung11">steigend</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung12">gleichbleibend</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung1"> 1. Ist für die geplante Maßnahme der vom Verein angeführte sportliche Bedarf gegeben?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung11">ja</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung12">nein</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung13">sinkend</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2">2. Sportliche Entwicklung der vom Verein im Antrag angeführte(n) Sparte(n) im BLSV - Kreis.</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung21">2.1. Im Schüler und Jugendbereich</label>
@@ -1016,32 +1017,33 @@ Georg-Brauchle Ring 93<br />
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2331">nein</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2332">ja, positiv</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung2333">ja, negativ</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung3">3. Besteht aus Sicht des BLSV-Kreises die Möglichkeit, durch eine verstärkte Nutzung der vereinseigenen oder anderer Sportanlagen im Einzugsgebiet des Vereins den angeführten Bedarf auf Dauer abzudecken? </label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung3">2. Besteht aus Sicht des BLSV-Kreises die Möglichkeit, durch eine verstärkte Nutzung der vereinseigenen oder anderer Sportanlagen im Einzugsgebiet des Vereins den angeführten Bedarf auf Dauer abzudecken? </label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung311">ja, vereinseigene Anlage</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung312">nein</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung321">ja, Anlagen anderer Vereine</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung322">nein</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung331">ja, kommunale Anlagen</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung332">nein</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung4">4. Kooperation des Vereins mit dem BLSV-Kreis</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung41">4.1. Wie ist das Verhältnis der Vereinsvorstandschaft zum BLSV-Kreis?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung4">3. Kooperation des Vereins mit dem BLSV-Kreis</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung41">3.1. Wie ist das Verhältnis der Vereinsvorstandschaft zum BLSV-Kreis?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung411">1</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung412">2</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung413">3</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung414">4</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung415">5</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung42">4.2. Wie rege ist die Teilnahme der Vereinsvorstandschaft an Veranstaltungen des BLSV-Kreises?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung42">3.2. Wie rege ist die Teilnahme der Vereinsvorstandschaft an Veranstaltungen des BLSV-Kreises?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung421">1</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung422">2</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung423">3</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung424">4</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung425">5</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung43">4.3. Wie ist die Mitwirkung des Vereins bei Veranstaltungen des BLSV-Kreises?</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung43">3.3. Wie ist die Mitwirkung des Vereins bei Veranstaltungen des BLSV-Kreises?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung431">1</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung432">2</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung433">3</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung434">4</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklung435">5</label>
+     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.sportlicheentwicklungNoten">(1=sehr gut; 2=gut; 3=befriedigend; 4=ausreichend; 5=mangelhaft)</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme11">1. Zeichnen sich in Bezug auf die Mitglieder im Einzugsbereich des Vereins Veränderungen ab?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme111">ja, Ausweisung neuer Wohnbaugebiete</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme112">keine</label>
