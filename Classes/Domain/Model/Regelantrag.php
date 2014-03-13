@@ -4306,10 +4306,10 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 * Stellungnahme614
 	 * kl + re
 	 *
-	 * @var integer
+	 * @var boolean
 	 * @validate NotEmpty
 	 */
-	protected $stellungnahme614=0;
+	protected $stellungnahme614=FALSE;
 
 	/**
 	 * art
@@ -14264,7 +14264,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	 * Returns the Stellungnahme614
 	 *
 	
-	 * @return integer $stellungnahme614
+	 * @return boolean $stellungnahme614
 	 */
 	public function getStellungnahme614() {
 		return $this->stellungnahme614;
@@ -15923,7 +15923,7 @@ class Tx_Blsvspstbauantrag_Domain_Model_Regelantrag extends Tx_Extbase_DomainObj
 	/**
 	 * Sets the Stellungnahme614
 	 *
-	 * @param integer $stellungnahme614
+	 * @param boolean $stellungnahme614
 	 * @return void
 	 */
 	public function setStellungnahme614($stellungnahme614) {

@@ -1064,7 +1064,7 @@ Georg-Brauchle Ring 93<br />
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme32">nein</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31_0">Wenn ja, welche?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme311">Mit einem bzw. mehreren Nachbarsvereinen</label>
-    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme312">Mit der Kommune</label>
+    <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme312">Mit der Kommune / Landkreis / Bezirk / Landesleistungszentrum u. dgl.</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme313">Mit einer zentralen Sportstätte im BLSV-Kreis</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme4">4. Wann wurden Sie in die Planungen des Vereins vor der Antragstellung eingebunden?</label>
     <label index="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme41">Datum:</label>

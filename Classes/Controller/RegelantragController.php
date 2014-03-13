@@ -832,7 +832,7 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 		
 	
 		
-		if ( !$regelantrag->getSportlicheentwicklung1() )   {
+/*		if ( !$regelantrag->getSportlicheentwicklung1() )   {
 			$erg[] =   tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung1', 'blsvspstbauantrag' );
 		}
 		if ( !$regelantrag->getSportlicheentwicklung1() ) {
@@ -866,7 +866,7 @@ class Tx_Blsvspstbauantrag_Controller_RegelantragController extends Tx_Extbase_M
 	/*	if ( !$regelantrag->getSportlicheEntwicklung22() ) {
 		
 			$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung22', 'blsvspstbauantrag' );
-		}*/
+		}
 		
 if ( !$regelantrag->getSportlicheEntwicklung221() ) {
 		
@@ -931,7 +931,7 @@ $erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domai
 		
 			$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung43', 'blsvspstbauantrag' );
 		}*/
-		
+		/*
 if ( !$regelantrag->getBestehendesportstaetten11() ) {		
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten11', 'blsvspstbauantrag' );
 	}
@@ -962,7 +962,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 	
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung213', 'blsvspstbauantrag' );
 	
-	}
+	} */
 	
 /*	if ( !$regelantrag->getSportlicheEntwicklung22() ) {
 	
@@ -970,7 +970,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 	
 	}*/
 	
-	if ( !$regelantrag->getSportlicheEntwicklung221() ) {
+/*	if ( !$regelantrag->getSportlicheEntwicklung221() ) {
 	
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung221', 'blsvspstbauantrag' );
 	
@@ -1005,7 +1005,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 	
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung233', 'blsvspstbauantrag' );
 	
-	}
+	} */
 	
 /*	if ( !$regelantrag->getSportlicheEntwicklung3() ) {
 	
@@ -1014,7 +1014,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 	}
 */	
 	
-	
+/*	
 	if ( !$regelantrag->getSportlicheEntwicklung411() ) {
 	
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.Valkeinesportlicheentwicklung41', 'blsvspstbauantrag' );
@@ -1053,7 +1053,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten31', 'blsvspstbauantrag' );
 	
 	}
-	
+	 
 	
 	if ( !$regelantrag->getBestehendesportstaetten41() ) {
 	
@@ -1067,7 +1067,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineBestehendesportstaetten511', 'blsvspstbauantrag' );
 	
 	}
-*/	
+
 	if ( !$regelantrag->getStellungnahme111() ) {
 	
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme111', 'blsvspstbauantrag' );
@@ -1107,7 +1107,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 	
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineStellungnahme61', 'blsvspstbauantrag' );
 	
-	}
+	} 
 	 
 	if ( !$regelantrag->getFinanzierung111() ) {
 	
@@ -1136,7 +1136,7 @@ if ( !$regelantrag->getBestehendesportstaetten11() ) {
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineFinanzierung41', 'blsvspstbauantrag' );	
 	}
 	
-	
+	*/
 	if ( !$regelantrag->getSonstiges11() ) {
 	
 		$erg[] = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.ValkeineSonstiges11', 'blsvspstbauantrag' );

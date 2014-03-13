@@ -2397,14 +2397,7 @@
 									<f:form.checkbox class="kv" property="stellungnahme312" value="1" />
 								</td>
 							</tr>
-							<tr>
-								<th colspan="2">
-									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme313" />
-								</th>
-								<td colspan="2">
-									<f:form.checkbox class="kv" property="stellungnahme313" value="1" />
-								</td>
-							</tr>
+							
 							<tr>
 								<th colspan="4">
 									<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme4" /></h3>
@@ -2496,6 +2489,15 @@
 									<f:form.checkbox class="kv" property="stellungnahme613" value="1" />
 								</td>
 							</tr>
+								<tr>
+								<th colspan="2">
+									<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme614" />
+								</th>
+								<td colspan="2">
+									<f:form.checkbox class="kv" property="stellungnahme614" value="1" />
+								</td>
+							</tr>
+							
 						</table>
 					</div>
 
@@ -2799,6 +2801,11 @@ $(function () {
 		
 		
 		$('.mitgliederzahlen').each(function(index, value) { 
+			if ( $(this).val() == '' )  $(this).val('0');
+		});
+		
+		
+		$('.anzahl').each(function(index, value) { 
 			if ( $(this).val() == '' )  $(this).val('0');
 		});
 	

@@ -466,10 +466,13 @@ class Tx_Blsvspstbauantrag_Controller_AntragsanforderungController extends Tx_Ex
 		
 		if ( ( $antragsanforderung->getStatus( ) == 4 ) or ( $antragsanforderung->getStatus( ) == 5 ) ){
 			
+			$art = $antragsanforderung->getArt();
+			$artShort = tx_Extbase_Utility_Localization::translate( "tx_blsvspstbauantrag_domain_model_antragsanforderung.artkurz" . $art, 'blsvspstbauantrag' );
+			
 			$parameter[0] = $antragsanforderung->getUid();
 			$parameter[1] = $antragsanforderung->getVereinsnummer();			
 			
-			$subject =  tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungheader', 'blsvspstbauantrag', $parameter );
+			$subject =   $artShort . ' - '  . $antragsanforderung->getVereinsname()  . ', '  . $antragsanforderung->getVereinsnummer() .  ', ' . tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigungheader', 'blsvspstbauantrag', $parameter );
 			$emailBody = tx_Extbase_Utility_Localization::translate( 'tx_blsvspstbauantrag_domain_model_regelantrag.emailbestaettigung', 'blsvspstbauantrag' );
 			$antragsanforderung->setStatus( 7 );;
 			
@@ -576,6 +579,7 @@ class Tx_Blsvspstbauantrag_Controller_AntragsanforderungController extends Tx_Ex
 			$newRegelantrag->setFinanzierunglkr( $antragsanforderung->GetFinanzierunglkr() );
 			$newRegelantrag->setFinanzierungsonstige( $antragsanforderung->GetZuschuesse() );
 			$newRegelantrag->setFinanzierungzuschuss( $antragsanforderung->GetBeantragtefoerderung() );
+			$newRegelantrag->setstaatsmittelfoerderung2( $antragsanforderung->GetBeantragtefoerderung() );
 			$newRegelantrag->setFinanzierungvorsteuer( $antragsanforderung->GetFinanzierungvorsteuer() );
 			$newRegelantrag->setFinanzierungdarlehen( $antragsanforderung->GetFremdgelder() );
 				

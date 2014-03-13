@@ -9,14 +9,16 @@
 </div>
 
 <div id="pdf_footer">
+	<div class="links">
 		<f:format.date format="d.n.Y">+0 seconds</f:format.date>
 		 - <f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.art{regelantrag.art}" /> Nr. {regelantrag.antragsnummer1.uid} 
 		 - {regelantrag.vereinsname} ({regelantrag.vereinsnummer}) 
 		 - Kreis {regelantrag.blsvkreis}
+	
 	</div>
-
 	<div class="rechts">
-		Seite ##PAGE## von ##PAGES##</div>
+		Seite ##PAGE## von ##PAGES##
+	</div>
 </div>
 
 
@@ -907,14 +909,15 @@
 	<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.erklfinanzierung}"/></b><br />
 </div>
 
-<pagebreak class="page-break" />
+
 <!-- I) Stellungnahme des BLSV-Kreises -->
 
 <f:if condition="{0:admin,1:kv} == {0:0, 1:0}">
+
 	<f:then>
 	</f:then>
 	<f:else>
-	
+	<pagebreak class="page-break" />
 	<h3><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i" /></h3>
 	<div>
 			<h2><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i1" /></h2>
@@ -1070,41 +1073,43 @@
 			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten531" /><br /></f:if>
 		<f:if condition="{regelantrag.bestehendesportstaetten531} == 2">
 			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.bestehendesportstaetten532" /><br /></f:if>
-
+   <pagebreak class="page-break" />
+   
+   
 
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.ueberschrift_i3" /></h4>
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme11" /></h4>
 	 	<f:if condition="{regelantrag.stellungnahme111} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme111" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme111" /><br />
 		</f:if>
 		<f:if condition="{regelantrag.stellungnahme111} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme112" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme112" /><br />
 		</f:if>
 
 		<f:if condition="{regelantrag.stellungnahme121} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme121" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme121" /><br />
 		</f:if>
 		<f:if condition="{regelantrag.stellungnahme121} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme122" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme122" /><br />
 		</f:if>
 		
 		<f:if condition="{regelantrag.stellungnahme131} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme131" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme131" /><br />
 		</f:if>
 		<f:if condition="{regelantrag.stellungnahme131} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme132" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme132" /><br />
 		</f:if>
 								
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme2" /></h4>
 
 		<f:if condition="{regelantrag.stellungnahme21} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme21" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme21" /><br />
 		</f:if>
 		<f:if condition="{regelantrag.stellungnahme21} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme22" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22" /><br />
 		</f:if>
 								
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22_0" />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme22_0" /><br />
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme221" />
 
 		<br />
@@ -1125,13 +1130,13 @@
 		<!-- 3. -->
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme3" /></h4>
 		<f:if condition="{regelantrag.stellungnahme31} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme31" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31" /><br />
 		</f:if>
 		<f:if condition="{regelantrag.stellungnahme31} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme32" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme32" /><br />
 		</f:if>
 								
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31_0" />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme31_0" /><br />
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme311" /><br />
 		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme311}"/></b><br />
 		<br />
@@ -1140,9 +1145,7 @@
 		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme312}"/></b><br />
 		<br />
 
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme313" /><br />
-		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme313}"/></b><br />
-		<br />
+		
 
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme4" /></h4>
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme41" />
@@ -1150,25 +1153,26 @@
 
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme5" /></h4>
 		<f:if condition="{regelantrag.stellungnahme51} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme51" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme51" /><br />
 		</f:if>
 		<f:if condition="{regelantrag.stellungnahme51} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme52" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52" /><br />
 		</f:if>
 								
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme52_0" /><br />
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme521" /><br />
-		<f:format.nl2br>{regelantragstellungnahmetext}</f:format.nl2br>
+		<f:format.nl2br>{regelantrag.stellungnahmetext}</f:format.nl2br>
+
+<pagebreak class="page-break" />
 
 		<h4><f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme6" /></h4>
 		<f:if condition="{regelantrag.stellungnahme61} == 1">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme61" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61" /><br />
 		</f:if>
 		<f:if condition="{regelantrag.stellungnahme61} == 2">
-			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.stellungnahme62" /><br />
+			<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme62" /><br />
 		</f:if>
 								
-		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61_0" />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme61_0" /><br />
 
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme611" /><br />
 		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme611}"/></b><br />
@@ -1178,6 +1182,11 @@
 		<br />
 		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme613" /><br />
 		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme613}"/></b><br />
+		
+		<br />
+		<f:translate key="tx_blsvspstbauantrag_domain_model_regelantrag.Stellungnahme614" /><br />
+		<b><f:translate htmlEscape="false" key="tx_blsvspstbauantrag_domain_model_regelantrag.haken{regelantrag.Stellungnahme614}"/></b><br />
+					
 					
 					
  
